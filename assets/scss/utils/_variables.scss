@@ -6,18 +6,31 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+//$white:    #fff !default;
+//$gray-100: #f8f9fa !default;
+//$gray-200: #e9ecef !default;
+//$gray-300: #dee2e6 !default;
+//$gray-400: #ced4da !default;
+//$gray-500: #adb5bd !default;
+//$gray-600: #6c757d !default;
+//$gray-700: #495057 !default;
+//$gray-800: #343a40 !default;
+//$gray-900: #212529 !default;
+//$black:    #000 !default; 
 // scss-docs-end gray-color-variables
+
+$white:    #fff !default;
+$gray-100: #efefef !default;
+$gray-200: #dcdcdc !default;
+$gray-300: #bdbdbd !default;
+$gray-400: #989898 !default;
+$gray-500: #7c7c7c !default;
+$gray-600: #656565 !default;
+$gray-700: #525252 !default;
+$gray-800: #464646 !default;
+$gray-900: #3d3d3d !default;
+$gray-950: #292929 !default;
+$black:    #000 !default; 
 
 // fusv-disable
 // scss-docs-start gray-colors-map
@@ -176,6 +189,45 @@ $cyan-700: shade-color($cyan, 40%) !default;
 $cyan-800: shade-color($cyan, 60%) !default;
 $cyan-900: shade-color($cyan, 80%) !default;
 
+$primary-50:#f0faff;
+$primary-100:#e0f3fe;
+$primary-200:#b9e9fe;
+$primary-300:#7cd9fd;
+$primary-400:#58cffb;
+$primary-500:#0caeeb;
+$primary-600:#008dc9 ;
+$primary-700:#0170a3;
+$primary-800:#065e86;
+$primary-900:#0b4e6f;
+$primary-950:#07324a;
+
+$secondary-50:#fafee8;
+$secondary-100:#f3fec3;
+$secondary-200:#eeff89;
+$secondary-300:#e9fe46;
+$secondary-400:#ebfb14;
+$secondary-500:#e9ef07;
+$secondary-600:#cbc003;
+$secondary-700:#a28c06;
+$secondary-800:#866e0d;
+$secondary-900:#715912;
+$secondary-950:#423006;
+
+$emphasis-50:#fff0f1;
+$emphasis-100:#ffe2e5;
+$emphasis-200:#ffcad1;
+$emphasis-300:#ff9fab;
+$emphasis-400:#ff697e;
+$emphasis-500:#ff4564;
+$emphasis-600:#ed1140;
+$emphasis-700:#c80836;   
+$emphasis-800:#a80934;
+$emphasis-900:#8f0c33;
+$emphasis-950:#500117;
+
+
+
+
 $blues: (
   "blue-100": $blue-100,
   "blue-200": $blue-200,
@@ -297,21 +349,29 @@ $cyans: (
 ) !default;
 // fusv-enable
 
+//custom
+
+
+
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+//$primary:       $blue !default;
+//$secondary:     $gray-600 !default;
+$primary:       $primary-400 !default;
+$secondary:     $secondary-500 !default;
+$emphasis:        $emphasis-500 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$dark:          $gray-950 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "emphasis":      $emphasis,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -378,7 +438,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -409,12 +469,24 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  //0: 0,
+  //1: $spacer * .25,
+  //2: $spacer * .5,
+  //3: $spacer,
+  //4: $spacer * 1.5,
+  //5: $spacer * 3,
+
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -435,7 +507,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                $gray-900 !default;
+$body-color:                $gray-950 !default;
 $body-bg:                   $white !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
@@ -472,7 +544,7 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0;//1rem !default;
 
 
 // Grid breakpoints
@@ -544,8 +616,8 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
+$border-radius:               .25rem !default;
+$border-radius-sm:            .375rem !default;
 $border-radius-lg:            .5rem !default;
 $border-radius-xl:            1rem !default;
 $border-radius-xxl:           2rem !default;
@@ -603,7 +675,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Noto Sans TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -636,6 +708,8 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+
+
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -650,7 +724,7 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0;//$spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
