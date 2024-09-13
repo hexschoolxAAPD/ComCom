@@ -7,53 +7,100 @@
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    
 
-    <h1 class="h1">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+      <div class="container">
+        <span class=" mb-0 title-1">我的成就</span>
+        <ul class="list-unstyled mb-0 nav-list">
+          <li>
+            <a href="#" class="position-relative">
+              <img src="../assets/images/Icon/Navigation Bar/Bell.svg"  alt="Bell" style="width: 24px; height: 24px;">
+              <div class="news"></div>
+            </a>
+          </li>
+          <li >
+            <a href="#" class="position-relative">
+              <img src="../assets/images/Icon/Navigation Bar/ChatCircleDots.svg" alt="Chat" style="width: 24px; height: 24px;">
+              <div class="news"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../assets/images/Icon/Personal/ListBullets.svg" alt="Chat" style="width: 24px; height: 24px;">
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
-    
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-    
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+    <div class="bg-emphasis">
+      <div class="container">
+        <div class="alert d-flex justify-content-between align-items-center m-0 py-3 px-0 fade show" role="alert">
+          <p class="subtitle text-white">預約課程即將開始，快去上課吧！</p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
     </div>
 
-    <%- include('./layout/footer'); -%>
+    <main class="container pt-4 pb-2">
+      <div class="d-flex align-items-start mb-3">
+        <div class="flex-shrink-0 position-relative">
+          <img src="../assets/images/我的成就/Avatar.jpg" class="rounded-circle" alt="..." style="width: 80px; height: 80px;">
+          <img src="../assets/images/Icon/Flags/Taiwan (TW).svg" class="position-absolute bottom-0 start-0" alt="Taiwan">
+          <div class="bubble position-absolute top-50 start-90">
+            <p class=" text-white subtitle " >8/5~8/16 San Francisco trip <img src="../assets/images/Icon/Flags/us.png" class="align-baseline" alt="flags_us"></p>
+          </div>
+        </div>
+        <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center position-relative">
+          <h4 class="h4">Barron Li</h4>
+          <img src="../assets/images/Icon/Social Media/SealCheck-blue500.svg" class="ms-1" alt="SealCheck" style="width: 18px; height: 18px;">
+        </div>
+      </div>
+      <ul class="d-flex list-unstyled justify-content-around mb-3">
+        <li class="achievement">
+          <h5 class="h5">A1</h5>
+          <p class="caption-1">英文程度</p>
+        </li>
+        <li class="achievement">
+          <h5 class="h5">88個</h5>
+          <p class="caption-1">地標成就</p>
+        </li>
+        <li class="achievement">
+          <h5 class="h5">2小時</h5>
+          <p class="caption-1">上課時數</p>
+        </li>
+        <li class="achievement">
+          <h5 class="h5">369位</h5>
+          <p class="caption-1">學伴朋友</p>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button type="button" class="btn btn-light px-4 pt-0  me-3 rounded-3"><img src="../assets/images/Icon/Class/Export.svg" alt="Export" style="width: 20px; height: 20px; "></button>
+        <button type="button" class="btn btn-light subtitle rounded-3 flex-fill">編輯個人檔案</button>
+      </div>
+    </main>
+
+    <div class="loction">
+
+    </div>
+    <div class="tag container d-flex">
+      <a href="#" class="btn hashtag fs-body-2">私房景點</a>
+      <a href="#" class="btn hashtag fs-body-2">自然風景</a>
+      <a href="#" class="btn hashtag fs-body-2">節慶祭典</a>
+      <a href="#" class="btn hashtag fs-body-2">戶外運動</a>
+    </div>
+
+
+    
+    
+
+    
+    
+
+
+    <%- include('./layout/header'); -%>
+
 
     <script type="module" src="../main.js"></script>
   </body>

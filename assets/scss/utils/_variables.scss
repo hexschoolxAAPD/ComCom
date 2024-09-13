@@ -356,7 +356,7 @@ $cyans: (
 // scss-docs-start theme-color-variables
 //$primary:       $blue !default;
 //$secondary:     $gray-600 !default;
-$primary:       $primary-400 !default;
+$primary:       $primary-500 !default;
 $secondary:     $secondary-500 !default;
 $emphasis:        $emphasis-500 !default;
 $success:       $green !default;
@@ -497,7 +497,15 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  10: 10%,
+  20: 20%,
+  30: 30%,
+  40: 40%,
   50: 50%,
+  60: 60%,
+  70: 70%,
+  80: 80%,
+  90: 95%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -589,7 +597,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           2rem !default;
 $grid-row-columns:            6 !default;
 
 // Container padding
@@ -1779,7 +1787,7 @@ $btn-close-width:            1em !default;
 $btn-close-height:           $btn-close-width !default;
 $btn-close-padding-x:        .25em !default;
 $btn-close-padding-y:        $btn-close-padding-x !default;
-$btn-close-color:            $black !default;
+$btn-close-color:            $white !default;
 $btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !default;
 $btn-close-focus-shadow:     $focus-ring-box-shadow !default;
 $btn-close-opacity:          .5 !default;

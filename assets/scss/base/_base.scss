@@ -5,11 +5,14 @@ body{
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    line-height: 0;
+    
 }
 
 .h1{
@@ -57,7 +60,6 @@ a {
 .subtitle{
     font-size: 14px;
     line-height: 20px;
-    font-weight: 600;
 }
 .fs-body-1{
     font-size: 16px;
