@@ -1,0 +1,47 @@
+// filter & search modal 出現動畫
+.modal.fade .modal-dialog {
+  transform: translate(100%, 0);
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+// 手風琴自定義樣式
+.explore-search-accordion .accordion-button:not(.collapsed) {
+  background-color: $white;
+  box-shadow: none;
+  color: $primary-950;
+}
+
+.class-time.accordion-button::after {
+  margin-left: 8px;
+}
+
+// label checkbox
+.label-checkbox {
+  padding: 14px;
+  background-color: $gray-100;
+  cursor: pointer;
+}
+
+.label-checkbox-light {
+  background-color: $white;
+}
+
+input:checked ~ .label-checkbox {
+  background-color: $primary-100;
+  font-weight: 600;
+  fill: black;
+}
+
+// modal body 撐滿版
+.modal-body-full-height {
+  height: calc(100vh - 50px);
+}
+
+// form 陰影
+.sec-spot {
+  box-shadow: -8px 67px 41px rgba(#a5a1a1, 0.05),
+    -3px 30px 30px rgba(#a5a1a1, 0.09), -1px 7px 17px rgba(#a5a1a1, 0.1);
+}

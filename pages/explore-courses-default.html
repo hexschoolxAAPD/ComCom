@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <%- include('./layout/head'); -%>
+
+  <body>
+    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+      <div class="container">
+        <span class="mb-0 title-1">探索課程</span>
+        <ul class="list-unstyled mb-0 nav-list">
+          <li>
+            <a href="#" class="position-relative">
+              <img
+                src="../assets/images/icon/navbar-bell.svg"
+                alt="Bell"
+                style="width: 24px; height: 24px"
+              />
+              <div class="news"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="position-relative">
+              <img
+                src="../assets/images/icon/navbar-chat-circle-dots.svg"
+                alt="Chat"
+                style="width: 24px; height: 24px"
+              />
+              <div class="news"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="../assets/images/icon/personal-list-bullets.svg"
+                alt="Chat"
+                style="width: 24px; height: 24px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container pt-4 pb-2">
+      <!-- search & filter button-->
+      <div class="d-flex justify-content-between gap-4">
+        <button
+          type="button"
+          class="btn btn-gray-100 text-gray-500 flex-grow-1 text-start ps-4 pe-2 py-2"
+          data-bs-toggle="modal"
+          data-bs-target="#exploreCourseSearch"
+        >
+          <img
+            src="../assets/images/icon/function-search.svg"
+            alt="courses search icon"
+            class="align-bottom me-1"
+          />搜尋你最愛的城市，找旅遊主題課
+        </button>
+
+        <button
+          type="button"
+          class="btn px-0 py-1"
+          data-bs-toggle="modal"
+          data-bs-target="#exploreCourseFilter"
+        >
+          <img
+            src="../assets/images/icon/course-sliders-horizontal.svg"
+            alt="filter icon"
+          />
+        </button>
+      </div>
+      <!-- theme filter -->
+
+      <!-- hot courses swiper-->
+      <!-- 立即上課 swiper -->
+
+      <!-- search Modal -->
+      <div
+        class="modal fade"
+        id="exploreCourseSearch"
+        tabindex="-1"
+        aria-labelledby="exploreCourseSearchLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content bg-gray-100">
+            <!-- modal header -->
+            <div
+              class="modal-header justify-content-between align-items-center border-bottom-0 py-0"
+            >
+              <button
+                type="button"
+                class="btn py-3 px-0 d-flex"
+                data-bs-dismiss="modal"
+                aria-label="back"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.7071 2.29289C18.0976 2.68342 18.0976 3.31658 17.7071 3.70711L9.41421 12L17.7071 20.2929C18.0976 20.6834 18.0976 21.3166 17.7071 21.7071C17.3166 22.0976 16.6834 22.0976 16.2929 21.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L16.2929 2.29289C16.6834 1.90237 17.3166 1.90237 17.7071 2.29289Z"
+                    fill="#292929"
+                  />
+                </svg>
+              </button>
+              <h2 class="modal-title title-1" id="exploreCourseSearchLabel">
+                用英語探索世界
+              </h2>
+              <button
+                type="button"
+                class="btn py-3 px-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exploreCourseFilter"
+              >
+                <img
+                  src="../assets/images/icon/course-sliders-horizontal.svg"
+                  alt="filter icon"
+                />
+              </button>
+            </div>
+            <!-- modal body -->
+            <form class="d-flex flex-column modal-body-full-height">
+              <div class="modal-body">
+                <!-- accordion -->
+                <div
+                  class="accordion explore-search-accordion mb-4"
+                  id="accordionSearch"
+                >
+                  <div class="accordion-item rounded border-0 mb-4 sec-spot">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button title-2 px-7 py-3 rounded"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseLocation"
+                        aria-expanded="true"
+                        aria-controls="collapseLocation"
+                      >
+                        選擇地點
+                      </button>
+                    </h3>
+                    <div
+                      id="collapseLocation"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body pt-0 pb-3 px-3">
+                        <!-- 地點搜尋框 -->
+                        <div class="input-group rounded">
+                          <span
+                            class="input-group-text bg-gray-100 pe-0 border-0"
+                            ><img
+                              src="../assets/images/icon/function-search.svg"
+                              alt="location search icon"
+                          /></span>
+                          <input
+                            type="search"
+                            name="locationSearch"
+                            id="locationSearch"
+                            class="form-control ps-1 border-0 bg-gray-100"
+                            placeholder="搜尋"
+                            aria-label="search"
+                          />
+                        </div>
+                        <!-- location swiper -->
+                        <div class="swiper search-location-swiper py-3">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-japan.png"
+                                  alt="japan"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">日本</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-china.png"
+                                  alt="japan"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">中國</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-korea.png"
+                                  alt="japan"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">南韓</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-southeast-asia.png"
+                                  alt="southeast asia"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">東南亞</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-asia.png"
+                                  alt="asia"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">亞洲</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-north-america.png"
+                                  alt="north america"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">北美洲</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-south-america.png"
+                                  alt="south america"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">南美洲</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-europe.png"
+                                  alt="europe"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">歐洲</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-australia.png"
+                                  alt="australia"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">大洋洲</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="fs-body-2 text-gray-900">
+                                <img
+                                  src="../assets/images/explore-courses/landmark-africa.png"
+                                  alt="africa"
+                                  class="w-100 rounded mb-1"
+                                />
+                                <p class="text-center">非洲</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- top ten -->
+                        <div>
+                          <h4 class="title-2 mb-2">台灣人最愛的十大旅遊城市</h4>
+                          <div class="row g-2">
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationTokyo"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationTokyo"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                東京
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationSeoul"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationSeoul"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                首爾
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationBangkok"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationBangkok"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                曼谷
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationKyoto"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationKyoto"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                京都
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationOsaka"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationOsaka"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                大阪
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationSingapore"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationSingapore"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                新加坡
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationBusan"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationBusan"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                釜山
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationOkinawa"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationOkinawa"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                沖繩
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationParis"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationParis"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                巴黎
+                              </label>
+                            </div>
+                            <div class="col-6">
+                              <input
+                                type="radio"
+                                name="location"
+                                id="locationKL"
+                                class="d-none"
+                              />
+                              <label
+                                for="locationKL"
+                                class="d-block rounded fs-body-2 text-center label-checkbox"
+                              >
+                                吉隆坡
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item rounded border-0 mb-4 sec-spot">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button rounded title-2 px-7 py-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTheme"
+                        aria-expanded="false"
+                        aria-controls="collapseTheme"
+                      >
+                        選擇主題
+                      </button>
+                    </h3>
+                    <div
+                      id="collapseTheme"
+                      class="accordion-collapse collapse show"
+                    >
+                      <div class="accordion-body px-3 pb-3 pt-0">
+                        <div class="row g-2">
+                          <div class="col-12">
+                            <p class="caption-1 text-gray-500">已選擇 0/3 項</p>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeLocalLife"
+                              id="themeLocalLife"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeLocalLife"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              當地生活
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeHistory"
+                              id="themeHistory"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeHistory"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              文化歷史
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeViewpoints"
+                              id="themeViewpoints"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeViewpoints"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              私房景點
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeFood"
+                              id="themeFood"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeFood"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              美食饗宴
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeLandscape"
+                              id="themeLandscape"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeLandscape"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              自然風景
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeOutdoorSports"
+                              id="themeOutdoorSports"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeOutdoorSports"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              戶外運動
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeEntertainment"
+                              id="themeEntertainment"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeEntertainment"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              影劇娛樂
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="themeArt"
+                              id="themeArt"
+                              class="d-none"
+                            />
+                            <label
+                              for="themeArt"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              人文藝術
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="locationShopping"
+                              id="locationShopping"
+                              class="d-none"
+                            />
+                            <label
+                              for="locationShopping"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              購物百貨
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="locationFestivals"
+                              id="locationFestivals"
+                              class="d-none"
+                            />
+                            <label
+                              for="locationFestivals"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              節慶祭典
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- buttons -->
+                <div class="row g-4">
+                  <div class="col-6">
+                    <button
+                      type="reset"
+                      class="btn btn-white d-flex align-items-center w-100 py-4 fs-body-2 sec-spot"
+                    >
+                      <img
+                        src="../assets/images/icon/social-check-circle.svg"
+                        alt="check icon"
+                        class="me-4"
+                      />清除所有設定
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <input
+                      type="checkbox"
+                      name="rememberSetting"
+                      id="rememberSetting"
+                      class="d-none"
+                    />
+                    <label
+                      for="rememberSetting"
+                      class="d-flex align-items-center rounded fs-body-2 py-4 label-checkbox label-checkbox-light sec-spot"
+                    >
+                      <img
+                        src="../assets/images/icon/social-check-circle.svg"
+                        alt="check icon"
+                        class="me-4"
+                      />
+                      記住所有設定
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary flex-grow-1"
+                  data-bs-dismiss="modal"
+                >
+                  搜尋
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- filter modal -->
+      <div
+        class="modal fade"
+        id="exploreCourseFilter"
+        tabindex="-1"
+        aria-labelledby="exploreCourseSearchLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content bg-gray-100">
+            <!-- modal header -->
+            <div class="modal-header align-items-center border-bottom-0 py-0">
+              <button
+                type="button"
+                class="btn py-3 px-0 d-flex"
+                data-bs-dismiss="modal"
+                aria-label="back"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.7071 2.29289C18.0976 2.68342 18.0976 3.31658 17.7071 3.70711L9.41421 12L17.7071 20.2929C18.0976 20.6834 18.0976 21.3166 17.7071 21.7071C17.3166 22.0976 16.6834 22.0976 16.2929 21.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L16.2929 2.29289C16.6834 1.90237 17.3166 1.90237 17.7071 2.29289Z"
+                    fill="#292929"
+                  />
+                </svg>
+              </button>
+              <h2
+                class="modal-title title-1 text-center flex-grow-1"
+                id="exploreCourseSearchLabel"
+              >
+                篩選
+              </h2>
+            </div>
+            <!-- modal body -->
+            <form class="d-flex flex-column modal-body-full-height">
+              <div class="modal-body">
+                <div
+                  class="accordion explore-search-accordion mb-4"
+                  id="accordionCourseFilter"
+                >
+                  <div class="accordion-item rounded border-0 mb-4 sec-spot">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button title-2 px-7 py-3 rounded"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFilterLevel"
+                        aria-expanded="true"
+                        aria-controls="collapseFilterLevel"
+                      >
+                        英文程度
+                      </button>
+                    </h3>
+                    <div
+                      id="collapseFilterLevel"
+                      class="accordion-collapse collapse show"
+                    >
+                      <div class="accordion-body pt-0 pb-3 px-3">
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="englishLevel"
+                              id="englishLevelA1"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelA1"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              A1：基礎
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="englishLevel"
+                              id="englishLevelA2"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelA2"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              A2：初級
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="englishLevel"
+                              id="englishLevelB1"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelB1"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              B1：中級
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="englishLevel"
+                              id="englishLevelB2"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelB2"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              B2：中高級
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="englishLevel"
+                              id="englishLevelC1"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelC1"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              C1：高級
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="englishLevel"
+                              id="englishLevelC2"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelC2"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              C1：精通
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="englishLevel"
+                              id="englishLevelAll"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelAll"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              全選
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 上課時間 -->
+                  <div class="accordion-item rounded border-0 mb-4 sec-spot">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button rounded title-2 px-7 py-3 class-time"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFilterClassDate"
+                        aria-expanded="false"
+                        aria-controls="collapseFilterClassDate"
+                      >
+                        上課時間
+                        <span class="text-gray-500 fs-body-2 ms-auto"
+                          >台灣時區(UTC+8)</span
+                        >
+                      </button>
+                    </h3>
+                    <div
+                      id="collapseFilterClassDate"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body pt-0 pb-3 px-3">
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateMon"
+                              class="d-none"
+                            />
+                            <label
+                              for="classDateMon"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              星期一
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateTue"
+                              class="d-none"
+                            />
+                            <label
+                              for="englishLevelA2"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              星期二
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateWed"
+                              class="d-none"
+                            />
+                            <label
+                              for="classDateWed"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              星期三
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateThu"
+                              class="d-none"
+                            />
+                            <label
+                              for="classDateThu"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              星期四
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateFri"
+                              class="d-none"
+                            />
+                            <label
+                              for="classDateFri"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              星期五
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateSat"
+                              class="d-none"
+                            />
+                            <label
+                              for="classDateSat"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              星期六
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateSun"
+                              class="d-none"
+                            />
+                            <label
+                              for="classDateSun"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              星期日
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="classDate"
+                              id="classDateAll"
+                              class="d-none"
+                            />
+                            <label
+                              for="classDateAll"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              全選
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 上課時段 -->
+                  <div class="accordion-item rounded border-0 mb-4 sec-spot">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button rounded title-2 px-7 py-3 class-time"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFilterClassTime"
+                        aria-expanded="false"
+                        aria-controls="collapseFilterClassTime"
+                      >
+                        上課時段
+                        <span class="text-gray-500 fs-body-2 ms-auto"
+                          >台灣時區(UTC+8)</span
+                        >
+                      </button>
+                    </h3>
+                    <div
+                      id="collapseFilterClassTime"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body pt-0 pb-3 px-3">
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="classTimeSlot1"
+                              id="classTimeSlot1"
+                              class="d-none"
+                            />
+                            <label
+                              for="classTimeSlot1"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              06:00 - 09:00
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="classTimeSlot2"
+                              id="classTimeSlot2"
+                              class="d-none"
+                            />
+                            <label
+                              for="classTimeSlot2"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              09:00 - 12:00
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="classTimeSlot3"
+                              id="classTimeSlot3"
+                              class="d-none"
+                            />
+                            <label
+                              for="classTimeSlot3"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              12:00 - 18:00
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="classTimeSlot4"
+                              id="classTimeSlot4"
+                              class="d-none"
+                            />
+                            <label
+                              for="classTimeSlot4"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              18:00 - 21:00
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="classTimeSlot5"
+                              id="classTimeSlot5"
+                              class="d-none"
+                            />
+                            <label
+                              for="classTimeSlot5"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              21:00 - 24:00
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="classTimeSlotAll"
+                              id="classTimeSlotAll"
+                              class="d-none"
+                            />
+                            <label
+                              for="classTimeSlotAll"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              全選
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 預算區間 -->
+                  <div class="accordion-item rounded border-0 mb-4 sec-spot">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button rounded title-2 px-7 py-3 budget-time"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFilterBudget"
+                        aria-expanded="false"
+                        aria-controls="collapseFilterBudget"
+                      >
+                        預算區間
+                      </button>
+                    </h3>
+                    <div
+                      id="collapseFilterBudget"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body pt-0 pb-3 px-3">
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="budget"
+                              id="budgetUnder350"
+                              value="under350"
+                              class="d-none"
+                            />
+                            <label
+                              for="budgetUnder350"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              NT $350 以下
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="budget"
+                              id="budget351To500"
+                              value="351To500"
+                              class="d-none"
+                            />
+                            <label
+                              for="budget351To500"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              NT $351 - NT $500
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="budget"
+                              id="budget501To650"
+                              value="501To650"
+                              class="d-none"
+                            />
+                            <label
+                              for="budget501To650"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              NT $501 - NT $650
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="budget"
+                              id="budget651To800"
+                              value="651To800"
+                              class="d-none"
+                            />
+                            <label
+                              for="budget651To800"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              NT $651 - NT $800
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="budget"
+                              id="budgetAbove800"
+                              value="above800"
+                              class="d-none"
+                            />
+                            <label
+                              for="budgetAbove800"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              NT $800 以上
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="radio"
+                              name="budget"
+                              id="budgetNoPreference"
+                              value="noPreference"
+                              class="d-none"
+                            />
+                            <label
+                              for="budgetNoPreference"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              不指定
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 關於老師 -->
+                  <div class="accordion-item rounded border-0 mb-4 sec-spot">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button rounded title-2 px-7 py-3 teacher-info"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFilterTeacher"
+                        aria-expanded="false"
+                        aria-controls="collapseFilterTeacher"
+                      >
+                        關於老師
+                      </button>
+                    </h3>
+                    <div
+                      id="collapseFilterTeacher"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body pt-0 pb-3 px-3">
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="teacherNoPreference"
+                              id="teacherNoPreference"
+                              class="d-none"
+                            />
+                            <label
+                              for="teacherNoPreference"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              不指定
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="teacherNativeSpeaker"
+                              id="teacherNativeSpeaker"
+                              class="d-none"
+                            />
+                            <label
+                              for="teacherNativeSpeaker"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              母語者
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="teacherSpeaksChinese"
+                              id="teacherSpeaksChinese"
+                              class="d-none"
+                            />
+                            <label
+                              for="teacherSpeaksChinese"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              會講中文
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="teacherFluentChinese"
+                              id="teacherFluentChinese"
+                              class="d-none"
+                            />
+                            <label
+                              for="teacherFluentChinese"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              精通中文
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="teacherInstantBooking"
+                              id="teacherInstantBooking"
+                              class="d-none"
+                            />
+                            <label
+                              for="teacherInstantBooking"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              即時預約
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="checkbox"
+                              name="teacherCustomCourse"
+                              id="teacherCustomCourse"
+                              class="d-none"
+                            />
+                            <label
+                              for="teacherCustomCourse"
+                              class="d-block rounded fs-body-2 text-center label-checkbox"
+                            >
+                              客製化課程
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-4">
+                  <div class="col-6">
+                    <button
+                      type="reset"
+                      class="btn btn-white d-flex align-items-center w-100 py-4 fs-body-2 sec-spot"
+                    >
+                      <img
+                        src="../assets/images/icon/social-check-circle.svg"
+                        alt="check icon"
+                        class="me-4"
+                      />清除所有設定
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <input
+                      type="checkbox"
+                      name="rememberFilterSetting"
+                      id="rememberFilterSetting"
+                      class="d-none"
+                    />
+                    <label
+                      for="rememberFilterSetting"
+                      class="d-flex align-items-center rounded fs-body-2 py-4 label-checkbox label-checkbox-light sec-spot"
+                    >
+                      <img
+                        src="../assets/images/icon/social-check-circle.svg"
+                        alt="check icon"
+                        class="me-4"
+                      />
+                      記住所有設定
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary flex-grow-1"
+                  data-bs-dismiss="modal"
+                >
+                  搜尋
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/tab-bar'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <!-- <div class="modal-backdrop fade show"></div> -->
+  </body>
+</html>

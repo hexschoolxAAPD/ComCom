@@ -1,4 +1,13 @@
-import './assets/scss/all.scss';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import "./assets/scss/all.scss";
+import "bootstrap/dist/js/bootstrap.min.js";
+// import Swiper bundle with all modules installed
+import Swiper from "swiper/bundle";
+// import styles bundle
+import "swiper/css/bundle";
 
 console.log("Hello world!");
+
+const exploreSearchLocationSwiper = new Swiper(".search-location-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 8,
+});

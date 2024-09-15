@@ -1,0 +1,17 @@
+.btn-primary {
+  --bs-btn-color: #{$white};
+  --bs-btn-hover-color: #{$white};
+  --bs-btn-active-color: #{$white};
+}
+
+// 白底按鈕
+.btn.btn-white {
+  background-color: $white;
+  border: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary-100;
+  }
+}
