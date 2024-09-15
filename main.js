@@ -11,3 +11,8 @@ const exploreSearchLocationSwiper = new Swiper(".search-location-swiper", {
   slidesPerView: 4,
   spaceBetween: 8,
 });
+
+const exploreCourseThemeSwiper = new Swiper(".course-theme-swiper", {
+  slidesPerView: 3.2,
+  spaceBetween: 16,
+});
