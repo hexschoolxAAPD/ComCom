@@ -45,3 +45,71 @@ input:checked ~ .label-checkbox {
   box-shadow: -8px 67px 41px rgba(#a5a1a1, 0.05),
     -3px 30px 30px rgba(#a5a1a1, 0.09), -1px 7px 17px rgba(#a5a1a1, 0.1);
 }
+
+// 卡片英文程度 tag
+.card-tag-secondary {
+  width: 48px;
+  text-align: center;
+  background-color: $secondary-400;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.bookmark-label-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon/ic-button-bookmark-light.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.bookmark-checkbox:checked ~ .bookmark-label-icon {
+  background-image: url(../images/icon/ic-button-bookmark-fill-red.svg);
+}
+
+.online-dot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: $emphasis-500;
+  border: 1px solid $white;
+  border-radius: 50%;
+}
+
+.course-img-filter {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5) 75%,
+      rgba(0, 0, 0, 1)
+    );
+  }
+}
+
+.icon-xs {
+  width: 12px;
+  height: 12px;
+}
+
+.icon-sm {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-md {
+  width: 20px;
+  height: 20px;
+}
+
+.avatar-base {
+  width: 40px;
+  height: 40px;
+}

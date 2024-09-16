@@ -16,3 +16,9 @@ const exploreCourseThemeSwiper = new Swiper(".course-theme-swiper", {
   slidesPerView: 3.2,
   spaceBetween: 16,
 });
+
+//  popular-course-swiper
+const exploreCoursePopularSwiper = new Swiper(".popular-course-swiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 16,
+});
