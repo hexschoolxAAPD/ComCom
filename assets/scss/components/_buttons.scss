@@ -17,6 +17,12 @@
 }
 
 .btn.btn-tag {
+  // svg
+  fill: $gray-950;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    fill 0.15s ease-in-out;
+
   &:hover,
   &:active,
   &.active,
@@ -24,5 +30,7 @@
     background-color: $primary-500;
     color: $white;
     font-weight: 600;
+    // svg
+    fill: $white;
   }
 }
