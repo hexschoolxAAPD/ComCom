@@ -33,20 +33,42 @@ main.explore-page {
 }
 
 // label checkbox
+// 灰底（預設）
 .label-checkbox {
   padding: 14px;
   background-color: $gray-100;
   cursor: pointer;
 }
 
+// 白底
 .label-checkbox-light {
   background-color: $white;
 }
 
+// 勾選狀態
 input:checked ~ .label-checkbox {
   background-color: $primary-100;
   font-weight: 600;
   fill: black;
+}
+
+// check-icon
+.label-check-icon {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    background-image: url("../images/icon/social-check-circle.svg");
+  }
+}
+
+// 勾選狀態（ icon 實心 ）
+input:checked ~ .label-check-icon {
+  &::before {
+    background-image: url("../images/icon/course-check-circle.svg");
+  }
 }
 
 // form 陰影
