@@ -1,0 +1,4335 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <%- include('./layout/head'); -%>
+
+  <body>
+    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+      <div class="container">
+        <span class="mb-0 title-1">探索課程</span>
+        <ul class="list-unstyled mb-0 nav-list">
+          <li>
+            <a href="#" class="position-relative">
+              <img
+                src="../assets/images/icon/navbar-bell.svg"
+                alt="Bell"
+                style="width: 24px; height: 24px"
+              />
+              <div class="news"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="position-relative">
+              <img
+                src="../assets/images/icon/navbar-chat-circle-dots.svg"
+                alt="Chat"
+                style="width: 24px; height: 24px"
+              />
+              <div class="news"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="../assets/images/icon/personal-list-bullets.svg"
+                alt="Chat"
+                style="width: 24px; height: 24px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="pt-4 pb-2 explore-page">
+      <!-- search & filter button-->
+      <%- include('./layout/explore-search-section'); -%>
+
+      <!-- theme filter swiper -->
+      <section class="container px-0 ps-4 pt-2 pb-4">
+        <div class="swiper course-theme-swiper pe-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4 active"
+              >
+                <!-- 引用外部 svg icon -->
+                <svg
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-globe"
+                  /></svg
+                ><span>全部</span></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <!-- 引用外部 svg icon -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-cheers"
+                  /></svg
+                ><span>飲食</span></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-bus"
+                  /></svg
+                ><span>交通</span></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-shopping"
+                  /></svg
+                ><span>購物</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-pin"
+                  /></svg
+                ><span>文化</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-bed"
+                  /></svg
+                ><span>住宿</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-windmill"
+                  /></svg
+                ><span>景點</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-compass"
+                  /></svg
+                ><span>問路</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-syringe"
+                  /></svg
+                ><span>醫療</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-aid-kit"
+                  /></svg
+                ><span>緊急</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-airplane"
+                  /></svg
+                ><span>機場</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-money"
+                  /></svg
+                ><span>兌幣</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-mountain"
+                  /></svg
+                ><span>戶外</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="btn btn-gray-100 btn-theme-tag w-100 py-2 px-4"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="align-bottom me-1"
+                >
+                  <use
+                    href="../assets/images/icon/course-theme-filter-icons.svg#ic-film"
+                  /></svg
+                ><span>影劇</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- courses swiper -->
+
+      <!-- 熱門課程-->
+      <section class="mb-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="title-1 d-flex align-items-center">
+              熱門課程
+              <span class="fs-body-2 text-gray-500 ms-2 align-middle"
+                >最多人學</span
+              >
+            </h2>
+            <a
+              role="button"
+              tabindex="0"
+              href="#"
+              class="btn btn-text fs-body-2 p-0 d-flex align-items-center"
+              >更多<img
+                src="../assets/images/icon/function-caret-right.svg"
+                alt="arrow right icon"
+                class="ms-1 icon-size-2"
+            /></a>
+          </div>
+        </div>
+        <div class="px-0 container">
+          <div class="swiper course-swiper-1 px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-21.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Kyoto
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r1:-0"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r1:-0"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      一年只開放兩季的瑠璃光院 絕美京都賞楓點 獨特的地板紅葉
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-9.png"
+                          alt="Yuki Nakamura"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Yuki Nakamura</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3061</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>660</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-11.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Istanbul
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r1:-1"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r1:-1"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      教你品嘗土耳其道地茶品 體驗茶葉大國的另類風貌
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-8.png"
+                          alt="Fatma Yılmaz"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Fatma Yılmaz</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3621</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>580</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-10.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r1:-2"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r1:-2"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      來趟日本東京築地場外以及道地的烹飪指南
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-7.png"
+                          alt="Matsushima Nanako"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-jp.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Japan"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Matsushima Nanako</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">998</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>980</del></span
+                      ><span class="h4 text-emphasis">NT$<span>680</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-9.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >San Francisco
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r1:-3"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r1:-3"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      美國人眼裡的中式料理 要有幸運餅乾才是中菜的完美句點
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-6.png"
+                          alt="Emma Corrin"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emma Corrin</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1836</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>380</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-8.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Busan
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r1:-4"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r1:-4"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        影劇娛樂</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        人文藝術
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      韓國媳婦教妳有趣的現代韓國史 原來KPOP是這樣來的！
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-5.png"
+                          alt="Kim Hani"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-kr.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Korea"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Kim Hani</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4673</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>999</del></span
+                      ><span class="h4 text-emphasis">NT$<span>799</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-7.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Marseille
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r1:-5"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r1:-5"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        人文藝術</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        購物百貨
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      從0開始學英⽂ 30分鐘教你旅遊⽇常會話
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-4.png"
+                          alt="Drouin Jeannin"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-fr.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="France"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Drouin Jeannin</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">2243</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>380</del></span
+                      ><span class="h4">NT$<span>380</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 立即上課-->
+      <section class="mb-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="title-1 d-flex align-items-center">
+              立即上課
+              <span class="fs-body-2 text-gray-500 ms-2 align-middle"
+                >現在預約</span
+              >
+            </h2>
+            <a
+              role="button"
+              tabindex="0"
+              href="#"
+              class="btn btn-text fs-body-2 p-0 d-flex align-items-center"
+              >更多<img
+                src="../assets/images/icon/function-caret-right.svg"
+                alt="arrow right icon"
+                class="align-bottom ms-1 icon-size-2"
+            /></a>
+          </div>
+        </div>
+        <div class="px-0 container">
+          <div class="swiper course-swiper-2 px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-6.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r3:-0"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r3:-0"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        購物百貨
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      澀谷購物攻略 逛街腳不痠 私藏質感小店大公開
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-10.png"
+                          alt="Emi Tanaka"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-jp.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Japan"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emi Tanaka</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.9</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1978</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>999</del></span
+                      ><span class="h4 text-emphasis">NT$<span>799</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-9.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >San Francisco
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r3:-1"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r3:-1"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      美國人眼裡的中式料理 要有幸運餅乾才是中菜的完美句點
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-6.png"
+                          alt="Emma Corrin"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emma Corrin</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1836</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>380</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-11.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Istanbul
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r3:-2"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r3:-2"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      教你品嘗土耳其道地茶品 體驗茶葉大國的另類風貌
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-8.png"
+                          alt="Fatma Yılmaz"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Fatma Yılmaz</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3621</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>580</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-5.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r3:-3"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r3:-3"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        節慶祭典</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      目黑川賞櫻 河畔櫻花隧道漫步 入夜後的夜櫻
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-12.png"
+                          alt="Hiroshi Yamamoto"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-jp.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Japan"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Hiroshi Yamamoto</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.3</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">397</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>480</del></span
+                      ><span class="h4">NT$<span>480</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-4.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Wyoming
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r3:-4"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r3:-4"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        戶外運動</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      世界上第一個國家公園 世界瑰寶之稱的黃石國家公園
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-11.png"
+                          alt="Jessica Carter"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-us-circle.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="US"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Jessica Carter</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">371</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>360</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-10.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r3:-5"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r3:-5"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      來趟日本東京築地場外以及道地的烹飪指南
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-7.png"
+                          alt="Matsushima Nanako"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-jp.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Japan"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Matsushima Nanako</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">998</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>980</del></span
+                      ><span class="h4 text-emphasis">NT$<span>680</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 好評口碑-->
+      <section class="mb-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="title-1 d-flex align-items-center">
+              好評口碑
+              <span class="fs-body-2 text-gray-500 ms-2 align-middle"
+                >5星評價</span
+              >
+            </h2>
+            <a
+              role="button"
+              tabindex="0"
+              href="#"
+              class="btn btn-text fs-body-2 p-0 d-flex align-items-center"
+              >更多<img
+                src="../assets/images/icon/function-caret-right.svg"
+                alt="arrow right icon"
+                class="align-bottom ms-1 icon-size-2"
+            /></a>
+          </div>
+        </div>
+        <div class="px-0 container">
+          <div class="swiper course-swiper-3 px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-3.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Busan
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r5:-0"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r5:-0"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        影劇娛樂</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        人文藝術
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      釜山甘川洞文化村 每個角落都好拍 還有小巧溫馨的咖啡廳
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-5.png"
+                          alt="Kim Hani"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-kr.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Korea"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Kim Hani</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4673</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>999</del></span
+                      ><span class="h4 text-emphasis">NT$<span>799</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-2.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Taipei
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r5:-1"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r5:-1"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        人文藝術</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      台灣的獨立書店巡禮 用英文聊你讀過的一本書
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-3.png"
+                          alt="Sophie Chen"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-taiwan.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Taiwan"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Sophie Chen</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1139</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>599</del></span
+                      ><span class="h4 text-emphasis">NT$<span>550</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-6.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r5:-2"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r5:-2"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        購物百貨
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      澀谷購物攻略 逛街腳不痠 私藏質感小店大公開
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-10.png"
+                          alt="Emi Tanaka"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-jp.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Japan"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emi Tanaka</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.9</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1978</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>999</del></span
+                      ><span class="h4 text-emphasis">NT$<span>799</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-9.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >San Francisco
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r5:-3"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r5:-3"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      美國人眼裡的中式料理 要有幸運餅乾才是中菜的完美句點
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-6.png"
+                          alt="Emma Corrin"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emma Corrin</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1836</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>380</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-11.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Istanbul
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r5:-4"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r5:-4"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      教你品嘗土耳其道地茶品 體驗茶葉大國的另類風貌
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-8.png"
+                          alt="Fatma Yılmaz"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Fatma Yılmaz</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3621</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>580</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-4.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Wyoming
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r5:-5"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r5:-5"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        戶外運動</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      世界上第一個國家公園 世界瑰寶之稱的黃石國家公園
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-11.png"
+                          alt="Jessica Carter"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-us-circle.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="US"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Jessica Carter</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">371</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>360</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 猜你喜歡-->
+      <section class="mb-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="title-1 d-flex align-items-center">
+              猜你喜歡
+              <span class="fs-body-2 text-gray-500 ms-2 align-middle"
+                >興趣主題</span
+              >
+            </h2>
+            <a
+              role="button"
+              tabindex="0"
+              href="#"
+              class="btn btn-text fs-body-2 p-0 d-flex align-items-center"
+              >更多<img
+                src="../assets/images/icon/function-caret-right.svg"
+                alt="arrow right icon"
+                class="align-bottom ms-1 icon-size-2"
+            /></a>
+          </div>
+        </div>
+        <div class="px-0 container">
+          <div class="swiper course-swiper-4 px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-5.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r7:-0"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r7:-0"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        節慶祭典</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      目黑川賞櫻 河畔櫻花隧道漫步 入夜後的夜櫻
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-12.png"
+                          alt="Hiroshi Yamamoto"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-jp.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Japan"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Hiroshi Yamamoto</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.3</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">397</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>480</del></span
+                      ><span class="h4">NT$<span>480</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-21.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Kyoto
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r7:-1"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r7:-1"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      一年只開放兩季的瑠璃光院 絕美京都賞楓點 獨特的地板紅葉
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-9.png"
+                          alt="Yuki Nakamura"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Yuki Nakamura</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3061</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>660</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-1.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Kyoto
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r7:-2"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r7:-2"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      體驗自給自足的田園生活 緊鄰日本海的綾部​​小農村
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-16.png"
+                          alt="Sarah Smith"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Sarah Smith</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">169</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>980</del></span
+                      ><span class="h4 text-emphasis">NT$<span>580</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-20.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Kyoto
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r7:-3"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r7:-3"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      每年7月1日起 舉世聞名的祇園祭 日本三大祭之一
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-15.png"
+                          alt="Masaru Kato"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-jp.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Masaru Kato</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3061</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>980</del></span
+                      ><span class="h4 text-emphasis">NT$<span>580</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-19.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r7:-4"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r7:-4"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      東京鐵塔的百種攝影點 攝影迷別錯過
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-8.png"
+                          alt="Kenta Morita"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Kenta Morita</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">682</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>680</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-18.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Kyoto
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r7:-5"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r7:-5"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      400年歷史的錦市場 有京都廚房之稱 特色食材這裡都找得到
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-6.png"
+                          alt="Emma Corrin"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emma Corrin</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1836</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>520</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 旅遊必備-->
+      <section class="mb-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="title-1 d-flex align-items-center">
+              旅遊必備
+              <span class="fs-body-2 text-gray-500 ms-2 align-middle"
+                >萬用基礎</span
+              >
+            </h2>
+            <a
+              role="button"
+              tabindex="0"
+              href="#"
+              class="btn btn-text fs-body-2 p-0 d-flex align-items-center"
+              >更多<img
+                src="../assets/images/icon/function-caret-right.svg"
+                alt="arrow right icon"
+                class="align-bottom ms-1 icon-size-2"
+            /></a>
+          </div>
+        </div>
+        <div class="px-0 container">
+          <div class="swiper course-swiper-5 px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-17.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Seattle
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r9:-0"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r9:-0"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      學會買咖啡 到全球第一間星巴克旗艦店買隱藏版口味
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-13.png"
+                          alt="Chloe Thompson"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-au.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Australia"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Chloe Thompson</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">783</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>999</del></span
+                      ><span class="h4 text-emphasis">NT$<span>799</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-7.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Marseille
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r9:-1"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r9:-1"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        人文藝術</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        購物百貨
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      從0開始學英⽂ 30分鐘教你旅遊⽇常會話
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-4.png"
+                          alt="Drouin Jeannin"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-fr.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="France"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Drouin Jeannin</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">2243</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>380</del></span
+                      ><span class="h4">NT$<span>380</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-16.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Firenze
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r9:-2"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r9:-2"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        購物百貨
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      逛市集逛得入迷 迷路了該怎麼問路
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-14.png"
+                          alt="Emma Brown"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emma Brown</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.3</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">838</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>980</del></span
+                      ><span class="h4 text-emphasis">NT$<span>680</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-15.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >San Francisco
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r9:-3"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r9:-3"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        人文藝術</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        影劇娛樂
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      舊金山現代藝術博物館之旅 如何聽懂英文導覽
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-6.png"
+                          alt="Emma Corrin"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Emma Corrin</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1836</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>500</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-14.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Pai
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r9:-4"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r9:-4"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      入住民宿 如何跟民宿主人詢問周邊景點
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-1.png"
+                          alt="Heidi Meier"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-au.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Australia"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Heidi Meier</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">752</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>580</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-13.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Taichung
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":r9:-5"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":r9:-5"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">用英文介紹台灣的特色小吃與文化</h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-2.png"
+                          alt="Peter Wu"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-taiwan.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Taiwan"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Peter Wu</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1234</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>599</del></span
+                      ><span class="h4 text-emphasis">NT$<span>550</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 新鮮話題-->
+      <section class="mb-7">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="title-1 d-flex align-items-center">
+              新鮮話題
+              <span class="fs-body-2 text-gray-500 ms-2 align-middle"
+                >最新課程</span
+              >
+            </h2>
+            <a
+              role="button"
+              tabindex="0"
+              href="#"
+              class="btn btn-text fs-body-2 p-0 d-flex align-items-center"
+              >更多<img
+                src="../assets/images/icon/function-caret-right.svg"
+                alt="arrow right icon"
+                class="align-bottom ms-1 icon-size-2"
+            /></a>
+          </div>
+        </div>
+        <div class="px-0 container">
+          <div class="swiper course-swiper-6 px-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-12.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Cappadocia
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":rb:-0"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":rb:-0"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      土耳其的熱氣球看日出 值得你早起的景色
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-8.png"
+                          alt="Fatma Yılmaz"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Fatma Yılmaz</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3621</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>380</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-4.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Wyoming
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":rb:-1"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":rb:-1"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        戶外運動</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      世界上第一個國家公園 世界瑰寶之稱的黃石國家公園
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-11.png"
+                          alt="Jessica Carter"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-us-circle.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="US"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Jessica Carter</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">371</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>690</del></span
+                      ><span class="h4 text-emphasis">NT$<span>360</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-2.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Taipei
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":rb:-2"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":rb:-2"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        人文藝術</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      台灣的獨立書店巡禮 用英文聊你讀過的一本書
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-3.png"
+                          alt="Sophie Chen"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-taiwan.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Taiwan"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Sophie Chen</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">1139</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>599</del></span
+                      ><span class="h4 text-emphasis">NT$<span>550</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-1.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B1
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Kyoto
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":rb:-3"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":rb:-3"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      體驗自給自足的田園生活 緊鄰日本海的綾部​​小農村
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-16.png"
+                          alt="Sarah Smith"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-uk.png"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="UK"
+                        />
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Sarah Smith</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">169</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>980</del></span
+                      ><span class="h4 text-emphasis">NT$<span>580</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-21.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Kyoto
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":rb:-4"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":rb:-4"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        自然風景</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        文化歷史
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      一年只開放兩季的瑠璃光院 絕美京都賞楓點 獨特的地板紅葉
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-9.png"
+                          alt="Yuki Nakamura"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Yuki Nakamura</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.8</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">3061</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>660</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide h-auto">
+                <a href="#" class="w-100 h-100 card"
+                  ><div class="position-relative course-img-filter">
+                    <img
+                      class="card-img-top"
+                      src="../assets/images/explore-courses/course-19.jpg"
+                    />
+                    <div
+                      class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+                    >
+                      B2
+                    </div>
+                    <div
+                      class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+                    >
+                      <div class="title-2 text-white">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="align-bottom"
+                        >
+                          <use
+                            href="../assets/images/icon/social-map-pin-symbol.svg#ic-map-pin"
+                          ></use></svg
+                        >Tokyo
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="classBookmark"
+                          id=":rb:-5"
+                          class="d-none bookmark-checkbox"
+                        /><label
+                          for=":rb:-5"
+                          class="bookmark-label-icon align-bottom"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-3 pb-4 px-3 d-flex flex-column card-body">
+                    <div class="d-flex gap-3 mb-2">
+                      <button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        當地生活</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        私房景點</button
+                      ><button
+                        type="button"
+                        class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+                      >
+                        美食饗宴
+                      </button>
+                    </div>
+                    <h3 class="title-1 mb-2">
+                      東京鐵塔的百種攝影點 攝影迷別錯過
+                    </h3>
+                    <div class="d-flex gap-1 mb-2 mt-auto">
+                      <div class="position-relative">
+                        <img
+                          src="../assets/images/explore-courses/avatar-8.png"
+                          alt="Kenta Morita"
+                          class="rounded-circle avatar-base"
+                        /><img
+                          src="../assets/images/icon/flag-turkey.svg"
+                          class="position-absolute bottom-0 start-0 rounded-circle icon-size-1"
+                          alt="Turkey"
+                        />
+                        <div class="online-dot"></div>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <h3 class="title-1 me-1">Kenta Morita</h3>
+                        <img
+                          src="../assets/images/icon/social-check-fill-blue500.svg"
+                          alt="check icon"
+                          class="align-bottom icon-size-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2 mb-1">
+                      <div>
+                        <img
+                          src="../assets/images/icon/course-star-blue.svg"
+                          alt="star icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">4.5</span>
+                      </div>
+                      <div>
+                        <img
+                          src="../assets/images/icon/personal-user-blue.svg"
+                          alt="people icon"
+                          class="align-bottom icon-size-4"
+                        /><span class="fs-body-2 text-gray-500">682</span>
+                      </div>
+                    </div>
+                    <p>
+                      <span class="text-gray-300 subtitle me-1"
+                        >NY$<del>880</del></span
+                      ><span class="h4 text-emphasis">NT$<span>680</span></span>
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <%- include('./layout/explore-course-modal'); -%>
+    </main>
+
+    <%- include('./layout/tab-bar'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

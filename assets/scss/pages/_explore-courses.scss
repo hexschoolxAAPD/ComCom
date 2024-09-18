@@ -1,0 +1,133 @@
+main.explore-page {
+  height: calc(100dvh - 88px - 43px);
+  overflow-y: auto;
+}
+
+// ==================================
+// 探索課程 - search & filter modal
+// ==================================
+
+// filter & search modal 出現動畫
+.modal.fade .modal-dialog {
+  transform: translate(100%, 0);
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+// modal body 撐滿版
+.modal-body-full-height {
+  height: calc(100dvh - 50px);
+}
+
+// 手風琴自定義樣式
+.explore-search-accordion .accordion-button:not(.collapsed) {
+  background-color: $white;
+  box-shadow: none;
+  color: $primary-950;
+}
+
+.class-time.accordion-button::after {
+  margin-left: 8px;
+}
+
+// label checkbox
+// 灰底（預設）
+.label-checkbox {
+  padding: 14px;
+  background-color: $gray-100;
+  cursor: pointer;
+}
+
+// 白底
+.label-checkbox-light {
+  background-color: $white;
+}
+
+// 勾選狀態
+input:checked ~ .label-checkbox {
+  background-color: $primary-100;
+  font-weight: 600;
+  fill: black;
+}
+
+// check-icon
+.label-check-icon {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    background-image: url("../images/icon/social-check-circle.svg");
+  }
+}
+
+// 勾選狀態（ icon 實心 ）
+input:checked ~ .label-check-icon {
+  &::before {
+    background-image: url("../images/icon/course-check-circle.svg");
+  }
+}
+
+// form 陰影
+.sec-spot {
+  box-shadow: -8px 67px 41px rgba(#a5a1a1, 0.05),
+    -3px 30px 30px rgba(#a5a1a1, 0.09), -1px 7px 17px rgba(#a5a1a1, 0.1);
+}
+
+// ====================
+// 探索課程 - swiper 卡片
+// ====================
+
+// 卡片英文程度 tag
+.card-tag-secondary {
+  width: 48px;
+  text-align: center;
+  background-color: $secondary-400;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+// 卡片圖片黑色漸層
+.course-img-filter {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5) 75%,
+      rgba(0, 0, 0, 1)
+    );
+  }
+}
+
+// 收藏課程 checkbox
+.bookmark-label-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon/ic-button-bookmark-light.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.bookmark-checkbox:checked ~ .bookmark-label-icon {
+  background-image: url(../images/icon/ic-button-bookmark-fill-red.svg);
+}
+
+// 上線紅點點
+.online-dot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: $emphasis-500;
+  border: 1px solid $white;
+  border-radius: 50%;
+}
