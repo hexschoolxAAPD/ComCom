@@ -14,7 +14,7 @@
       >
         <button
           type="button"
-          class="btn py-3 px-0 d-flex"
+          class="btn btn-text py-3 px-0 d-flex"
           data-bs-dismiss="modal"
           aria-label="back"
         >
@@ -34,7 +34,7 @@
         </h2>
         <button
           type="button"
-          class="btn py-3 px-0"
+          class="btn btn-text py-3 px-0"
           data-bs-toggle="modal"
           data-bs-target="#exploreCourseFilter"
         >
@@ -68,20 +68,15 @@
               <div id="collapseLocation" class="accordion-collapse collapse">
                 <div class="accordion-body pt-0 pb-3 px-3">
                   <!-- 地點搜尋框 -->
-                  <div class="input-group rounded">
-                    <span class="input-group-text bg-gray-100 pe-0 border-0"
-                      ><img
-                        src="../assets/images/icon/function-search.svg"
-                        alt="location search icon"
-                    /></span>
-                    <input
-                      type="search"
-                      name="locationSearch"
-                      id="locationSearch"
-                      class="form-control ps-1 border-0 bg-gray-100"
-                      placeholder="搜尋"
-                      aria-label="search"
-                    />
+                  <div class="search-bar py-3 fs-body-1">
+                    <form class="d-flex" role="search">
+                      <input
+                        class="form-control border-0 bg-gray-100"
+                        type="search"
+                        placeholder="搜尋"
+                        aria-label="Search"
+                      />
+                    </form>
                   </div>
                   <!-- location swiper -->
                   <div class="swiper search-location-swiper py-3">
@@ -561,7 +556,7 @@
       <div class="modal-header align-items-center border-bottom-0 py-0">
         <button
           type="button"
-          class="btn py-3 px-0 d-flex"
+          class="btn btn-text py-3 px-0 d-flex"
           data-bs-dismiss="modal"
           aria-label="back"
         >
