@@ -36,7 +36,10 @@
 .achievement + .achievement{
   border-left: 1px solid $gray-100;
 }
-
+.location-img{
+  width: 72px;
+  text-align: center;
+}
 
 .hashtag{
   display: block;
@@ -51,8 +54,6 @@
     flex-direction: column;
   }
 }
-
-
 .talkbubble{
   position: absolute;
   top: 40px;
