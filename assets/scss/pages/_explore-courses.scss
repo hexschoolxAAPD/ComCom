@@ -1,7 +1,11 @@
 main.explore-page {
-  height: calc(100vh - 88px - 43px);
+  height: calc(100dvh - 88px - 43px);
   overflow-y: auto;
 }
+
+// ==================================
+// 探索課程 - search & filter modal
+// ==================================
 
 // filter & search modal 出現動畫
 .modal.fade .modal-dialog {
@@ -10,6 +14,11 @@ main.explore-page {
 
 .modal.show .modal-dialog {
   transform: none;
+}
+
+// modal body 撐滿版
+.modal-body-full-height {
+  height: calc(100dvh - 50px);
 }
 
 // 手風琴自定義樣式
@@ -40,16 +49,15 @@ input:checked ~ .label-checkbox {
   fill: black;
 }
 
-// modal body 撐滿版
-.modal-body-full-height {
-  height: calc(100vh - 50px);
-}
-
 // form 陰影
 .sec-spot {
   box-shadow: -8px 67px 41px rgba(#a5a1a1, 0.05),
     -3px 30px 30px rgba(#a5a1a1, 0.09), -1px 7px 17px rgba(#a5a1a1, 0.1);
 }
+
+// ====================
+// 探索課程 - swiper 卡片
+// ====================
 
 // 卡片英文程度 tag
 .card-tag-secondary {
@@ -60,31 +68,7 @@ input:checked ~ .label-checkbox {
   border-radius: 4px;
 }
 
-.bookmark-label-icon {
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/icon/ic-button-bookmark-light.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-
-.bookmark-checkbox:checked ~ .bookmark-label-icon {
-  background-image: url(../images/icon/ic-button-bookmark-fill-red.svg);
-}
-
-.online-dot {
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  background-color: $emphasis-500;
-  border: 1px solid $white;
-  border-radius: 50%;
-}
-
+// 卡片圖片黑色漸層
 .course-img-filter {
   &::before {
     content: "";
@@ -99,27 +83,29 @@ input:checked ~ .label-checkbox {
   }
 }
 
-.icon-size-1 {
-  width: 12px;
-  height: 12px;
+// 收藏課程 checkbox
+.bookmark-label-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon/ic-button-bookmark-light.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
 }
 
-.icon-size-2 {
-  width: 14px;
-  height: 14px;
+.bookmark-checkbox:checked ~ .bookmark-label-icon {
+  background-image: url(../images/icon/ic-button-bookmark-fill-red.svg);
 }
 
-.icon-size-3 {
-  width: 18px;
-  height: 18px;
-}
-
-.icon-size-4 {
-  width: 20px;
-  height: 20px;
-}
-
-.avatar-base {
-  width: 40px;
-  height: 40px;
+// 上線紅點點
+.online-dot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: $emphasis-500;
+  border: 1px solid $white;
+  border-radius: 50%;
 }
