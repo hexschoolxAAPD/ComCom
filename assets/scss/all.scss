@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables.scss';
+@import "./utils/variables.scss";
 
 @import "../../node_modules/bootstrap";
 
-@import './base/base.scss';
+
+// 自定義基礎樣式
+@import "./base/base.scss";
+
+// components
 @import './components/swiper.scss';
 @import './components/container.scss';
 @import './components/usercard.scss';
-@import './components/button.scss';
+@import "./components/buttons.scss";
 
+// layouts
 @import './layout/notification.scss';
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
-@import './pages/index.scss';
+// pages
+@import "./pages/index.scss";
+@import "./pages/explore-courses.scss";
 @import './pages/mycourse.scss';
