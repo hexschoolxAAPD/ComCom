@@ -17,8 +17,21 @@ const exploreCourseThemeSwiper = new Swiper(".course-theme-swiper", {
   spaceBetween: 16,
 });
 
-//  popular-course-swiper
-const exploreCoursePopularSwiper = new Swiper(".popular-course-swiper", {
+// 探索課程 swiper
+const swiperCoursesClasses = [
+  ".course-swiper-1",
+  ".course-swiper-2",
+  ".course-swiper-3",
+  ".course-swiper-4",
+  ".course-swiper-5",
+  ".course-swiper-6",
+];
+
+const swiperCoursesConfig = {
   slidesPerView: 1.2,
   spaceBetween: 16,
+};
+
+swiperCoursesClasses.forEach((swiperClass) => {
+  new Swiper(swiperClass, swiperCoursesConfig);
 });

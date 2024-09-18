@@ -43,3 +43,12 @@
   --bs-btn-active-color: #{$gray-950};
   --bs-btn-border-width: 0;
 }
+
+.btn.btn-card-theme-tag {
+  --bs-btn-hover-color: #{$primary-600};
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #{$primary-600};
+  --bs-btn-active-color: #{$primary-600};
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: #{$primary-600};
+}
