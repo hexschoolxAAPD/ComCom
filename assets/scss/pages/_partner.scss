@@ -1,0 +1,28 @@
+.search-bar input{
+    background-image: url('/assets/images/icon/function-search.svg'); /* 替換成你的圖標路徑 */
+    background-position: 16px center;
+    background-repeat: no-repeat;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 44px; /* 給圖標留出空間 */
+    border-radius: 8px;
+}
+.partner-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $gray-100;
+}
+
+.partner-talkbubble{
+    position: absolute;
+    top: 29px;
+    left:42px
+    
+}
+
+
+
+

@@ -87,3 +87,42 @@
   padding: 0;
   border: 0;
 }
+
+.plus-btn{
+  background-image: url('/assets/images/icon/social-user-plus.svg'); 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 52px;
+  height: 36px;
+  background-color: $gray-100;
+  border-radius: 8px;
+  &:hover{
+    background-color: $primary-100;
+  }
+  &:focus{
+    background-image: url('/assets/images/icon/social-user-check.svg'); 
+    background-color: $primary;
+  }
+}
+
+.check-btn{
+  background-image: url('/assets/images/icon/social-user-check.svg'); 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 52px;
+  height: 36px;
+  background-color: $primary;
+  border-radius: 8px;
+  &:hover{
+    background-color: $primary-100;
+  }
+  &:focus{
+    background-image: url('/assets/images/icon/social-user-plus.svg'); 
+    background-color: $gray-100;
+  }
+}
+
