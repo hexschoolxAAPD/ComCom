@@ -1,0 +1,20 @@
+
+.nav-list{
+    width: 112px;
+    display: flex;
+    justify-content: space-between;
+    .nav-item img{
+    position: relative;
+    }
+}
+
+.news{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $emphasis;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    top: 1px;
+    right: 0px;
+}

@@ -1,15 +1,16 @@
+
+
+
 .tabbar {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000; /* 確保導航欄位於頂層 */
-
   border-top: 1px solid $gray-200;
-  background-color: $white;
 }
 
-.tabbar-item {
+.tabbar-item{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,16 +18,44 @@
   line-height: 12px;
   font-weight: 400;
   color: $gray-500;
-  .icon {
+  .icon{
     margin-bottom: 8px;
-    path {
+    path{
       fill: $gray-500;
+      }
     }
-  }
-  .icon-home {
+  .icon-home{
     margin-bottom: 8px;
-    path {
-      stroke: $gray-500;
+    path{
+    stroke: $gray-500;
+      }
     }
-  }
+}
+
+.tabbar-item:hover{
+  color: $gray-300;
+  .icon{
+    path{
+      fill: $gray-300;
+      }
+    }
+  .icon-home{
+    path{
+    stroke: $gray-300;
+      }
+    }
+}
+
+.tabbar-item.active{
+  color: $primary;
+  .icon{
+    path{
+      fill: $primary;
+      }
+    }
+  .icon-home{
+    path{
+    stroke: $primary;
+      }
+    }
 }

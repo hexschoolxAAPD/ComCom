@@ -3,43 +3,14 @@
   <%- include('./layout/head'); -%>
 
   <body>
-    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+<!-- 置頂列 -->
+    <nav class="navbar d-flex align-items-center border-bottom border-1 border-gray-200" aria-label="Navigation Bar">
       <div class="container">
         <span class="mb-0 title-1">我的成就</span>
-        <ul class="list-unstyled mb-0 nav-list">
-          <li>
-            <a href="#" class="position-relative">
-              <img
-                src="../assets/images/icon/navbar-bell.svg"
-                alt="Bell"
-                style="width: 24px; height: 24px"
-              />
-              <div class="news"></div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="position-relative">
-              <img
-                src="../assets/images/icon/navbar-chat-circle-dots.svg"
-                alt="Chat"
-                style="width: 24px; height: 24px"
-              />
-              <div class="news"></div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="../assets/images/icon/personal-list-bullets.svg"
-                alt="Chat"
-                style="width: 24px; height: 24px"
-              />
-            </a>
-          </li>
-        </ul>
+        <%- include('./layout/notification'); -%>
       </div>
     </nav>
-
+<!-- 通知條 -->
     <div class="bg-emphasis">
       <div class="container">
         <div
@@ -56,44 +27,26 @@
         </div>
       </div>
     </div>
-
+<!-- user資訊欄 -->
     <main class="container pt-4 pb-2">
-      <div class="d-flex align-items-start mb-3">
-        <div class="flex-shrink-0 position-relative">
-          <img
-            src="../assets/images/achievements/avatar.jpg"
-            class="rounded-circle"
-            alt="..."
-            style="width: 80px; height: 80px"
-          />
-          <img
-            src="../assets/images/icon/flag-taiwan.svg"
-            class="position-absolute bottom-0 start-0"
-            alt="Taiwan"
-          />
-          <div class="bubble position-absolute top-50 start-90">
-            <p class="text-white subtitle">
-              8/5~8/16 San Francisco trip
-              <img
-                src="../assets/images/icon/flag-us.png"
-                class="align-baseline"
-                alt="flags_us"
-              />
-            </p>
-          </div>
+      <!-- user狀態列-->
+      <div class="d-flex align-items-start mb-3 position-relative">
+        <div class="flex-shrink-0 position-relative ">
+          <img src="../assets/images/achievements/avatar.jpg" class="avatar" alt="avatar"/>
+          <img src="../assets/images/flag/Taiwan (TW).png" class="flag" alt="Taiwan"/>
         </div>
-        <div
-          class="flex-grow-1 ms-1 py-2 d-flex align-items-center position-relative"
-        >
-          <h4 class="h4">Barron Li</h4>
-          <img
-            src="../assets/images/icon/social-check-fill-blue500.svg"
-            class="ms-1"
-            alt="SealCheck"
-            style="width: 18px; height: 18px"
-          />
+
+        <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center ">
+          <h4 class="username">Barron Li</h4>
+          <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck" alt="SocialCheck" />
         </div>
+
+        <div class="talkbubble d-flex">
+              <p class="talkbubble-item">8/5~8/16 San Francisco trip <img src="../assets/images/icon/flag-us.png" class="align-baseline" alt="flags_us"></p>
+        </div>
+
       </div>
+      <!-- user成就欄-->
       <ul class="d-flex list-unstyled justify-content-around mb-3">
         <li class="achievement">
           <h5 class="h5">A1</h5>
@@ -112,8 +65,9 @@
           <p class="caption-1">學伴朋友</p>
         </li>
       </ul>
+      <!-- user編輯欄-->
       <div class="d-flex">
-        <button type="button" class="btn btn-light px-4 pt-0 me-3 rounded-3">
+        <button type="button" class="btn btn-light px-4 pt-0 me-3" style="width: 52px;">
           <img
             src="../assets/images/icon/course-export.svg"
             alt="Export"
@@ -122,23 +76,157 @@
         </button>
         <button
           type="button"
-          class="btn btn-light subtitle rounded-3 flex-fill"
+          class="btn btn-light subtitle flex-fill"
         >
           編輯個人檔案
         </button>
       </div>
     </main>
 
-    <div class="loction"></div>
-    <div class="tag container d-flex">
-      <a href="#" class="btn hashtag fs-body-2">私房景點</a>
-      <a href="#" class="btn hashtag fs-body-2">自然風景</a>
-      <a href="#" class="btn hashtag fs-body-2">節慶祭典</a>
-      <a href="#" class="btn hashtag fs-body-2">戶外運動</a>
+<!-- 最愛地標 -->
+    <div class="location container py-2">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <h3 class=" mb-0 title-1">最愛地標</h3>
+        <a href="#" class="fs-body-2 text-gray-600 d-inline-flex align-items-center">更多<img src="../assets/images/icon/function-caret-right.svg" alt="more" width="14px" height="14px" ></a>
+      </div>
+
+      <div class="swiper-container overflow-hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-1.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">舊金山</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-2.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">東京鐵塔</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-3.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">羅浮宮</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-4.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">首爾</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-5.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">紐約</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-6.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">自由女神</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-7.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">金門大橋</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-8.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">紐西蘭</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-9.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">庫克山</p>
+          </div>
+          <div class="swiper-slide location-img">
+            <img src="../assets/images/achievements/favorite-landmark-10.jpg" class="rounded-3" alt="favorite-landmark">
+            <p class="fs-body-2">瑞典</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+<!-- tag -->
+    <div class="tag container d-flex pt-1 pb-2 flex-wrap">
+      <a href="#" class="hashtag fs-body-2">私房景點</a>
+      <a href="#" class="hashtag fs-body-2">自然風景</a>
+      <a href="#" class="hashtag fs-body-2">節慶祭典</a>
+      <a href="#" class="hashtag fs-body-2">戶外運動</a>
     </div>
 
-    <%- include('./layout/tab-bar'); -%>
+<!-- 學習分享 -->
+    <div class="container pt-2">
+      <h3 class=" mb-0 title-1 mb-2">學習分享</h3>
+      
+      <div class="post mb-2">
+      <!-- user -->
+        <div class="d-flex align-items-center mb-2">
+          <div class="flex-shrink-0 position-relative ">
+            <img src="../assets/images/achievements/avatar.jpg" class="avatar-sm" alt="avatar"/>
+            <img src="../assets/images/flag/Taiwan (TW).png" class="flag-sm" alt="Taiwan"/>
+          </div>
+          <div class="flex-grow-1 ms-2 me-auto d-flex flex-column ">
+            <div class="d-flex align-items-center">
+                <h4 class="username-sm">Barron Li</h4>
+                <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm" alt="SocialCheck"/>
+            </div>
+            <time datetime="" class="caption-1 text-gray-500">8月9日</time>
+          </div>
+          <a href="#" type="button" ><img src="../assets/images/icon/more.svg" alt="more"></a>
+        </div>
+      <!-- post -->
+      <div class="ms-12">
+        <p class="mb-2">
+          Last time I chatted with <span class="text-primary">@Emma Corrin</span> about fortune cookies, and I  finding them at a Chinese restaurant in San Francisco! How lucky! <img src="../assets/images/achievements/Emoji_love.png" alt="" width="16px">
+        </p>
+        <img src="../assets/images/achievements/post-02.jpg" class="rounded mb-2" alt="post" height="166px">
+        <div class="d-flex">
+          <button class="btn post-icon pe-4"><img src="../assets/images/icon/ic-button-heart.svg" alt="button-heart" width="24px"></button>
+          <button class="btn post-icon pe-4"><img src="../assets/images/icon/social-chat.svg" alt="chat" width="24px"></button>
+          <button class="btn post-icon"><img src="../assets/images/icon/social-paper-plane.svg" alt="share" width="24px"></button>
+        </div>
+        <span class="caption-1">52個讚</span>
+      </div>
 
+      
+      </div>
+      <div class="post mb-2">
+        <!-- user -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0 position-relative ">
+              <img src="../assets/images/achievements/avatar.jpg" class="avatar-sm" alt="..." />
+              <img src="../assets/images/flag/Taiwan (TW).png" class="flag-sm" alt="Taiwan" />
+            </div>
+            <div class="flex-grow-1 ms-2 me-auto d-flex flex-column ">
+              <div class="d-flex align-items-center">
+                  <h4 class="username-sm">Barron Li</h4>
+                  <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm" alt="socialCheck"/>
+              </div>
+              <time datetime="" class="caption-1 text-gray-500">8月5日</time>
+            </div>
+            <a href="#" type="button" ><img src="../assets/images/icon/more.svg" alt="more"></a>
+          </div>
+        <!-- post -->
+        <div class="ms-12">
+          <p class="mb-2">
+            Good morning! The weather is really nice today, and the Golden Gate Bridge is so spectacular!<img src="../assets/images/achievements/Emoji_love.png" alt="" width="16px">
+          </p>
+          <img src="../assets/images/achievements/post-01.jpg" class="rounded mb-2" alt="post" height="166px">
+          <div class="d-flex">
+            <button class="btn post-icon pe-4"><img src="../assets/images/icon/ic-button-heart.svg" alt="button-heart" width="24px"></button>
+            <button class="btn post-icon pe-4"><img src="../assets/images/icon/social-chat.svg" alt="chat" width="24px"></button>
+            <button class="btn post-icon"><img src="../assets/images/icon/social-paper-plane.svg" alt="share" width="24px"></button>
+          </div>
+          <span class="caption-1">19個讚</span>
+        </div>
+  
+        
+      </div>
+    </div> 
+
+
+
+    <%- include('./layout/tab-bar', {page: "home"}); -%>
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script type="module">
+      import Swiper from 'swiper/bundle';
+
+      const swiper = new Swiper(".swiper-container", {
+        slidesPerView: '4.2',
+        spaceBetween: 12,
+});
+
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@ import Swiper from "swiper/bundle";
 // import styles bundle
 import "swiper/css/bundle";
 
+
 console.log("Hello world!");
 
 const exploreSearchLocationSwiper = new Swiper(".search-location-swiper", {

@@ -1,0 +1,116 @@
+.avatar{
+    border-radius: 100%;
+    width: 80px;
+}
+.avatar-md{
+    border-radius: 100%;
+    width: 56px;
+}
+
+.avatar-sm{
+    border-radius: 100%;
+    width: 40px;
+}
+
+.flag{
+    position: absolute;
+    width: 24px;
+    bottom: 0;
+    left: 0;
+}
+
+.flag-md{
+    position: absolute;
+    width: 16px;
+    bottom: 0;
+    left: 0;
+}
+
+.flag-sm{
+    position: absolute;
+    width: 12px;
+    bottom: 0;
+    left: 0;
+}
+
+.username{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.username-md{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.username-sm{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.socialCheck{
+    width: 18px;
+    margin-left: 4px;
+}
+.socialCheck-sm{
+    width: 14px;
+    margin-left: 4px;
+}
+
+.online-dot{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: $emphasis-500;
+    border: 1px solid #fff;
+    bottom: 1px;
+    right: 3px;
+}
+
+.talkbubble-item{
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFF;
+    height: 28px;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    border-radius: 0 25px 25px 0;
+    text-indent: 1px;
+}
+.talkbubble-sm{
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+    height: 24px;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    border-radius: 0 25px 25px 0;
+    text-indent: 1px;
+}
+
+.talkbubble::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    background-image: url('/assets/images/achievements/talkbubble.svg'); 
+    background-size: contain;
+}
+.partner-talkbubble::before{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 24px;
+    background-image: url('/assets/images/achievements/talkbubble.svg'); 
+    background-size: contain;
+}

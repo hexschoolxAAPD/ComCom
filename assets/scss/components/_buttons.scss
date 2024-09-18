@@ -50,3 +50,79 @@
   --bs-btn-active-bg: transparent;
   --bs-btn-active-border-color: #{$primary-600};
 }
+
+// 預約課程 btn
+.button{
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+}
+
+.time-btn{
+  background-color: $gray-100;
+  color: $gray-500;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  &:hover{
+      background-color: $gray-200;
+  }
+}
+.start-btn{
+  background-color: $primary;
+  color: $white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  &:hover{
+      background-color: $primary-200;
+      color: $primary-700;
+  }
+}
+
+.post-icon{
+  padding: 0;
+  border: 0;
+}
+
+.plus-btn{
+  background-image: url('/assets/images/icon/social-user-plus.svg'); 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 52px;
+  height: 36px;
+  background-color: $gray-100;
+  border-radius: 8px;
+  &:hover{
+    background-color: $primary-100;
+  }
+  &:focus{
+    background-image: url('/assets/images/icon/social-user-check.svg'); 
+    background-color: $primary;
+  }
+}
+
+.check-btn{
+  background-image: url('/assets/images/icon/social-user-check.svg'); 
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 52px;
+  height: 36px;
+  background-color: $primary;
+  border-radius: 8px;
+  &:hover{
+    background-color: $primary-100;
+  }
+  &:focus{
+    background-image: url('/assets/images/icon/social-user-plus.svg'); 
+    background-color: $gray-100;
+  }
+}
+

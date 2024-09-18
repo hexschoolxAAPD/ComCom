@@ -1,0 +1,11 @@
+body {
+    overflow: auto;
+}
+.container{
+    max-width: 576px;
+}
+
+/* Webkit 浏览器中隐藏滚动条 */
+body::-webkit-scrollbar {
+    display: none;
+}
