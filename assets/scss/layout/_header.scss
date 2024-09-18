@@ -5,9 +5,8 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000; /* 確保導航欄位於頂層 */
-
   border-top: 1px solid $gray-200;
 }
 
@@ -29,6 +28,34 @@
     margin-bottom: 8px;
     path{
     stroke: $gray-500;
+      }
+    }
+}
+
+.tabbar-item:hover{
+  color: $gray-300;
+  .icon{
+    path{
+      fill: $gray-300;
+      }
+    }
+  .icon-home{
+    path{
+    stroke: $gray-300;
+      }
+    }
+}
+
+.tabbar-item.active{
+  color: $primary;
+  .icon{
+    path{
+      fill: $primary;
+      }
+    }
+  .icon-home{
+    path{
+    stroke: $primary;
       }
     }
 }
