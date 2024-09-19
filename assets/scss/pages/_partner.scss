@@ -1,5 +1,10 @@
+main.partner-page{
+    height: calc(100dvh - 88px - 43px);
+    overflow-y: auto;
+}
+
 .search-bar input{
-    background-image: url('/assets/images/icon/function-search.svg'); /* 替換成你的圖標路徑 */
+    background-image: url('/assets/images/icon/function-search.svg'); 
     background-position: 16px center;
     background-repeat: no-repeat;
     padding-top: 8px;
@@ -21,6 +26,45 @@
     top: 29px;
     left:42px
     
+}
+
+
+.plus-btn{
+    background-image: url('/assets/images/icon/social-user-plus.svg'); 
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 52px;
+    height: 36px;
+    background-color: $gray-100;
+    border-radius: 8px;
+    &:hover{
+        background-color: $primary-100;
+    }
+}
+.checkbtn:checked ~ .plus-btn{
+    background-image: url('/assets/images/icon/social-user-check.svg'); 
+    background-color: $primary;
+}
+
+.check-btn{
+    background-image: url('/assets/images/icon/social-user-check.svg'); 
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 52px;
+    height: 36px;
+    background-color: $primary;
+    border-radius: 8px;
+    &:hover{
+        background-color: $primary-100;
+    }
+    &:focus{
+        background-image: url('/assets/images/icon/social-user-plus.svg'); 
+        background-color: $gray-100;
+    }
 }
 
 
