@@ -95,7 +95,6 @@
     padding-right: 12px;
     padding-bottom: 2px;
     border-radius: 0 25px 25px 0;
-    text-indent: 1px;
 }
 
 .talkbubble::before{
@@ -105,6 +104,7 @@
     height: 28px;
     background-image: url('/assets/images/achievements/talkbubble.svg'); 
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .partner-talkbubble::before{
     content: "";
@@ -113,4 +113,5 @@
     height: 24px;
     background-image: url('/assets/images/achievements/talkbubble.svg'); 
     background-size: contain;
+    background-repeat: no-repeat;
 }

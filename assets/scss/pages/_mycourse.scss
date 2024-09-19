@@ -1,4 +1,7 @@
-
+main.mycourse-page{
+    height: calc(100dvh - 88px - 43px);
+    overflow-y: auto;
+}
 .nav-btn{
     text-align: center;
     font-size: 16px;
