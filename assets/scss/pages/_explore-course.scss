@@ -1,0 +1,64 @@
+main.course-intro-page {
+  height: calc(100dvh - 89px - 56px);
+  overflow-y: auto;
+}
+
+.avatar-80 {
+  width: 80px;
+  height: 80px;
+}
+
+.icon-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.course-banner {
+  aspect-ratio: 375 / 236;
+}
+
+.course-intro-img {
+  aspect-ratio: 320 / 180;
+}
+
+.course-intro-card__img {
+  aspect-ratio: 287 / 180;
+}
+
+.list-style-small-dot {
+  li::marker {
+    content: "· ";
+  }
+}
+
+.label-arrow-up-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  &::before {
+    content: "收合簡介";
+    display: inline;
+    color: $gray-500;
+  }
+
+  img {
+    width: 14px;
+    height: 14px;
+    transition-property: transform;
+    transition-duration: 300ms;
+  }
+}
+
+input:checked ~ .label-arrow-up-down {
+  &::before {
+    content: "展開全部";
+    display: inline;
+    color: $gray-500;
+  }
+
+  img {
+    transform: rotate(-180deg);
+  }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <%- include('./layout/head'); -%>
+
+  <body>
+    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+      <div class="container">
+        <a class="btn px-0 rounded-0" href="#" role="button"
+          ><svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use
+              href="../assets/images/icon/function-caret-left-symbol.svg#ic-arrow-left"
+            />
+          </svg>
+        </a>
+        <span class="mb-0 title-1 flex-grow-1 text-center">我的成就</span>
+        <ul class="list-unstyled mb-0 d-flex gap-4">
+          <li>
+            <a href="#" class="position-relative">
+              <img
+                src="../assets/images/icon/course-export.svg"
+                alt="share icon"
+              />
+            </a>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="classBookmark"
+              id="course-page-bookmark"
+              class="d-none bookmark-checkbox"
+            /><label
+              for="course-page-bookmark"
+              class="bookmark-label-icon bookmark-dark align-middle"
+            ></label>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="course-intro-page pb-4">
+      <!-- _course-banner -->
+
+      <section class="container">
+        <div class="card border-0 bg-gray-100 px-3 pt-4 pb-8 gap-4 d-none">
+          <h3 class="h5">課程簡介</h3>
+          <img
+            src="../assets/images/course-page-intro/class-info-5.jpg"
+            alt="course img"
+            class="rounded-1"
+          />
+          <div class="d-grid gap-4">
+            <p class="fs-body-1">
+              你認為美國人喜歡的是幸運餅乾還是它的籤語或樂透號，又或是它帶來的幸運感？
+            </p>
+            <h4 class="title-1 text-primary-800 px-2">
+              <img
+                src="../assets/images/icon/tab-bars-chat-blue-500.svg"
+                alt="chat icon"
+                class="me-2"
+              />
+              這堂課我們可以聊聊
+            </h4>
+            <ul class="title-2 list-style-small-dot mb-0">
+              <li>美國人怎麼看幸運餅乾？美味中餐的完美句點？</li>
+              <li>幸運餅乾在電影還是生活中？</li>
+              <li>相關旅遊經驗與體驗</li>
+            </ul>
+            <div class="px-3">
+              <h4 class="title-2 text-primary-800 mb-2">
+                Bonus: 這堂課的神秘小禮物
+              </h4>
+              <p class="text-gray-700">
+                課程結束前我會為你抽出一個幸運餅乾，作為這堂課的祝福，中大獎的話，要再回來上課喔！
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse show" id="collapseCourseIntro">
+            <div class="d-grid gap-4">
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="../assets/images/course-page-intro/class-info-4.jpg"
+                  alt="幸運餅乾圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 1・美國人怎麼看幸運餅乾？
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>內藏籤語真的能帶來幸運？美國人相信嗎？</li>
+                  <li>幸運餅乾裡面藏有樂透，真的有人中獎了？</li>
+                  <li>
+                    籤語是誰寫的？裡面寫些什麼？內容是不是都是報喜不報憂？
+                  </li>
+                </ul>
+              </div>
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="../assets/images/course-page-intro/class-info-3.jpg"
+                  alt="幸運餅乾圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 2・幸運餅乾在電影還是生活中？
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>電影裡的幸運餅乾，在真實世界存在嗎？</li>
+                  <li>你在哪部電影看過幸運餅乾？</li>
+                  <li>
+                    你看過或吃過幸運餅乾嗎？你知道哪裡可以吃到幸運餅乾嗎？
+                  </li>
+                </ul>
+              </div>
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="../assets/images/course-page-intro/class-info-2.jpg"
+                  alt="旅遊經驗圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 3・你我的相關旅遊經驗與體驗
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>
+                    你去過美國任何一個城市的唐人街嗎？你會想買幸運餅乾送朋友嗎？
+                  </li>
+                  <li>
+                    你喜歡美式中菜還是道地中菜？你吃過嗎？你喜歡哪一種，為什麼？
+                  </li>
+                  <li>旅行時你喜歡嚐鮮當地飲食還是找習慣的中式料理？</li>
+                </ul>
+              </div>
+              <div class="px-3 d-grid gap-4">
+                <p>
+                  <strong class="title-2"
+                    >課程開始時，我會詢問你比較想聊哪些話題，以上話題提供你參考。</strong
+                  >
+                </p>
+
+                <p>
+                  不限於這些主題，你也可以隨時主動提問喔，例如「我想聽用幸運餅乾裡的樂透號買彩券得到大獎的故事」。
+                </p>
+                <p>
+                  你也可以在課程<strong class="title-2">24小時前</strong
+                  >聯絡我，跟我討論你想聊的主題，我提供客製化課程，非常期待收到你們的訊息！
+                </p>
+                <p>
+                  認真看完課程介紹的你，獲得一則知名的籤語： All the preparation
+                  you’ve done will finally be paying
+                  off.（你所做的一切準備，都將得到回報）
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- collapse button -->
+          <div>
+            <input type="checkbox" id="arrowUpDown1" class="d-none" />
+            <label
+              for="arrowUpDown1"
+              class="btn btn-text caption-1 label-arrow-up-down"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCourseIntro"
+              aria-expanded="false"
+              aria-controls="collapseCourseIntro"
+            >
+              <img
+                src="../assets/images/icon/function-caret-down-gray-500.svg"
+                alt="open all content"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="card border-0 bg-gray-100 px-3 pt-4 pb-8 gap-4">
+          <h3 class="h5">城市地標</h3>
+          <img
+            src="../assets/images/course-page-intro/class-info-6.jpg"
+            alt="舊金山 San Francisco"
+            class="rounded-1"
+          />
+          <div class="d-grid gap-4">
+            <h4 class="title-2">舊金山 San Francisco</h4>
+            <p>
+              位於美國加利福尼亞州中部沿海的大型城市，為加州唯一市郡合一的行政區，亦別名<b>金門城市、灣邊之城、霧城</b>等。
+            </p>
+          </div>
+
+          <div class="collapse" id="collapseCourseIntro">
+            <div class="d-grid gap-4">
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="../assets/images/course-page-intro/class-info-4.jpg"
+                  alt="幸運餅乾圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 1・美國人怎麼看幸運餅乾？
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>內藏籤語真的能帶來幸運？美國人相信嗎？</li>
+                  <li>幸運餅乾裡面藏有樂透，真的有人中獎了？</li>
+                  <li>
+                    籤語是誰寫的？裡面寫些什麼？內容是不是都是報喜不報憂？
+                  </li>
+                </ul>
+              </div>
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="../assets/images/course-page-intro/class-info-3.jpg"
+                  alt="幸運餅乾圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 2・幸運餅乾在電影還是生活中？
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>電影裡的幸運餅乾，在真實世界存在嗎？</li>
+                  <li>你在哪部電影看過幸運餅乾？</li>
+                  <li>
+                    你看過或吃過幸運餅乾嗎？你知道哪裡可以吃到幸運餅乾嗎？
+                  </li>
+                </ul>
+              </div>
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="../assets/images/course-page-intro/class-info-2.jpg"
+                  alt="旅遊經驗圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 3・你我的相關旅遊經驗與體驗
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>
+                    你去過美國任何一個城市的唐人街嗎？你會想買幸運餅乾送朋友嗎？
+                  </li>
+                  <li>
+                    你喜歡美式中菜還是道地中菜？你吃過嗎？你喜歡哪一種，為什麼？
+                  </li>
+                  <li>旅行時你喜歡嚐鮮當地飲食還是找習慣的中式料理？</li>
+                </ul>
+              </div>
+              <div class="px-3 d-grid gap-4">
+                <p>
+                  <strong class="title-2"
+                    >課程開始時，我會詢問你比較想聊哪些話題，以上話題提供你參考。</strong
+                  >
+                </p>
+
+                <p>
+                  不限於這些主題，你也可以隨時主動提問喔，例如「我想聽用幸運餅乾裡的樂透號買彩券得到大獎的故事」。
+                </p>
+                <p>
+                  你也可以在課程<strong class="title-2">24小時前</strong
+                  >聯絡我，跟我討論你想聊的主題，我提供客製化課程，非常期待收到你們的訊息！
+                </p>
+                <p>
+                  認真看完課程介紹的你，獲得一則知名的籤語： All the preparation
+                  you’ve done will finally be paying
+                  off.（你所做的一切準備，都將得到回報）
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- collapse button -->
+          <div>
+            <input type="checkbox" id="arrowUpDown1" class="d-none" />
+            <label
+              for="arrowUpDown1"
+              class="btn btn-text caption-1 label-arrow-up-down"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCourseIntro"
+              aria-expanded="false"
+              aria-controls="collapseCourseIntro"
+            >
+              <img
+                src="../assets/images/icon/function-caret-down-gray-500.svg"
+                alt="open all content"
+              />
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/tab-bar', {page: "explore-course"}); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -367,8 +367,13 @@ $dark: $gray-950 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary": $primary,
+  "primary-700": $primary-700,
+  "primary-800": $primary-800,
+
   "secondary": $secondary,
   "emphasis": $emphasis,
+  "emphasis-400": $emphasis-400,
+
   "success": $success,
   "info": $info,
   "warning": $warning,

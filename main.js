@@ -36,3 +36,9 @@ const swiperCoursesConfig = {
 swiperCoursesClasses.forEach((swiperClass) => {
   new Swiper(swiperClass, swiperCoursesConfig);
 });
+
+//課程 intro 城市地標 swiper
+const sanFranciscoSwiper = new Swiper(".san-francisco-swiper", {
+  slidesPerView: 3.2,
+  spaceBetween: 16,
+});
