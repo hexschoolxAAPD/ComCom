@@ -4,7 +4,7 @@
 
   <body>
 <!-- 置頂列 -->
-    <nav class="navbar d-flex align-items-center border-bottom border-1 border-gray-200" aria-label="Navigation Bar">
+    <nav class="navbar d-flex align-items-center " aria-label="Navigation Bar">
       <div class="container">
         <span class="mb-0 title-1">我的成就</span>
         <%- include('./layout/notification'); -%>
@@ -88,7 +88,7 @@
     <div class="location container py-2">
       <div class="d-flex align-items-center justify-content-between mb-2">
         <h3 class=" mb-0 title-1">最愛地標</h3>
-        <a href="#" class="fs-body-2 text-gray-600 d-inline-flex align-items-center">更多<img src="../assets/images/icon/function-caret-right.svg" alt="more" width="14px" height="14px" ></a>
+        <a href="landmark.html" class="fs-body-2 text-gray-600 d-inline-flex align-items-center">更多<img src="../assets/images/icon/function-caret-right.svg" alt="more" width="14px" height="14px" ></a>
       </div>
 
       <div class="swiper-container overflow-hidden">
@@ -219,7 +219,7 @@
 
 
     <%- include('./layout/tab-bar', {page: "home"}); -%>
-    <%- include('./layout/footer'); -%>
+
     <script type="module" src="../main.js"></script>
     <script type="module">
       import Swiper from 'swiper/bundle';

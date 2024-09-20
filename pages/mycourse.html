@@ -4,9 +4,9 @@
     <%- include('./layout/head'); -%>
 <body>
     <!-- 置頂列 -->
-    <nav class="navbar d-flex align-items-center border-bottom border-1 border-gray-200" aria-label="Navigation Bar">
+    <nav class="navbar d-flex align-items-center " aria-label="Navigation Bar">
         <div class="container">
-            <a href="javascript:history.back()"><img src="../assets/images/icon/function-caret-left.svg" alt="back"></a>
+            <span class="mb-0 title-1">我的課程</span>
             <%- include('./layout/notification'); -%>
         </div>
     </nav>
@@ -159,7 +159,7 @@
     </main>
 
     <%- include('./layout/tab-bar', {page: "mycourse"}); -%>
-    <%- include('./layout/footer'); -%>
+
     <script type="module" src="../main.js"></script>
 </body>
 </html>
