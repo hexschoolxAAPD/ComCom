@@ -15,35 +15,39 @@ main.course-intro-page {
   aspect-ratio: 287 / 180;
 }
 
+.img-1x1 {
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.avatar-img {
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
 // icon sizes
-.icon-10 {
+.w-10 {
   width: 10px;
-  height: 10px;
 }
 
-.icon-15 {
+.w-15 {
   width: 15px;
-  height: 15px;
 }
 
-.icon-16 {
+.w-16 {
   width: 16px;
-  height: 16px;
 }
 
-.icon-24 {
+.w-24 {
   width: 24px;
-  height: 24px;
 }
 
-.avatar-56 {
-  width: 56px;
-  height: 56px;
-}
-
-.avatar-80 {
+.w-80 {
   width: 80px;
-  height: 80px;
+}
+
+.w-56 {
+  width: 56px;
 }
 
 .timetable-icon {
