@@ -1,18 +1,8 @@
 main.course-intro-page {
-  height: calc(100dvh - 89px - 56px);
+  height: calc(100dvh - 43px - 67px);
   overflow-y: auto;
 }
-
-.avatar-80 {
-  width: 80px;
-  height: 80px;
-}
-
-.icon-24 {
-  width: 24px;
-  height: 24px;
-}
-
+// 圖片 aspect-ratio
 .course-banner {
   aspect-ratio: 375 / 236;
 }
@@ -25,12 +15,61 @@ main.course-intro-page {
   aspect-ratio: 287 / 180;
 }
 
+// icon sizes
+.icon-10 {
+  width: 10px;
+  height: 10px;
+}
+
+.icon-15 {
+  width: 15px;
+  height: 15px;
+}
+
+.icon-16 {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.avatar-56 {
+  width: 56px;
+  height: 56px;
+}
+
+.avatar-80 {
+  width: 80px;
+  height: 80px;
+}
+
+.timetable-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 0.25rem;
+
+  &__available {
+    border: 1px solid $white;
+    background-color: $primary-100;
+  }
+
+  &__unavailable {
+    background-color: $primary-700;
+  }
+}
+
+// list style
 .list-style-small-dot {
   li::marker {
     content: "· ";
   }
 }
 
+// 展開卡片 btn
 .label-arrow-up-down {
   display: flex;
   justify-content: center;
@@ -38,7 +77,7 @@ main.course-intro-page {
   gap: 2px;
 
   &::before {
-    content: "收合簡介";
+    content: "展開全部";
     display: inline;
     color: $gray-500;
   }
@@ -53,12 +92,39 @@ main.course-intro-page {
 
 input:checked ~ .label-arrow-up-down {
   &::before {
-    content: "展開全部";
-    display: inline;
-    color: $gray-500;
+    content: "收合簡介";
   }
 
   img {
     transform: rotate(-180deg);
   }
+}
+
+// 展開評論卡片 btn
+.label-comment-text {
+  &::before {
+    content: "顯示所有評論";
+  }
+}
+
+input:checked ~ .label-comment-text {
+  &::before {
+    content: "收合所有評論";
+  }
+}
+
+// 常見問題 - 手風琴樣式
+.course-faq-accordion {
+  --#{$prefix}accordion-border-color: #{$gray-100};
+
+  --#{$prefix}accordion-btn-padding-x: 1rem;
+  --#{$prefix}accordion-btn-padding-y: 0.75rem;
+  --#{$prefix}accordion-btn-color: #{$accordion-button-color};
+  --#{$prefix}accordion-btn-bg: #{$accordion-button-bg};
+
+  --#{$prefix}accordion-body-padding-x: 2rem;
+  --#{$prefix}accordion-body-padding-y: 1rem;
+
+  --#{$prefix}accordion-active-color: #{$gray-950};
+  --#{$prefix}accordion-active-bg: #{$white};
 }
