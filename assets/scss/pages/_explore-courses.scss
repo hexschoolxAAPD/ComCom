@@ -106,10 +106,15 @@ input:checked ~ .label-check-icon {
 }
 
 // 收藏課程 checkbox
+.bookmark-light {
+  background-image: url(../images/icon/ic-button-bookmark-light.svg);
+}
+.bookmark-dark {
+  background-image: url(../images/icon/ic-button-bookmark.svg);
+}
 .bookmark-label-icon {
   width: 24px;
   height: 24px;
-  background-image: url(../images/icon/ic-button-bookmark-light.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -130,4 +135,12 @@ input:checked ~ .label-check-icon {
   background-color: $emphasis-500;
   border: 1px solid $white;
   border-radius: 50%;
+}
+
+.online-dot-lg {
+  width: 14px;
+  height: 14px;
+  border: 2px solid $white;
+  bottom: 4px;
+  right: 4px;
 }

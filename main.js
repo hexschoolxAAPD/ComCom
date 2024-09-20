@@ -5,7 +5,6 @@ import Swiper from "swiper/bundle";
 // import styles bundle
 import "swiper/css/bundle";
 
-
 console.log("Hello world!");
 
 const exploreSearchLocationSwiper = new Swiper(".search-location-swiper", {
@@ -35,4 +34,10 @@ const swiperCoursesConfig = {
 
 swiperCoursesClasses.forEach((swiperClass) => {
   new Swiper(swiperClass, swiperCoursesConfig);
+});
+
+//課程 intro 城市地標 swiper
+const sanFranciscoSwiper = new Swiper(".san-francisco-swiper", {
+  slidesPerView: 3.6,
+  spaceBetween: 16,
 });
