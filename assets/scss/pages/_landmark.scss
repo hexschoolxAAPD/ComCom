@@ -12,6 +12,7 @@ main.landmark-page{
 
 .classify-cell{
     width: 100%;
+    background-color: #fff;
     border: 1px solid $primary-950;
     text-align: center;
     font-size: 14px;
@@ -70,4 +71,70 @@ main.landmark-page{
 }
 .favorite-checkbtn:checked ~ .heart-btn{
     background-image: url('/assets/images/icon/social-heart-fill.svg'); 
+}
+
+
+//地圖模式
+.landmap{
+    background-image: url('/assets/images/achievements/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: -16px;
+    margin-right: -16px;
+    height: 100vh;
+}
+
+
+.landmark{
+    position: absolute;
+    animation: zoomin 0.5s ease-out forwards; 
+    transform-origin: bottom center; /* 改變放大重心*/
+    &.icon1{
+        top: 200px;
+        right: 350px;
+    }
+    &.icon2{
+        top: 300px;
+        right: 200;
+    }
+    &.icon3{
+        bottom: 250px;
+        right: 50px;
+    }
+    &.icon4{
+        bottom: 100px;
+        right: 60px;
+    }
+
+}
+@keyframes zoomin {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.2); 
+        opacity: 1;
+    }
+    70% {
+        transform: scale(0.6); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+.pin-img{
+    width: 80px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.pin{
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    margin-top: 2px;
+    border: 6px solid;
+    border-color: #fff transparent transparent transparent;
+
 }

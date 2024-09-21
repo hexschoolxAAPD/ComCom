@@ -14,9 +14,13 @@
     <main class="landmark-page">
         <!-- 頁籤 -->
         <div class="nav"  role="tablist">
-            <button class="nav-btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">收藏模式</button>
-            <button class="nav-btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">地圖模式</button>
+            <button class="nav-btn active" id="collect-tab" data-bs-toggle="tab" data-bs-target="#collect" type="button" role="tab" aria-controls="collect" aria-selected="true">收藏模式</button>
+            <button class="nav-btn" id="landmap-tab" data-bs-toggle="tab" data-bs-target="#landmap" type="button" role="tab" aria-controls="landmap" aria-selected="false">地圖模式</button>
         </div>
+
+    <div class="tab-content">
+        <!-- 收藏模式 -->
+        <div class="tab-pane fade show active" id="collect" role="tabpanel" aria-labelledby="collect-tab">
         <div class="container py-4">
             <div class="list-unstyled d-flex mb-3 classify">
                     <button class="btn classify-cell">國家</button>
@@ -141,7 +145,45 @@
                 </div>
             </div>
         </div>
+        </div>
+        <!-- 地圖模式 -->
+        <div class="tab-pane fade" id="landmap" role="tabpanel" aria-labelledby="landmap-tab">
+            <div class="container">
 
+            <div class="position-relative landmap">
+                <div class="py-4 ">
+                    <div class="mx-4 list-unstyled d-flex mb-3 classify">
+                        <button class="btn classify-cell">國家</button>
+                        <button class="btn classify-cell">城市</button>
+                        <button class="btn classify-cell active">地標</button>
+                        <button class="btn classify-cell">古蹟</button>
+                        <button class="btn classify-cell">美食</button>
+                    </div>
+                </div>
+                <div class="landmark icon1">
+                    <img src="../assets/images/achievements/map-pin-4.png" class="pin-img" alt="map-pin" >
+                    <div class="pin"></div>
+                </div>
+                <div class="landmark icon2">
+                    <img src="../assets/images/achievements/map-pin-3.png" class="pin-img" alt="map-pin">
+                    <div class="pin"></div>
+                </div>
+                <div class="landmark icon3">
+                    <img src="../assets/images/achievements/map-pin-2.png" class="pin-img" alt="map-pin">
+                    <div class="pin"></div>
+                </div>
+                <div class="landmark icon4">
+                    <img src="../assets/images/achievements/map-pin-1.png" class="pin-img" alt="map-pin">
+                    <div class="pin"></div>
+                </div>
+            </div>
+
+
+            
+            </div>
+        </div>
+        
+    </div>
     </main>
     <%- include('./layout/tab-bar', {page: "home"}); -%>
 
