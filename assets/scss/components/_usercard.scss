@@ -56,6 +56,7 @@
 .socialCheck-sm{
     width: 14px;
     margin-left: 4px;
+
 }
 
 .online-dot{
@@ -67,6 +68,17 @@
     border: 1px solid #fff;
     bottom: 1px;
     right: 3px;
+}
+
+.online-dot-large{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: $emphasis-500;
+    border: 1px solid #fff;
+    bottom: 5px;
+    right: 5px;
 }
 
 .talkbubble-item{

@@ -67,8 +67,6 @@
   line-height: 24px;
   font-weight: 600;
   margin-bottom: 12px;
-
-
 }
 .start-btn{
   background-color: $primary;
@@ -80,6 +78,14 @@
       background-color: $primary-200;
       color: $primary-700;
   }
+}
+
+.cancel-btn, .cancel-btn:hover{
+  background-color: $gray-200;
+  color: $white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
 }
 
 .post-icon{
