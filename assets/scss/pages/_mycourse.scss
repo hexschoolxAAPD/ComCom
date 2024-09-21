@@ -3,6 +3,7 @@ main.mycourse-page{
     overflow-y: auto;
     justify-self: unset;
 }
+//頁籤按鈕
 .nav-btn{
     text-align: center;
     font-size: 16px;
@@ -24,10 +25,13 @@ main.mycourse-page{
     color: $primary-700;
     border-bottom: 2px solid $primary-700;
 }
+
+//課程資訊內容
 .course-card{
     border: 1px solid $gray-200;
     border-radius: 8px;
 }
+
 .course-title {
     img{
         width: 120px;
