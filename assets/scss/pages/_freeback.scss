@@ -1,0 +1,55 @@
+//star-rating
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse; /* 星星從右到左排列 */
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.star-rating input {
+    display: none; /* 隱藏 radio buttons */
+}
+
+.star-rating label {
+    width: 30px;
+    height: 30px;
+    background-image: url('/assets/images/icon/social-star.svg'); /* 空心星星圖片 */
+    background-size: contain;
+    cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    background-image: url('/assets/images/icon/course-star-lime-green.svg'); /* 滑鼠懸停時顯示實心星星圖片 */
+}
+
+.star-rating input:checked ~ label {
+    background-image: url('/assets/images/icon/course-star-lime-green.svg'); /* 選中時顯示實心星星圖片 */
+}
+
+
+//freeback
+textarea {
+    width: 100%;
+    height: 132px;
+    resize: none;
+    background-color: $gray-100;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px;
+}
+textarea::placeholder{
+    font-size: 14px;
+    color: $gray-500;
+}
+textarea:focus{
+    outline: none;
+}
+.counter {
+    margin-top: 4px;
+    text-align: right;
+    color: $gray-500;
+}
+.error {
+    color: red;
+}
