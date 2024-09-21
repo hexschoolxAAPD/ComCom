@@ -76,6 +76,16 @@ main.landmark-page{
 
 //地圖模式
 .landmap{
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrap-row{
+    margin-left: -16px;
+    margin-right: -16px;
+    }
+
+.landmap-test{
     background-image: url('/assets/images/achievements/map.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,25 +96,26 @@ main.landmark-page{
 }
 
 
+
 .landmark{
     position: absolute;
     animation: zoomin 0.5s ease-out forwards; 
     transform-origin: bottom center; /* 改變放大重心*/
     &.icon1{
-        top: 200px;
-        right: 350px;
+        bottom: 67%;
+        right: 64%;
     }
     &.icon2{
-        top: 300px;
-        right: 200;
+        bottom: 48%;
+        right: 62%;
     }
     &.icon3{
-        bottom: 250px;
-        right: 50px;
+        bottom: 40%;
+        right: 7%;
     }
     &.icon4{
-        bottom: 100px;
-        right: 60px;
+        bottom: 22%;
+        right: 13%;
     }
 
 }
@@ -125,7 +136,8 @@ main.landmark-page{
     }
 }
 .pin-img{
-    width: 80px;
+    width: 21vw;
+    max-width: 120px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -137,4 +149,13 @@ main.landmark-page{
     border: 6px solid;
     border-color: #fff transparent transparent transparent;
 
+}
+
+.landmap-btn{
+    position: absolute;
+    top:12px;
+    right: 0;
+    left: 0;
+    margin-right: 16px;
+    margin-left: 16px;
 }
