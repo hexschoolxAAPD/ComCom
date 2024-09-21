@@ -1,0 +1,12 @@
+.label-icon-heart {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-image: url(../images/icon/social-heart.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input:checked ~ .label-icon-heart {
+  background-image: url(../images/icon/ic-button-heart-fill-red.svg);
+}
