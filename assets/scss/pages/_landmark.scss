@@ -1,0 +1,140 @@
+.back-btn{
+    position: absolute;
+    top: 8px;
+    left: 0px;
+}
+
+main.landmark-page{
+    height: calc(100dvh - 88px - 43px);
+    overflow-y: auto;
+    justify-self: unset;
+}
+
+.classify-cell{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $primary-950;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    border-radius: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: $gray-500;
+    &:hover{
+        background-color: $primary-950;
+        color: $white;
+        border: 1px solid $primary-950;
+    }
+    &:not(:last-child){
+        border-right: 0;
+    }
+    &:first-child{
+        border-radius: 8px 0 0 8px;
+    }
+    &:last-child{
+        border-radius: 0 8px 8px 0;
+    }
+}
+.classify .active{
+    background-color: $primary-950;
+    color: $white;
+    border: 1px solid $primary-950;
+}
+
+
+
+//swiper
+
+.swipe-slide{
+    width: 257px;
+}
+
+.slide-txt{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+}
+.favorite-mark{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+.heart-btn{
+    background-image: url('/assets/images/icon/social-heart.svg'); 
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.favorite-checkbtn:checked ~ .heart-btn{
+    background-image: url('/assets/images/icon/social-heart-fill.svg'); 
+}
+
+
+//地圖模式
+.landmap{
+    background-image: url('/assets/images/achievements/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: -16px;
+    margin-right: -16px;
+    height: 100vh;
+}
+
+
+.landmark{
+    position: absolute;
+    animation: zoomin 0.5s ease-out forwards; 
+    transform-origin: bottom center; /* 改變放大重心*/
+    &.icon1{
+        top: 200px;
+        right: 350px;
+    }
+    &.icon2{
+        top: 300px;
+        right: 200;
+    }
+    &.icon3{
+        bottom: 250px;
+        right: 50px;
+    }
+    &.icon4{
+        bottom: 100px;
+        right: 60px;
+    }
+
+}
+@keyframes zoomin {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.2); 
+        opacity: 1;
+    }
+    70% {
+        transform: scale(0.6); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+.pin-img{
+    width: 80px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.pin{
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    margin-top: 2px;
+    border: 6px solid;
+    border-color: #fff transparent transparent transparent;
+
+}

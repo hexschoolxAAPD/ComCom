@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <%- include('./layout/head'); -%>
+<body>
+    <!-- 置頂列 -->
+    <nav class="container text-center py-2  position-relative" aria-label="Navigation Bar">
+        <span class="title-1">地標成就</span>
+        <div class="back-btn">
+            <a href="javascript:history.back()"><img src="../assets/images/icon/function-caret-left.svg" alt="back"></a>
+        </div>
+    </nav>
+
+
+    <main class="landmark-page">
+        <!-- 頁籤 -->
+        <div class="nav"  role="tablist">
+            <button class="nav-btn active" id="collect-tab" data-bs-toggle="tab" data-bs-target="#collect" type="button" role="tab" aria-controls="collect" aria-selected="true">收藏模式</button>
+            <button class="nav-btn" id="landmap-tab" data-bs-toggle="tab" data-bs-target="#landmap" type="button" role="tab" aria-controls="landmap" aria-selected="false">地圖模式</button>
+        </div>
+
+    <div class="tab-content">
+        <!-- 收藏模式 -->
+        <div class="tab-pane fade show active" id="collect" role="tabpanel" aria-labelledby="collect-tab">
+        <div class="container py-4">
+            <div class="list-unstyled d-flex mb-3 classify">
+                    <button class="btn classify-cell">國家</button>
+                    <button class="btn classify-cell">城市</button>
+                    <button class="btn classify-cell active">地標</button>
+                    <button class="btn classify-cell">古蹟</button>
+                    <button class="btn classify-cell">美食</button>
+            </div>
+            <span class="title-1 mb-3 d-block">我的最愛</span>
+            <div class="swiper-landmark overflow-hidden mb-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-img mb-2 position-relative">
+                        <img src="../assets/images/achievements/achievement-overview-2.png" class="rounded-3" alt="favorite-landmark">
+                            <div class="slide-txt">
+                                <h4 class="h4 text-white">舊金山</h4>
+                                <h5 class="h5 text-white">San Francisco</h5>
+                            </div>
+                            <div class="favorite-mark">
+                                <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn" id="favorite-1">
+                                <label for="favorite-1" class="heart-btn">
+                            </div>
+                        </div>
+                        <span class="subtitle d-block mt-0">美國 Unites States</span>
+                        <time datetime="" class="caption-2 d-block">2024.07.20</time>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img mb-2 position-relative">
+                        <img src="../assets/images/achievements/achievement-overview-3.png" class="rounded-3" alt="favorite-landmark" >
+                            <div class="slide-txt">
+                                <h4 class="h4 text-white">東京</h4>
+                                <h5 class="h5 text-white">Tokyo</h5>
+                            </div>
+                            <div class="favorite-mark">
+                                <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn" id="favorite-2">
+                                <label for="favorite-2" class="heart-btn">
+                            </div>
+                        </div>
+                        <span class="subtitle d-block mt-0">日本 Japan</span>
+                        <time datetime="" class="caption-2 d-block">2024.07.22</time>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img mb-2 position-relative">
+                        <img src="../assets/images/achievements/achievement-overview-4.png" class="rounded-3" alt="favorite-landmark" >
+                            <div class="slide-txt">
+                                <h4 class="h4 text-white">巴黎</h4>
+                                <h5 class="h5 text-white">Paris</h5>
+                            </div>
+                            <div class="favorite-mark">
+                                <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn" id="favorite-3">
+                                <label for="favorite-3" class="heart-btn">
+                            </div>
+                        </div>
+                        <span class="subtitle d-block mt-0">法國 France</span>
+                        <time datetime="" class="caption-2 d-block">2024.07.17</time>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img mb-2 position-relative">
+                        <img src="../assets/images/achievements/achievement-overview-5.png" class="rounded-3" alt="favorite-landmark" >
+                            <div class="slide-txt">
+                                <h4 class="h4 text-white">斯德哥爾摩</h4>
+                                <h5 class="h5 text-white">Stockholm</h5>
+                            </div>
+                            <div class="favorite-mark">
+                                <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn" id="favorite-4">
+                                <label for="favorite-4" class="heart-btn">
+                            </div>
+                        </div>
+                        <span class="subtitle d-block mt-0">瑞典 Sverige</span>
+                        <time datetime="" class="caption-2 d-block">2024.07.17</time>
+                    </div>
+                </div>
+            </div>
+            <span class="title-1 mb-3 d-block">亞洲地區</span>
+            <div class="swiper-landmark overflow-hidden mb-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-img mb-2 position-relative">
+                        <img src="../assets/images/achievements/achievement-overview-3.png" class="rounded-3" alt="favorite-landmark" >
+                            <div class="slide-txt">
+                                <h4 class="h4 text-white">東京</h4>
+                                <h5 class="h5 text-white">Tokyo</h5>
+                            </div>
+                            <div class="favorite-mark">
+                                <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn" id="favorite-6">
+                                <label for="favorite-6" class="heart-btn">
+                            </div>
+                        </div>
+                        <span class="subtitle d-block mt-0">日本 Japan</span>
+                        <time datetime="" class="caption-2 d-block">2024.07.22</time>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img mb-2 position-relative">
+                        <img src="../assets/images/achievements/achievement-overview-1.png" class="rounded-3" alt="favorite-landmark" >
+                            <div class="slide-txt">
+                                <h4 class="h4 text-white">台北</h4>
+                                <h5 class="h5 text-white">Taipei</h5>
+                            </div>
+                            <div class="favorite-mark">
+                                <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn" id="favorite-7">
+                                <label for="favorite-7" class="heart-btn">
+                            </div>
+                        </div>
+                        <span class="subtitle d-block mt-0">台灣 Taiwan</span>
+                        <time datetime="" class="caption-2 d-block">2024.07.22</time>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-img mb-2 position-relative">
+                        <img src="../assets/images/achievements/achievement-overview-2.png" class="rounded-3" alt="favorite-landmark" >
+                            <div class="slide-txt">
+                                <h4 class="h4 text-white">首爾</h4>
+                                <h5 class="h5 text-white">Seoul</h5>
+                            </div>
+                            <div class="favorite-mark">
+                                <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn" id="favorite-8">
+                                <label for="favorite-8" class="heart-btn">
+                            </div>
+                        </div>
+                        <span class="subtitle d-block mt-0">韓國 Soutj Korea</span>
+                        <time datetime="" class="caption-2 d-block">2024.07.17</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- 地圖模式 -->
+        <div class="tab-pane fade" id="landmap" role="tabpanel" aria-labelledby="landmap-tab">
+            <div class="container">
+
+            <div class="position-relative landmap">
+                <div class="py-4 ">
+                    <div class="mx-4 list-unstyled d-flex mb-3 classify">
+                        <button class="btn classify-cell">國家</button>
+                        <button class="btn classify-cell">城市</button>
+                        <button class="btn classify-cell active">地標</button>
+                        <button class="btn classify-cell">古蹟</button>
+                        <button class="btn classify-cell">美食</button>
+                    </div>
+                </div>
+                <div class="landmark icon1">
+                    <img src="../assets/images/achievements/map-pin-4.png" class="pin-img" alt="map-pin" >
+                    <div class="pin"></div>
+                </div>
+                <div class="landmark icon2">
+                    <img src="../assets/images/achievements/map-pin-3.png" class="pin-img" alt="map-pin">
+                    <div class="pin"></div>
+                </div>
+                <div class="landmark icon3">
+                    <img src="../assets/images/achievements/map-pin-2.png" class="pin-img" alt="map-pin">
+                    <div class="pin"></div>
+                </div>
+                <div class="landmark icon4">
+                    <img src="../assets/images/achievements/map-pin-1.png" class="pin-img" alt="map-pin">
+                    <div class="pin"></div>
+                </div>
+            </div>
+
+
+            
+            </div>
+        </div>
+        
+    </div>
+    </main>
+    <%- include('./layout/tab-bar', {page: "home"}); -%>
+
+
+    <script type="module" src="../main.js"></script>
+    <script type="module">
+    import Swiper from 'swiper/bundle';
+
+    const swiper = new Swiper(".swiper-landmark", {
+        slidesPerView: '1.4',
+        spaceBetween: 16,
+    });
+    </script>
+</body>
+</html>
