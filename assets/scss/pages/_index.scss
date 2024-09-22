@@ -1,19 +1,18 @@
 .achievement-page {
-  height: calc(100dvh - 88px - 43px);
+  height: calc(100dvh - 69px - 43px);
   overflow-y: auto;
 }
 
-.nav-list{
+.nav-list {
   width: 112px;
   display: flex;
   justify-content: space-between;
-  .nav-item img{
+  .nav-item img {
     position: relative;
   }
 }
 
-
-.news{
+.news {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -24,42 +23,41 @@
   right: 0px;
 }
 
-.btn-close{
+.btn-close {
   width: 8px;
   height: 8px;
 }
 
-
-.achievement{
+.achievement {
   flex: 1;
   text-align: center;
-  h5{
+  h5 {
     color: $primary-950;
   }
 }
-.achievement + .achievement{
+.achievement + .achievement {
   border-left: 1px solid $gray-100;
 }
-.location-img{
+.location-img {
   width: 72px;
   text-align: center;
 }
 
-.hashtag{
+.hashtag {
   display: block;
   border: 1px solid $primary;
   color: $primary;
   padding: 4px 8px;
   margin-right: 12px;
   border-radius: 4px;
-  &:hover{
+  &:hover {
     background-color: $primary;
     color: $white;
     flex-direction: column;
   }
 }
-.talkbubble{
+.talkbubble {
   position: absolute;
   top: 40px;
-  left:65px
+  left: 65px;
 }
