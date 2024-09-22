@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Com Com 英語學習 App</title>
+  <script type="module" crossorigin src="/ComCom/assets/main-77f78901.js"></script>
+  <link rel="stylesheet" href="/ComCom/assets/main-1eae165e.css">
+</head>
+
+  <body>
+    <header>
+      <nav class="container border-bottom border-gray-100 py-2">
+        <div class="row">
+          <div class="col-3">
+            <a href="explore-courses-default.html" class="btn btn-icon p-1">
+              <img
+                src="/ComCom/assets/function-caret-left-2a6218da.svg"
+                alt="back icon"
+              />
+            </a>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-center">
+            <h2 class="title-1">課程資訊</h2>
+          </div>
+          <div class="col-3 d-flex align-items-center ps-0 gap-3">
+            <button type="button" class="btn btn-icon p-1">
+              <img
+                src="/ComCom/assets/course-export-e3e4e540.svg"
+                alt="share icon"
+                class="align-baseline"
+              />
+            </button>
+            <input
+              type="checkbox"
+              name="courseBookmark"
+              id="courseBookmark"
+              class="d-none bookmark-checkbox"
+            /><label
+              for="courseBookmark"
+              class="bookmark-label-icon bookmark-dark py-2"
+              role="button"
+            ></label>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="intro-page pb-4">
+      <!-- 課程資訊 -->
+      <section class="mb-4 container-fluid-sm">
+        <!-- banner img -->
+        <a
+          class="position-relative course-img-filter course-banner"
+          href="https://youtu.be/FuxB34ifkCc?si=9FQQ3m3Wu7bsYiNp"
+          target="_blank"
+        >
+          <img
+            src="/ComCom/assets/course-9-52f864c4.jpg"
+            alt="美國人眼裡的中式料理，要有幸運餅乾才是中菜的完美句點 - 課程圖片"
+            class="w-100 h-100 object-fit-cover"
+          />
+          <!-- level tag -->
+          <div
+            class="card-tag-secondary subtitle position-absolute top-0 start-0 mt-3 ms-3"
+          >
+            B2
+          </div>
+          <!-- location -->
+          <div
+            class="d-flex justify-content-between position-absolute bottom-0 start-0 end-0 mb-3 mx-3"
+          >
+            <div class="title-2 text-white">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="align-bottom"
+              >
+                <use
+                  href="/ComCom/assets/social-map-pin-symbol-95604ccc.svg#ic-map-pin"
+                ></use></svg
+              >San Francisco
+            </div>
+          </div>
+          <!-- play icon -->
+          <img
+            src="/ComCom/assets/video-play-circle-8c5fb183.svg"
+            alt="play video"
+            class="position-absolute top-50 start-50 translate-middle w-40"
+          />
+          <!-- video icon -->
+        </a>
+        <!-- theme tags -->
+        <div class="container px-3 pt-3 pb-2 mb-3 d-flex flex-column">
+          <!-- tags -->
+          <div class="d-flex gap-3 mb-2">
+            <button
+              type="button"
+              class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+            >
+              當地生活</button
+            ><button
+              type="button"
+              class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+            >
+              私房景點</button
+            ><button
+              type="button"
+              class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+            >
+              美食饗宴
+            </button>
+          </div>
+          <h3 class="h4">
+            美國人眼裡的中式料理 要有幸運餅乾才是中菜的完美句點
+          </h3>
+        </div>
+        <!-- course info  -->
+        <div class="container px-6">
+          <!-- 教師資訊 -->
+          <div class="d-flex gap-2 mb-4 align-items-start">
+            <!-- Avatar -->
+            <div class="position-relative">
+              <img
+                src="/ComCom/assets/avatar-6-2b662957.jpg"
+                alt="Emma Corrin"
+                class="rounded-circle avatar-img avatar-lg"
+              />
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANBSURBVHgBtVZdSFNhGH7POv1oqBMMIw2PmkYXhqaQF4q7sS6KlCLoh0q7sPkDzovmD4Ubps4ZuC5yVthmkQYJptUuJJqipKAwxYIyzIPOi7CxTdGliF/ft50d59ncdrMH3p2z7+d5vvP+nQPgD4xMPL9kqf/bN2gcF5+ex4Y4s66MTBgNxm8yYKSMPwraN7GUoShKB7AhYRcscCYmWrhCjE0SduiABK9ro5LK9Nvb20pgO1jhQpFwACFU2VJ92UQIIEhERYQVTQ7UmublTTK/Akst2np80cil+eL6ygsQDMSR4fClWwaxBoP4z/O3bRyHN6YzL1YS/5pV7cgNheYjMo7NIvvIBPLwv9NwDJDp+6LTFlVa55i5md8reBLs89npOetM7lUkFLHa1/YUIPBBjlq0g1Z38EXcT/35Cp34kFYNh9NOglnVQdzFu2AvrIxOwpJKC0euX4K4mlLnmPLJJ6hR94ldSUK4sRKiqCLWbIFzpZ3gS8QfCHlSewNPToyDhKQ5bdBVFOJ04zfQURFw6kMnrM38DEhODhLJkdtWHJB3NhUHPJWfZ45Fy+gc2lEAW46dXawd1vGF4v6uYjesz/zwIl8TjO3DlilYs2li8yhSleAqnFCAFYWQnIARQYhBBFgIEXAcbfQJ3WN2f0w0428hCehCXeuusYQmOYTjLPIrQMEUvZqVMcyarRLPCUl2Cn+/ZV/1uZmkaBg2B5fOETlZMDT+a9cax7/Nfjoxt1FDURt8g9K13sa/LoHf5Q9xIRXAXiA1s9zTD8vdAxBfIwU2OR3uyl/z87hrvBcBq7Hh+yE3+Z0r2Tw52RgISU8b4Kj0prPy8+em4KX6loucovTk/SDilIqfNd6wCcnjq6XORw+EhGY5xFWX8iKEC8gLyBOkxZJOOFf2gO+O+t4xv+2azOnffeW76GKzq7N6vnj4OsDdT4NPrnSf/HNKBhTffxXw9MXY5129Y857Eoe46nvKRHWdxkuAILn9kSK25FqVISHNFgy5p8iLnlESy6rjteUKzzmvSibqJXVvMvATd0GQQAiGyB7iBeGc768K19dBEWKkCpzLhRQNJFfTYadvsVsWK8tkJg0jdFDDZaJP/AdHpc8GzSgKeAAAAABJRU5ErkJggg=="
+                class="position-absolute bottom-0 start-0 rounded-circle w-24"
+                alt=""
+                aria-hidden="true"
+              />
+              <div class="online-dot online-dot-lg" aria-label="online"></div>
+            </div>
+            <!-- Name -->
+            <div>
+              <h3 class="h5 mb-1">
+                Emma Corrin
+                <img
+                  src="/ComCom/assets/social-check-fill-blue500-14195d47.svg"
+                  alt="Verified"
+                  class="w-15 align-baseline ms-1"
+                />
+              </h3>
+              <!-- 語言能力 -->
+              <div
+                class="d-flex row-gap-1 column-gap-3 align-items-center flex-wrap mb-1"
+              >
+                <div
+                  class="rounded-1 bg-secondary-300 px-3 py-1 caption-1 fw-bold lh-base"
+                >
+                  C2
+                </div>
+                <span class="text-gray-600 fs-body-2">
+                  <img
+                    src="/ComCom/assets/course-check-circle-blue-900-69714dcb.svg"
+                    alt=""
+                    class="me-1 w-20 align-bottom"
+                    aria-hidden="true"
+                  />母語者
+                </span>
+                <span class="text-gray-600 fs-body-2">
+                  <img
+                    src="/ComCom/assets/course-user-sound-blue-900-46cea27c.svg"
+                    alt=""
+                    class="me-1 w-20 align-bottom"
+                    aria-hidden="true"
+                  />會講中文
+                </span>
+              </div>
+              <p class="text-emphasis-400 caption-1 fw-semibold">可即時預約</p>
+            </div>
+          </div>
+          <!-- 課程評分 -->
+          <div class="mb-4">
+            <div>
+              <img
+                src="/ComCom/assets/course-star-blue-a16982a4.svg"
+                alt=""
+                class="align-bottom w-20"
+                aria-hidden="true"
+              />
+              <span class="fs-body-2 text-gray-500 align-bottom"
+                >5.0(1733則評論)</span
+              >
+            </div>
+            <div>
+              <img
+                src="/ComCom/assets/personal-user-blue-06792e67.svg"
+                alt=""
+                class="w-20 align-bottom"
+                aria-hidden="true"
+              />
+              <span class="fs-body-2 text-gray-500 align-bottom"
+                >1836人學習</span
+              >
+            </div>
+          </div>
+          <!-- 課程價錢 -->
+          <p>
+            <span class="text-gray-300 h6 me-1">NY$<del>690</del></span
+            ><span class="h4 text-emphasis">NT$<span>380</span></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- 課程詳細介紹 -->
+      <section class="container d-grid gap-4">
+        <!-- 課程簡介 -->
+        <div class="card border-0 bg-gray-100 px-3 pt-4 pb-8 gap-4">
+          <h3 class="h5">課程簡介</h3>
+          <img
+            src="/ComCom/assets/class-info-5-2b363f0f.jpg"
+            alt="course img"
+            class="rounded-1"
+          />
+          <div class="d-grid gap-4">
+            <p class="fs-body-1">
+              你認為美國人喜歡的是幸運餅乾還是它的籤語或樂透號，又或是它帶來的幸運感？
+            </p>
+            <h4 class="title-1 text-primary-800 px-2">
+              <img
+                src="/ComCom/assets/tab-bars-chat-blue-500-662e99b8.svg"
+                alt="chat icon"
+                class="me-2"
+              />
+              這堂課我們可以聊聊
+            </h4>
+            <ul class="title-2 list-style-small-dot mb-0">
+              <li>美國人怎麼看幸運餅乾？美味中餐的完美句點？</li>
+              <li>幸運餅乾在電影還是生活中？</li>
+              <li>相關旅遊經驗與體驗</li>
+            </ul>
+            <div class="px-3">
+              <h4 class="title-2 text-primary-800 mb-2">
+                Bonus: 這堂課的神秘小禮物
+              </h4>
+              <p class="text-gray-700">
+                課程結束前我會為你抽出一個幸運餅乾，作為這堂課的祝福，中大獎的話，要再回來上課喔！
+              </p>
+            </div>
+          </div>
+
+          <div class="collapse" id="collapseCourseIntro">
+            <div class="d-grid gap-4">
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="/ComCom/assets/class-info-4-3c9a2f25.jpg"
+                  alt="幸運餅乾圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 1・美國人怎麼看幸運餅乾？
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>內藏籤語真的能帶來幸運？美國人相信嗎？</li>
+                  <li>幸運餅乾裡面藏有樂透，真的有人中獎了？</li>
+                  <li>
+                    籤語是誰寫的？裡面寫些什麼？內容是不是都是報喜不報憂？
+                  </li>
+                </ul>
+              </div>
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="/ComCom/assets/class-info-3-868bebb1.jpg"
+                  alt="幸運餅乾圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 2・幸運餅乾在電影還是生活中？
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>電影裡的幸運餅乾，在真實世界存在嗎？</li>
+                  <li>你在哪部電影看過幸運餅乾？</li>
+                  <li>
+                    你看過或吃過幸運餅乾嗎？你知道哪裡可以吃到幸運餅乾嗎？
+                  </li>
+                </ul>
+              </div>
+              <div class="card border-0 p-4 gap-4 sec-spot">
+                <img
+                  src="/ComCom/assets/class-info-2-67ee4eae.jpg"
+                  alt="旅遊經驗圖片"
+                  class="course-intro-card__img rounded-2"
+                />
+                <h5 class="title-2 text-primary-700">
+                  話題 3・你我的相關旅遊經驗與體驗
+                </h5>
+                <ul class="mb-0 list-style-small-dot ps-5">
+                  <li>
+                    你去過美國任何一個城市的唐人街嗎？你會想買幸運餅乾送朋友嗎？
+                  </li>
+                  <li>
+                    你喜歡美式中菜還是道地中菜？你吃過嗎？你喜歡哪一種，為什麼？
+                  </li>
+                  <li>旅行時你喜歡嚐鮮當地飲食還是找習慣的中式料理？</li>
+                </ul>
+              </div>
+              <div class="px-3 d-grid gap-4">
+                <p>
+                  <strong class="title-2"
+                    >課程開始時，我會詢問你比較想聊哪些話題，以上話題提供你參考。</strong
+                  >
+                </p>
+
+                <p>
+                  不限於這些主題，你也可以隨時主動提問喔，例如「我想聽用幸運餅乾裡的樂透號買彩券得到大獎的故事」。
+                </p>
+                <p>
+                  你也可以在課程<strong class="title-2">24小時前</strong
+                  >聯絡我，跟我討論你想聊的主題，我提供客製化課程，非常期待收到你們的訊息！
+                </p>
+                <p>
+                  認真看完課程介紹的你，獲得一則知名的籤語： All the preparation
+                  you’ve done will finally be paying
+                  off.（你所做的一切準備，都將得到回報）
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- collapse button -->
+          <div>
+            <input type="checkbox" id="arrowUpDown1" class="d-none" />
+            <label
+              for="arrowUpDown1"
+              class="btn btn-text caption-1 label-arrow-up-down"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCourseIntro"
+              aria-expanded="false"
+              aria-controls="collapseCourseIntro"
+            >
+              <img
+                src="/ComCom/assets/function-caret-down-gray-500-debcbb3e.svg"
+                alt="open all content"
+              />
+            </label>
+          </div>
+        </div>
+        <!-- 城市地標 -->
+        <div class="card border-0 bg-gray-100 px-3 py-4 gap-3">
+          <h3 class="h5">城市地標</h3>
+          <img
+            src="/ComCom/assets/class-info-6-3544b037.jpg"
+            alt="舊金山 San Francisco"
+            class="rounded-1"
+          />
+          <!-- 城市地標 - 資訊 -->
+          <div>
+            <h4 class="title-2 mb-3">舊金山 San Francisco</h4>
+            <p>
+              位於美國加利福尼亞州中部沿海的大型城市，為加州唯一市郡合一的行政區，亦別名<b>金門城市、灣邊之城、霧城</b>等。
+            </p>
+          </div>
+          <!-- 城市地標 - swiper -->
+          <div class="py-2">
+            <h5 class="fs-body-2 ps-4 pe-3">舊金山的其他地標</h5>
+            <div class="swiper san-francisco-swiper px-3 pt-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-1-bd81f4fa.jpg"
+                      alt="惡魔島"
+                      class="w-100 mb-2 rounded-2"
+                    />惡魔島</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-2-ce322542.jpg"
+                      alt="藝術宮"
+                      class="w-100 mb-2 rounded-2"
+                    />藝術宮</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-3-34cb3a7b.jpg"
+                      alt="九曲花街"
+                      class="w-100 mb-2 rounded-2"
+                    />九曲花街</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-4-8c5d3383.jpg"
+                      alt="Config"
+                      class="w-100 mb-2 rounded-2"
+                    />Config</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-5-520dabf2.jpg"
+                      alt="六姊妹"
+                      class="w-100 mb-2 rounded-2"
+                    />六姊妹</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-6-6446ec5f.jpg"
+                      alt="卡斯楚街"
+                      class="w-100 mb-2 rounded-2"
+                    />卡斯楚街</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-7-e936d1ca.jpg"
+                      alt="藍瓶咖啡"
+                      class="w-100 mb-2 rounded-2"
+                    />藍瓶咖啡</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-8-ff3614ce.jpg"
+                      alt="雲海"
+                      class="w-100 mb-2 rounded-2"
+                    />雲海</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-9-a5c6ad77.jpg"
+                      alt="叮噹車"
+                      class="w-100 mb-2 rounded-2"
+                    />叮噹車</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-10-b415a221.jpg"
+                      alt="聯合廣場"
+                      class="w-100 mb-2 rounded-2"
+                    />聯合廣場</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-11-3489e262.jpg"
+                      alt="灣區碼頭"
+                      class="w-100 mb-2 rounded-2"
+                    />灣區碼頭</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-12-f4f18026.jpg"
+                      alt="唐人街"
+                      class="w-100 mb-2 rounded-2"
+                    />唐人街</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="d-block btn btn-text p-0 fs-body-2"
+                    ><img
+                      src="/ComCom/assets/landmark-13-2f3948b5.jpg"
+                      alt="金門大橋"
+                      class="w-100 mb-2 rounded-2"
+                    />金門大橋</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- collapse 內容 -->
+          <!-- <div class="collapse" id="collapseCourseLandmark"></div> -->
+          <!-- collapse button -->
+          <div>
+            <input type="checkbox" id="arrowUpDown2" class="d-none" />
+            <label
+              for="arrowUpDown2"
+              class="btn btn-text caption-1 label-arrow-up-down py-0"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCourseLandmark"
+              aria-expanded="false"
+              aria-controls="collapseCourseLandmark"
+            >
+              <img
+                src="/ComCom/assets/function-caret-down-gray-500-debcbb3e.svg"
+                alt="open all content"
+              />
+            </label>
+          </div>
+        </div>
+        <!-- 學員評論 -->
+        <div class="card border-0 bg-gray-100 px-3 py-4 gap-4">
+          <h3 class="h5">課程評價</h3>
+          <!-- 評論卡片 -->
+          <div class="card border-0 py-4 px-3 gap-3">
+            <div class="d-flex gap-2 align-items-start">
+              <!-- Avatar -->
+              <div class="position-relative">
+                <img
+                  src="/ComCom/assets/avatar-2-24efecff.png"
+                  alt="Anna Tsai"
+                  class="avatar-img avatar-base rounded-circle"
+                />
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPWSURBVHgB1Zq/UxNBFMe/xzBYMcTRCgsulZ0khTVBK6uEQjuHUDoWwF8Q+A/SgGVw7LQIVHYmFFYWCZ2VFwqpdBLMjDNasO53c3tsAsn9BHOfmQd3t3fkfXffvre3wUIi1DJAvwTMLgPClhdy0jKuaTqyTdpMWx5Ls46BVx3ExEJk6PTvLXmwIq2AaFBINY6YCAI8xzcx3MNxOZCjsxtWyAxCsbcjnXfkQQWG87Y9j6WlecSkDFw4AtgJ8UxQAW9sYL8F1/FCYRGZzB2vtVB4gFIp652zLZe7h4hUpAgKsYPcHEDAXln2jHRe5PSVTqePRqPoiSgWs6Aowmtsi4ktrSVFlPxu9BHAkEENI7FOAdrRQW/fV3Z5bQ7t9k/EhJ9Z9wupWUx2vqLPBiFhScd+qPNm8zt6vT+q56vVE+V8sWh77RrOD1qzeYaIMKSYbXauaxyThfbl0Im6ecXsXTqzu/sFtdpTL3Q0h4ffsL39GZXKYzU3KHJ19Uj9DoLA63FNZensW/gL4IRlzF9NkVoEe5nH5sQ14egwhCgujPM+AnrS8pYqiBMF7DtuNb0W7Xit9gSTWFv7qEYqjPNkggDSlg7nzQsjk5hxf9V5xvDm5iPU68/Qaj0PlPN5T6v1Qj2zvv5Q/Y0EyAljXhJDAENnuNHk/Pwv2D8kSK9e1gmhjoVAUmwJI7yNLHQx1nmmzYODr8rozOjEvf6ZX8jn34cOoQDQeS5jdnnijoDq/bLvk+4kXllZVBN1HMxEzEBmsUsYbxRcARcFvyfMwkXb2PgkHXWu3EdhTKOjzySMHgWdhfaYNnOTnmDYOE4fp6d9da6z0PHxmZqwDBW2secXFuaUQKLXREErs08WMmlK51ctN+87CInjvPSKFLMNPzqf/+D1eDb7DlEIIYDcnQkSPqNw3WNWWBY2mnktgeV1EIoyC1nLOj0GRwxVWL0uIloEQ0eH2w2SkyG010D0V0KFLlJMt3EJGUKHrAM2YpKE4xHJMY3aSC+ZkO/EU0fGEuFn8FTBEeghxaRdQIcC2kgvSkAH6aVNASdIL23LXVd3kU6yM9ZgEjeRPviC39GFrIn0UeUP9ULjhhHfCZLcLr9pst4IuGFURXo40Btc3sZWykYhqwV4i7kUjcKONal2icG+vJhSc+AHvxmR1p1C57tBv7WhiPIUCvD9tmZURGWKnK8gClMiIprzhoiS+D9zgp+5jiQQg4nt3KLzzIQ2kuYWQqobO2QCiOBo1G7CcXGbqwBXSFnEK3yNuI7H+G+VYTEYbE/KfVa1TW9jOIZ7rvH9u+P+PrIS2FD4B4PFyCU8ZzklAAAAAElFTkSuQmCC"
+                  alt="Taiwan"
+                  class="position-absolute bottom-0 start-0 w-12"
+                />
+              </div>
+              <!-- Name & Rating -->
+              <div class="flex-grow-1">
+                <p class="subtitle mb-1">Anna Tsai</p>
+                <!-- Rating star -->
+                <div class="d-flex align-items-center gap-2">
+                  <div class="d-inline-flex gap-1">
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                  </div>
+                  <time datetime="2024-07-25" class="text-gray-500 caption-1"
+                    >2024-07-25</time
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="fs-body-2">
+              老師的講解生動有趣，這堂課不僅是語言學習，更是一段文化探索之旅，讓我想親自造訪舊金山，親自吃下這些神奇的幸運餅乾。
+            </p>
+            <!-- collapse 內容 -->
+            <div class="collapse" id="collapseFeedback1">
+              <p class="fs-body-2">有機會去的話我一定會去體驗看看！</p>
+            </div>
+            <div>
+              <input type="checkbox" id="arrowUpDown3" class="d-none" />
+              <label
+                for="arrowUpDown3"
+                class="btn btn-text caption-1 label-arrow-up-down"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFeedback1"
+                aria-expanded="false"
+                aria-controls="collapseFeedback1"
+              >
+                <img
+                  src="/ComCom/assets/function-caret-down-gray-500-debcbb3e.svg"
+                  alt="open all content"
+                />
+              </label>
+            </div>
+          </div>
+          <!-- 評價卡片 -->
+          <div class="card border-0 py-4 px-3 gap-3">
+            <div class="d-flex gap-2">
+              <!-- Avatar -->
+              <div class="position-relative align-self-start">
+                <img
+                  src="/ComCom/assets/avatar-3-1554defd.png"
+                  alt="Barron Li"
+                  class="avatar-img avatar-base rounded-circle"
+                />
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Hong Kong"
+                  class="position-absolute bottom-0 start-0 w-12"
+                />
+              </div>
+              <!-- Name & Rating -->
+              <div>
+                <p class="subtitle mb-1">
+                  Barron Li
+                  <img
+                    src="/ComCom/assets/social-check-fill-blue500-14195d47.svg"
+                    alt="Verified"
+                    class="w-12 align-baseline ms-1"
+                  />
+                </p>
+
+                <div class="d-flex align-items-center gap-2">
+                  <!-- Rating star -->
+                  <div class="d-inline-flex gap-1">
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                    <img
+                      src="/ComCom/assets/course-star-lime-green-13ce2623.svg"
+                      alt="star"
+                      class="w-10"
+                    />
+                  </div>
+                  <time datetime="2024-07-25" class="text-gray-500 caption-1"
+                    >2024-07-25</time
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="fs-body-2">
+              這堂課真是太棒了！透過新穎的學習方式，了解了幸運餅乾的製作過程，並學會了相關的英語表達。
+            </p>
+            <!-- collapse 內容 -->
+            <!-- <div class="collapse" id="collapseFeedback2"></div> -->
+            <div>
+              <input type="checkbox" id="arrowUpDown4" class="d-none" />
+              <label
+                for="arrowUpDown4"
+                class="btn btn-text caption-1 label-arrow-up-down"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFeedback2"
+                aria-expanded="false"
+                aria-controls="collapseFeedback2"
+              >
+                <img
+                  src="/ComCom/assets/function-caret-down-gray-500-debcbb3e.svg"
+                  alt="open all content"
+                />
+              </label>
+            </div>
+          </div>
+          <!-- collapse 內容 -->
+          <!-- <div class="collapse" id="collapseCourseLandmark"></div> -->
+          <!-- collapse button -->
+          <div>
+            <input type="checkbox" id="arrowUpDown5" class="d-none" />
+            <label
+              for="arrowUpDown5"
+              class="btn btn-text caption-1 label-arrow-up-down label-comment-text py-0"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCourseLandmark"
+              aria-expanded="false"
+              aria-controls="collapseCourseLandmark"
+            >
+              <img
+                src="/ComCom/assets/function-caret-down-gray-500-debcbb3e.svg"
+                alt="open all content"
+              />
+            </label>
+          </div>
+        </div>
+        <!-- 常見問題 -->
+        <div class="card border-0 bg-gray-100 px-3 py-4 gap-4">
+          <h3 class="h5">常見問題</h3>
+          <div
+            class="accordion accordion-flush course-faq-accordion"
+            id="accordionCourseFaq"
+          >
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  class="accordion-button collapsed subtitle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flushFaq-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flushFaq-collapseOne"
+                >
+                  課程內容是可以轉載的嗎？
+                </button>
+              </h4>
+              <div
+                id="flushFaq-collapseOne"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body fs-body-2">
+                  基於尊重著作版權，禁止複製或轉載內容，僅供線上使用！若您有文章、圖片、影音授權的需要，請於聯絡我們填寫需求內容，我們將主動與您聯繫。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  class="accordion-button collapsed subtitle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flushFaq-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flushFaq-collapseTwo"
+                >
+                  課程中間有休息時間嗎？
+                </button>
+              </h4>
+              <div
+                id="flushFaq-collapseTwo"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body fs-body-2">
+                  基於尊重著作版權，禁止複製或轉載內容，僅供線上使用！若您有文章、圖片、影音授權的需要，請於聯絡我們填寫需求內容，我們將主動與您聯繫。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button
+                  class="accordion-button collapsed subtitle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flushFaq-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flushFaq-collapseThree"
+                >
+                  老師會出練習作業嗎？
+                </button>
+              </h4>
+              <div
+                id="flushFaq-collapseThree"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body fs-body-2">
+                  基於尊重著作版權，禁止複製或轉載內容，僅供線上使用！若您有文章、圖片、影音授權的需要，請於聯絡我們填寫需求內容，我們將主動與您聯繫。
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- collapse 內容 -->
+          <!-- <div class="collapse" id="collapseCourseLandmark"></div> -->
+          <!-- collapse button -->
+          <div>
+            <input type="checkbox" id="arrowUpDown6" class="d-none" />
+            <label
+              for="arrowUpDown6"
+              class="btn btn-text caption-1 label-arrow-up-down"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCourseLandmark"
+              aria-expanded="false"
+              aria-controls="collapseCourseLandmark"
+            >
+              <img
+                src="/ComCom/assets/function-caret-down-gray-500-debcbb3e.svg"
+                alt="open all content"
+              />
+            </label>
+          </div>
+        </div>
+        <!-- 關於教師 -->
+        <div class="card border-0 bg-gray-100 px-3 py-4 gap-4">
+          <h3 class="h5">關於教師</h3>
+          <div class="card border-0 gap-4 p-4">
+            <div class="d-flex align-items-center">
+              <div class="position-relative">
+                <img
+                  src="/ComCom/assets/avatar-1-8dcdc330.png"
+                  alt="Emma Corrin"
+                  class="avatar-img max-w-56 rounded-circle object-fit"
+                />
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANBSURBVHgBtVZdSFNhGH7POv1oqBMMIw2PmkYXhqaQF4q7sS6KlCLoh0q7sPkDzovmD4Ubps4ZuC5yVthmkQYJptUuJJqipKAwxYIyzIPOi7CxTdGliF/ft50d59ncdrMH3p2z7+d5vvP+nQPgD4xMPL9kqf/bN2gcF5+ex4Y4s66MTBgNxm8yYKSMPwraN7GUoShKB7AhYRcscCYmWrhCjE0SduiABK9ro5LK9Nvb20pgO1jhQpFwACFU2VJ92UQIIEhERYQVTQ7UmublTTK/Akst2np80cil+eL6ygsQDMSR4fClWwaxBoP4z/O3bRyHN6YzL1YS/5pV7cgNheYjMo7NIvvIBPLwv9NwDJDp+6LTFlVa55i5md8reBLs89npOetM7lUkFLHa1/YUIPBBjlq0g1Z38EXcT/35Cp34kFYNh9NOglnVQdzFu2AvrIxOwpJKC0euX4K4mlLnmPLJJ6hR94ldSUK4sRKiqCLWbIFzpZ3gS8QfCHlSewNPToyDhKQ5bdBVFOJ04zfQURFw6kMnrM38DEhODhLJkdtWHJB3NhUHPJWfZ45Fy+gc2lEAW46dXawd1vGF4v6uYjesz/zwIl8TjO3DlilYs2li8yhSleAqnFCAFYWQnIARQYhBBFgIEXAcbfQJ3WN2f0w0428hCehCXeuusYQmOYTjLPIrQMEUvZqVMcyarRLPCUl2Cn+/ZV/1uZmkaBg2B5fOETlZMDT+a9cax7/Nfjoxt1FDURt8g9K13sa/LoHf5Q9xIRXAXiA1s9zTD8vdAxBfIwU2OR3uyl/z87hrvBcBq7Hh+yE3+Z0r2Tw52RgISU8b4Kj0prPy8+em4KX6loucovTk/SDilIqfNd6wCcnjq6XORw+EhGY5xFWX8iKEC8gLyBOkxZJOOFf2gO+O+t4xv+2azOnffeW76GKzq7N6vnj4OsDdT4NPrnSf/HNKBhTffxXw9MXY5129Y857Eoe46nvKRHWdxkuAILn9kSK25FqVISHNFgy5p8iLnlESy6rjteUKzzmvSibqJXVvMvATd0GQQAiGyB7iBeGc768K19dBEWKkCpzLhRQNJFfTYadvsVsWK8tkJg0jdFDDZaJP/AdHpc8GzSgKeAAAAABJRU5ErkJggg=="
+                  alt="UK"
+                  class="position-absolute start-0 bottom-0 w-16"
+                />
+              </div>
+              <h4 class="h5 ms-2 flex-grow-1">
+                Emma Corrin
+                <img
+                  src="/ComCom/assets/social-check-fill-blue500-14195d47.svg"
+                  alt="Verified"
+                  class="w-15 align-baseline"
+                />
+              </h4>
+              <div>
+                <input
+                  type="checkbox"
+                  name="teacherBookmark"
+                  id="teacherBookmark"
+                  class="d-none bookmark-checkbox"
+                /><label
+                  for="teacherBookmark"
+                  class="bookmark-label-icon bookmark-dark align-middle"
+                  role="button"
+                ></label>
+              </div>
+            </div>
+            <p class="fs-body-2">
+              我熱愛語言和文化，在舊金山居住 10 年以上，擁有 7
+              年的英語教學經驗，熱愛探索城市中的生活面貌與美景，透過教學分享舊金山...
+            </p>
+          </div>
+        </div>
+        <!-- 課表 -->
+<div class="card border-0 bg-gray-100 px-3 py-4 gap-4">
+  <h3 class="h5 d-flex align-items-center">
+    課表<span class="caption-1 text-gray-500 ms-3">台灣時區(UCT+8)</span>
+  </h3>
+  <img src="/ComCom/assets/calendar-20bb5cc3.png" alt="課表" />
+  <div
+    class="d-flex column-gap-5 row-gap-3 caption-1 text-gray-700 px-4 flex-wrap"
+  >
+    <p>每堂課皆為30分鐘</p>
+    <div class="d-flex align-items-center gap-1">
+      <span class="timetable-icon timetable-icon__available"></span>
+      <span>= 尚可預約</span>
+    </div>
+    <div class="d-flex align-items-center gap-1">
+      <span class="timetable-icon timetable-icon__unavailable"></span>
+      <span>= 預約額滿</span>
+    </div>
+  </div>
+</div>
+
+      </section>
+    </main>
+
+    <footer class="container pt-2 pb-3 border-top border-gray-200">
+      <a
+        class="btn btn-primary w-100 h5 fw-semibold py-2"
+        href="teacher-profile.html"
+        >前往預約</a
+      >
+    </footer>
+
+    
+  </body>
+</html>
