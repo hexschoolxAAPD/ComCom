@@ -1,147 +1,270 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-    <%- include('./layout/head'); -%>
-<body>
-        <!-- 置頂列 -->
-        <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
-            <div class="container d-flex justify-content-end">
-                <%- include('./layout/notification'); -%>
-            </div>
-        </nav>
-        <main class="partner-page">
-            <!-- 頁籤 -->
-            <div class="nav"  role="tablist">
-                <button class="nav-btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">地點</button>
-                <button class="nav-btn disabled" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">主題</button>
-            </div>
+  <%- include('./layout/head'); -%>
+  <body>
+    <!-- 置頂列 -->
+    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+      <div class="container d-flex justify-content-end">
+        <%- include('./layout/notification'); -%>
+      </div>
+    </nav>
+    <main class="partner-page">
+      <!-- 頁籤 -->
+      <div class="nav" role="tablist">
+        <button
+          class="nav-btn active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home"
+          type="button"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+        >
+          地點
+        </button>
+        <button
+          class="nav-btn disabled"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+        >
+          主題
+        </button>
+      </div>
 
-        
-            <div class="container">
-                <div class="search-bar py-3 fs-body-1">
-                    <form class="d-flex " role="search">
-                    <input class="form-control border-0 bg-gray-100" type="search" placeholder="舊金山" aria-label="Search">
-                    </form>
+      <div class="container">
+        <div class="search-bar py-3 fs-body-1">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control border-0 bg-gray-100"
+              type="search"
+              placeholder="舊金山"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        <p class="subtitle py-2">
+          你們都喜歡 <a href="#" class="text-primary">舊金山</a> 的主題
+        </p>
+
+        <ul class="list-unstyled">
+          <li class="partner-list">
+            <div
+              class="d-flex align-items-center position-relative flex-grow-1"
+            >
+              <div class="flex-shrink-0 position-relative">
+                <img
+                  src="../assets/images/find-study-partner/06.jpg"
+                  class="avatar-md"
+                  alt="avatar"
+                />
+                <img
+                  src="../assets/images/flag/United Kingdom (GB).png"
+                  class="flag-md"
+                  alt="Taiwan"
+                />
+              </div>
+
+              <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
+                <h4 class="username-sm fw-bold">Margp Knowles</h4>
+                <img
+                  src="../assets/images/icon/social-check-fill-blue500.svg"
+                  class="socialCheck-sm"
+                  alt="SocialCheck"
+                />
+              </div>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                class="d-none checkbtn"
+                name="partner-checkbtn"
+                id="plus-partner"
+              />
+              <label for="plus-partner" class="plus-btn"></label>
+            </div>
+          </li>
+          <li class="partner-list">
+            <div class="d-flex align-items-start position-relative flex-grow-1">
+              <div class="flex-shrink-0 position-relative">
+                <img
+                  src="../assets/images/find-study-partner/05.jpg"
+                  class="avatar-md"
+                  alt="avatar"
+                />
+                <img
+                  src="../assets/images/flag/Japan (JP).png"
+                  class="flag-md"
+                  alt="Taiwan"
+                />
+              </div>
+
+              <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
+                <h4 class="username-sm fw-bold">Ayako Matsunaga</h4>
+                <div class="partner-talkbubble d-flex">
+                  <p class="talkbubble-sm caption-1">How r u？</p>
                 </div>
-                <p class="subtitle py-2">你們都喜歡 <a href="#" class="text-primary">舊金山</a> 的主題</p>
-                
-                <ul class="list-unstyled">
-                    <li class="partner-list">
-                        <div class="d-flex align-items-center position-relative flex-grow-1">
-                            <div class="flex-shrink-0 position-relative ">
-                                <img src="../assets/images/find-study-partner/06.png" class="avatar-md" alt="avatar"/>
-                                <img src="../assets/images/flag/United Kingdom (GB).png" class="flag-md" alt="Taiwan"/>
-                            </div>
-                    
-                            <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center ">
-                                <h4 class="username-sm fw-bold">Margp Knowles</h4>
-                                <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm" alt="SocialCheck" />
-                            </div>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="d-none checkbtn" name="partner-checkbtn" id="plus-partner">
-                            <label for="plus-partner" class="plus-btn">
-                        </div>
-                    </li>
-                    <li class="partner-list">
-                        <div class="d-flex align-items-start position-relative flex-grow-1">
-                            <div class="flex-shrink-0 position-relative ">
-                                <img src="../assets/images/find-study-partner/05.png" class="avatar-md" alt="avatar"/>
-                                <img src="../assets/images/flag/Japan (JP).png" class="flag-md" alt="Taiwan"/>
-                            </div>
-                    
-                            <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center ">
-                                <h4 class="username-sm fw-bold">Ayako Matsunaga</h4>
-                                <div class="partner-talkbubble d-flex">
-                                <p class="talkbubble-sm caption-1">How r u？ </p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="partner-list">
-                        <div class="d-flex align-items-start position-relative flex-grow-1">
-                            <div class="flex-shrink-0 position-relative ">
-                                <img src="../assets/images/find-study-partner/04.png" class="avatar-md" alt="avatar"/>
-                                <img src="../assets/images/flag/Hong Kong (HK).png" class="flag-md" alt="Taiwan"/>
-                            </div>
-                    
-                            <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
-                                <h4 class="username-sm fw-bold">Lane Hatfield</h4>
-                                <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm" alt="SocialCheck" />
-                            </div>
-                            <div class="partner-talkbubble d-flex">
-                            <p class="talkbubble-sm caption-1">明天終於要去羅浮宮參觀了  🥰🥰🥰</p>
-                            </div>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="d-none checkbtn" name="partner-checkbtn" id="plus-partner2" checked>
-                            <label for="plus-partner2" class="plus-btn">
-                        </div>
-                    </li>
-                    <li class="partner-list">
-                        <div class="d-flex align-items-start position-relative flex-grow-1">
-                            <div class="flex-shrink-0 position-relative ">
-                                <img src="../assets/images/find-study-partner/03.png" class="avatar-md" alt="avatar"/>
-                                <img src="../assets/images/flag/Hong Kong (HK).png" class="flag-md" alt="Taiwan"/>
-                            </div>
-                    
-                            <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
-                                <h4 class="username-sm fw-bold">Lane Hatfield</h4>
-                                <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm" alt="SocialCheck" />
-                            </div>
-                            <div class="partner-talkbubble d-flex">
-                            <p class="talkbubble-sm caption-1">❤️❤️❤️</p>
-                            </div>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="d-none checkbtn" name="partner-checkbtn" id="plus-partner3" checked>
-                            <label for="plus-partner3" class="plus-btn">
-                        </div>
-                    </li>
-                    <li class="partner-list">
-                        <div class="d-flex align-items-center position-relative flex-grow-1">
-                            <div class="flex-shrink-0 position-relative ">
-                                <img src="../assets/images/find-study-partner/02.png" class="avatar-md" alt="avatar"/>
-                                <img src="../assets/images/flag/United States of America (USA).png" class="flag-md" alt="Taiwan"/>
-                            </div>
-                    
-                            <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center ">
-                                <h4 class="username-sm fw-bold">Zoey Hoffman</h4>
-                                <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm" alt="SocialCheck" />
-                            </div>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="d-none checkbtn" name="partner-checkbtn" id="plus-partner4">
-                            <label for="plus-partner4" class="plus-btn">
-                        </div>
-                    </li>
-                    <li class="partner-list">
-                        <div class="d-flex align-items-start position-relative flex-grow-1">
-                            <div class="flex-shrink-0 position-relative ">
-                                <img src="../assets/images/find-study-partner/01.png" class="avatar-md" alt="avatar"/>
-                                <img src="../assets/images/flag/Türkiye (TR).png" class="flag-md" alt="Taiwan"/>
-                            </div>
-                    
-                            <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
-                                <h4 class="username-sm fw-bold">Tobias Parker</h4>
-                                
-                            </div>
-                            <div class="partner-talkbubble d-flex">
-                            <p class="talkbubble-sm caption-1">language exchange😀</p>
-                            </div>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="d-none checkbtn" name="partner-checkbtn" id="plus-partner5" checked>
-                            <label for="plus-partner5" class="plus-btn">
-                        </div>
-                        </label>
-                    </li>
-                </ul>
+              </div>
             </div>
-        </main>
+          </li>
+          <li class="partner-list">
+            <div class="d-flex align-items-start position-relative flex-grow-1">
+              <div class="flex-shrink-0 position-relative">
+                <img
+                  src="../assets/images/find-study-partner/04.jpg"
+                  class="avatar-md"
+                  alt="avatar"
+                />
+                <img
+                  src="../assets/images/flag/Hong Kong (HK).png"
+                  class="flag-md"
+                  alt="Taiwan"
+                />
+              </div>
 
-    <%- include('./layout/tab-bar', {page: "partner"}); -%>
-    <%- include('./layout/footer'); -%>
+              <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
+                <h4 class="username-sm fw-bold">Lane Hatfield</h4>
+                <img
+                  src="../assets/images/icon/social-check-fill-blue500.svg"
+                  class="socialCheck-sm"
+                  alt="SocialCheck"
+                />
+              </div>
+              <div class="partner-talkbubble d-flex">
+                <p class="talkbubble-sm caption-1">
+                  明天終於要去羅浮宮參觀了 🥰🥰🥰
+                </p>
+              </div>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                class="d-none checkbtn"
+                name="partner-checkbtn"
+                id="plus-partner2"
+                checked
+              />
+              <label for="plus-partner2" class="plus-btn"></label>
+            </div>
+          </li>
+          <li class="partner-list">
+            <div class="d-flex align-items-start position-relative flex-grow-1">
+              <div class="flex-shrink-0 position-relative">
+                <img
+                  src="../assets/images/find-study-partner/03.jpg"
+                  class="avatar-md"
+                  alt="avatar"
+                />
+                <img
+                  src="../assets/images/flag/Hong Kong (HK).png"
+                  class="flag-md"
+                  alt="Taiwan"
+                />
+              </div>
+
+              <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
+                <h4 class="username-sm fw-bold">Lane Hatfield</h4>
+                <img
+                  src="../assets/images/icon/social-check-fill-blue500.svg"
+                  class="socialCheck-sm"
+                  alt="SocialCheck"
+                />
+              </div>
+              <div class="partner-talkbubble d-flex">
+                <p class="talkbubble-sm caption-1">❤️❤️❤️</p>
+              </div>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                class="d-none checkbtn"
+                name="partner-checkbtn"
+                id="plus-partner3"
+                checked
+              />
+              <label for="plus-partner3" class="plus-btn"></label>
+            </div>
+          </li>
+          <li class="partner-list">
+            <div
+              class="d-flex align-items-center position-relative flex-grow-1"
+            >
+              <div class="flex-shrink-0 position-relative">
+                <img
+                  src="../assets/images/find-study-partner/02.jpg"
+                  class="avatar-md"
+                  alt="avatar"
+                />
+                <img
+                  src="../assets/images/flag/United States of America (USA).png"
+                  class="flag-md"
+                  alt="Taiwan"
+                />
+              </div>
+
+              <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
+                <h4 class="username-sm fw-bold">Zoey Hoffman</h4>
+                <img
+                  src="../assets/images/icon/social-check-fill-blue500.svg"
+                  class="socialCheck-sm"
+                  alt="SocialCheck"
+                />
+              </div>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                class="d-none checkbtn"
+                name="partner-checkbtn"
+                id="plus-partner4"
+              />
+              <label for="plus-partner4" class="plus-btn"></label>
+            </div>
+          </li>
+          <li class="partner-list">
+            <div class="d-flex align-items-start position-relative flex-grow-1">
+              <div class="flex-shrink-0 position-relative">
+                <img
+                  src="../assets/images/find-study-partner/01.jpg"
+                  class="avatar-md"
+                  alt="avatar"
+                />
+                <img
+                  src="../assets/images/flag/Türkiye (TR).png"
+                  class="flag-md"
+                  alt="Taiwan"
+                />
+              </div>
+
+              <div class="flex-grow-1 ms-1 py-1 d-flex align-items-center">
+                <h4 class="username-sm fw-bold">Tobias Parker</h4>
+              </div>
+              <div class="partner-talkbubble d-flex">
+                <p class="talkbubble-sm caption-1">language exchange😀</p>
+              </div>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                class="d-none checkbtn"
+                name="partner-checkbtn"
+                id="plus-partner5"
+                checked
+              />
+              <label for="plus-partner5" class="plus-btn"></label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <%- include('./layout/tab-bar', {page: "partner"}); -%> <%-
+    include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
-    
-</body>
+  </body>
 </html>
