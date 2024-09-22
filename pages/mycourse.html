@@ -3,12 +3,13 @@
   <%- include('./layout/head'); -%>
   <body>
     <!-- 置頂列 -->
-    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+    <%- include('./layout/header', {page: "my-course"}); -%>
+    <!-- <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
       <div class="container">
         <span class="mb-0 title-1">我的課程</span>
         <%- include('./layout/notification'); -%>
       </div>
-    </nav>
+    </nav> -->
 
     <main class="mycourse-page">
       <!-- 頁籤 -->

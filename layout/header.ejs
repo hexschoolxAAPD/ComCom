@@ -1,0 +1,10 @@
+<nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+  <div class="container">
+    <!-- <span class="mb-0 title-1"> 我的成就</span> -->
+    <span class="mb-0 title-1"
+      ><%= page === 'home' ? '我的成就' : page === 'explore' ? '探索課程' : page
+      === 'my-course' ? "我的課程" : "" %></span
+    >
+    <%- include('./layout/notification'); -%>
+  </div>
+</nav>
