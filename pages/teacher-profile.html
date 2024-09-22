@@ -4,15 +4,15 @@
 
   <body>
     <header>
-      <nav class="container border-bottom border-gray-100">
+      <nav class="container border-bottom border-gray-100 py-2">
         <div class="d-flex justify-content-between">
-          <a href="explore-courses-default.html" class="btn btn-text py-2 px-0">
+          <a href="explore-courses-default.html" class="btn btn-icon p-1">
             <img
               src="../assets/images/icon/function-caret-left.svg"
               alt="back icon"
             />
           </a>
-          <a href="#" class="btn btn-text py-2 px-0">
+          <a href="#" class="btn btn-icon p-1">
             <img
               src="../assets/images/icon/function-dots-three.svg"
               alt="more icon"
@@ -21,35 +21,39 @@
       </nav>
     </header>
 
-    <main class="course-intro-page pb-4 pt-2 pb-4">
+    <main class="intro-page pb-4 pt-2 pb-4">
       <!-- 教師資訊 -->
       <section class="mb-5">
         <div class="container px-6">
-          <div class="d-flex gap-2 mb-5 mt-auto">
+          <div class="d-flex gap-2 mb-5 align-items-start">
             <!-- Avatar -->
             <div class="position-relative">
               <img
                 src="../assets/images/explore-courses/avatar-6.png"
                 alt="Emma Corrin"
-                class="rounded-circle avatar-img w-80"
-              /><img
-                src="../assets/images/icon/flag-uk-lg.png"
-                class="position-absolute bottom-0 start-0 rounded-circle w-24 img-1x1"
-                alt="UK"
+                class="rounded-circle avatar-img avatar-lg"
               />
-              <div class="online-dot online-dot-lg"></div>
+              <img
+                src="../assets/images/icon/flag-uk-lg.png"
+                class="position-absolute bottom-0 start-0 rounded-circle w-24"
+                alt="UK flag"
+              />
+              <div class="online-dot online-dot-lg" aria-label="online"></div>
             </div>
-            <!-- Name -->
+            <!-- Name and Info -->
             <div>
               <h3 class="h5 mb-1">
-                Emma Corrin<img
+                Emma Corrin
+                <img
                   src="../assets/images/icon/social-check-fill-blue500.svg"
-                  alt="check icon"
+                  alt="Verified"
                   class="w-15 align-baseline ms-1"
                 />
               </h3>
               <!-- 語言能力 -->
-              <div class="d-flex gap-3 align-items-center mb-1">
+              <div
+                class="d-flex column-gap-3 row-gap-1 align-items-center mb-1 flex-wrap"
+              >
                 <div
                   class="rounded-1 bg-secondary-300 px-3 py-1 caption-1 fw-bold lh-base"
                 >
@@ -58,15 +62,17 @@
                 <span class="text-gray-600 fs-body-2">
                   <img
                     src="../assets/images/icon/course-check-circle-blue-900.svg"
-                    alt="關於教師"
-                    class="me-1 icon-size-4 align-bottom"
+                    alt=""
+                    class="me-1 w-20 align-bottom"
+                    aria-hidden="true"
                   />母語者
                 </span>
                 <span class="text-gray-600 fs-body-2">
                   <img
                     src="../assets/images/icon/course-user-sound-blue-900.svg"
-                    alt="關於教師"
-                    class="me-1 icon-size-4 align-bottom"
+                    alt=""
+                    class="me-1 w-20 align-bottom"
+                    aria-hidden="true"
                   />會講中文
                 </span>
               </div>
@@ -95,18 +101,20 @@
               <p class="text-gray-700 caption-1">學員人數</p>
             </li>
           </ul>
-          <div class="row mb-5">
+          <div class="row mb-5 g-3">
             <div class="col-2 pe-0">
-              <input
-                type="checkbox"
-                name="teacherPageBookmark"
-                id="teacherPageBookmark"
-                class="d-none bookmark-checkbox"
-              /><label
-                for="teacherPageBookmark"
-                class="bookmark-label-icon bookmark-dark align-middle btn btn-gray-100 w-100 h-100"
-                role="button"
-              ></label>
+              <div class="w-100 h-100 btn btn-icon btn-gray-100 p-0">
+                <input
+                  type="checkbox"
+                  name="teacherPageBookmark"
+                  id="teacherPageBookmark"
+                  class="d-none bookmark-checkbox"
+                /><label
+                  for="teacherPageBookmark"
+                  class="bookmark-label-icon bookmark-dark w-20"
+                  role="button"
+                ></label>
+              </div>
             </div>
             <div class="col-10">
               <button
@@ -121,28 +129,8 @@
             我熱愛語言和文化，在舊金山居住 10 年以上，擁有 7
             年英語教學經驗，熱愛探索城市中的生活面貌與美景，透過教學分享舊金山之美，與學生的關係緊密，上課氛圍輕鬆，來舊金山旅遊前可以問我哪裡好玩，一定推薦你們我的私房景點。
           </p>
-          <div class="card border-0 bg-gray-100 px-3 py-4 gap-4">
-            <h3 class="h5 d-flex align-items-center">
-              課表<span class="caption-1 text-gray-500 ms-3"
-                >台灣時區(UCT+8)</span
-              >
-            </h3>
-            <img
-              src="../assets/images/course-page-intro/calendar.png"
-              alt="課表"
-            />
-            <div class="d-flex gap-5 caption-1 text-gray-700">
-              <p>每堂課皆為 30 分鐘</p>
-              <div class="d-flex align-items-center gap-1">
-                <span class="timetable-icon timetable-icon__available"></span>
-                <span>= 尚可預約</span>
-              </div>
-              <div class="d-flex align-items-center gap-1">
-                <span class="timetable-icon timetable-icon__unavailable"></span>
-                <span>= 尚可預約</span>
-              </div>
-            </div>
-          </div>
+          <!-- 課表 -->
+          <%- include('./layout/course-timetable'); %>
         </div>
       </section>
       <!-- 主題地標 -->
@@ -157,7 +145,7 @@
             >更多<img
               src="../assets/images/icon/function-caret-right.svg"
               alt="arrow right icon"
-              class="ms-1 icon-size-2"
+              class="ms-1 w-14"
           /></a>
         </div>
         <div class="swiper teacher-landmark-swiper pe-4">
@@ -169,7 +157,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-1.jpg"
                   alt="舊金山"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />舊金山</a
               >
@@ -181,7 +169,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-2.jpg"
                   alt="金門大橋"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />金門大橋</a
               >
@@ -193,7 +181,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-3.jpg"
                   alt="惡魔島"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />惡魔島</a
               >
@@ -205,7 +193,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-4.jpg"
                   alt="藝術宮"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />藝術宮</a
               >
@@ -217,7 +205,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-5.jpg"
                   alt="六姊妹"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />六姊妹</a
               >
@@ -229,7 +217,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-6.jpg"
                   alt="唐人街"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />唐人街</a
               >
@@ -241,7 +229,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-7.jpg"
                   alt="Config"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />Config</a
               >
@@ -253,7 +241,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-8.jpg"
                   alt="九曲花街"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />九曲花街</a
               >
@@ -265,7 +253,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-9.jpg"
                   alt="卡斯楚街"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />卡斯楚街</a
               >
@@ -277,7 +265,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-10.jpg"
                   alt="藍瓶咖啡"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />藍瓶咖啡</a
               >
@@ -289,7 +277,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-11.jpg"
                   alt="雲海"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />雲海</a
               >
@@ -301,7 +289,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-12.jpg"
                   alt="叮噹車"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />叮噹車</a
               >
@@ -313,7 +301,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-13.jpg"
                   alt="聯合廣場"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />聯合廣場</a
               >
@@ -325,7 +313,7 @@
                 ><img
                   src="../assets/images/teacher-profile/landmark-14.jpg"
                   alt="灣區碼頭"
-                  class="w-100 mb-2"
+                  class="w-100 mb-2 rounded-2"
                   loading="lazy"
                 />灣區碼頭</a
               >
@@ -345,7 +333,7 @@
             >更多<img
               src="../assets/images/icon/function-caret-right.svg"
               alt="arrow right icon"
-              class="ms-1 icon-size-2"
+              class="ms-1 w-14"
           /></a>
         </div>
         <div class="swiper teacher-theme-tags-swiper">
@@ -395,12 +383,12 @@
           <!-- Post  Header -->
           <div class="d-flex justify-content-between">
             <!-- avatar -->
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-2 align-items-start">
               <div class="position-relative">
                 <img
                   src="../assets/images/course-page-intro/avatar-1.png"
                   alt="Emma Corrin"
-                  class="img-1x1 avatar-base rounded-circle"
+                  class="avatar-base rounded-circle"
                 />
                 <img
                   src="../assets/images/icon/flag-us-circle.png"
@@ -413,7 +401,7 @@
                   Emma Corrin
                   <img
                     src="../assets/images/icon/social-check-fill-blue500.svg"
-                    alt="check icon"
+                    alt="Verified"
                     class="w-12 align-baseline"
                   />
                 </p>
