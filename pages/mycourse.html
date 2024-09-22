@@ -1,290 +1,192 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <%- include('./layout/head'); -%>
+<%- include('./layout/head'); -%>
+
   <body>
     <!-- 置頂列 -->
-    <%- include('./layout/header', {page: "my-course"}); -%>
-    <!-- <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+    <%- include('./layout/header', {page: "my-course" }); -%>
+      <!-- <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
       <div class="container">
         <span class="mb-0 title-1">我的課程</span>
         <%- include('./layout/notification'); -%>
       </div>
     </nav> -->
 
-    <main class="mycourse-page">
-      <!-- 頁籤 -->
-      <div class="nav" role="tablist">
-        <button
-          class="nav-btn active"
-          id="home-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#home"
-          type="button"
-          role="tab"
-          aria-controls="home"
-          aria-selected="true"
-        >
-          即將開始
-        </button>
-        <button
-          class="nav-btn"
-          id="profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#profile"
-          type="button"
-          role="tab"
-          aria-controls="profile"
-          aria-selected="false"
-        >
-          已預約
-        </button>
-      </div>
+      <main class="mycourse-page">
+        <!-- 頁籤 -->
+        <div class="nav" role="tablist">
+          <button class="nav-btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">
+            即將開始
+          </button>
+          <button class="nav-btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">
+            已預約
+          </button>
+        </div>
 
-      <div class="container">
-        <!-- 頁籤內容 -->
-        <div class="tab-content">
-          <div
-            class="tab-pane fade show active"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          >
-            <div class="py-4">
-              <time datetime="" class="caption-1">2024年8月5日 星期五</time>
-              <p class="title-1">明日共計2節課程</p>
-            </div>
+        <div class="container">
+          <!-- 頁籤內容 -->
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="py-4">
+                <time datetime="" class="caption-1">2024年8月5日 星期五</time>
+                <p class="title-1">明日共計2節課程</p>
+              </div>
 
-            <div class="course-card p-3 mb-4">
-              <div class="course-title d-flex">
-                <img
-                  src="../assets/images/explore-courses/course-9.jpg"
-                  alt="course"
-                />
-                <div class="course-txt">
-                  <span class="tag-level">B2</span>
-                  <h4 class="title-1 multiline">
-                    美國人眼裡的中式料理 要有幸運餅乾才是中菜的完美句點
-                  </h4>
+              <div class="course-card p-3 mb-4">
+                <div class="course-title d-flex">
+                  <img src="../assets/images/explore-courses/course-9.jpg" alt="course" />
+                  <div class="course-txt">
+                    <span class="tag-level">B2</span>
+                    <h4 class="title-1 multiline">
+                      美國人眼裡的中式料理要有幸運餅乾才是中菜的完美句點
+                    </h4>
+                  </div>
                 </div>
+                <div class="d-flex align-items-start my-3 ">
+                  <div class="flex-shrink-0 position-relative">
+                    <img src="../assets/images/course-page-intro/avatar-1.png" class="avatar-sm" alt="avatar" />
+                    <img src="../assets/images/flag/uk.png" class="flag-sm" alt="UK" />
+                    <div class="online-dot"></div>
+                  </div>
+                  <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
+                    <h4 class="username-md">Emma Corrin</h4>
+                    <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck"
+                      alt="SocialCheck" />
+                  </div>
+                </div>
+                <button class="btn button time-btn">
+                  <time datetime="">10:00-10:30</time>
+                </button>
+                <a class="btn button start-btn" href="classroom.html" role="button">開始上課</a>
               </div>
-              <div class="d-flex align-items-start my-3 position-relative">
-                <div class="flex-shrink-0 position-relative">
-                  <img
-                    src="../assets/images/course-page-intro/avatar-1.png"
-                    class="avatar-sm"
-                    alt="avatar"
-                  />
-                  <img
-                    src="../assets/images/flag/uk.png"
-                    class="flag-sm"
-                    alt="UK"
-                  />
-                  <div class="online-dot"></div>
+
+              <div class="course-card p-3 mb-4">
+                <div class="course-title d-flex">
+                  <img src="../assets/images/explore-courses/course-10.jpg" alt="course" />
+                  <div class="course-txt">
+                    <span class="tag-level">A1</span>
+                    <h4 class="title-1 multiline">
+                      來趟日本東京築地場外以及道地的烹飪指南
+                    </h4>
+                  </div>
                 </div>
-                <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
-                  <h4 class="username-md">Emma Corrin</h4>
-                  <img
-                    src="../assets/images/icon/social-check-fill-blue500.svg"
-                    class="socialCheck"
-                    alt="SocialCheck"
-                  />
+                <div class="d-flex align-items-start my-3">
+                  <div class="flex-shrink-0 position-relative">
+                    <img src="../assets/images/explore-courses/avatar-7.jpg" class="avatar-sm" alt="avatar" />
+                    <img src="../assets/images/flag/jp.png" class="flag-sm" alt="Japan" />
+                    <div class="online-dot"></div>
+                  </div>
+                  <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
+                    <h4 class="username-md">Matsushima Nanako</h4>
+                  </div>
                 </div>
+                <button class="btn button time-btn">
+                  <time datetime="">10:00-10:30</time>
+                </button>
+                <a class="btn button start-btn" href="classroom.html" role="button">開始上課</a>
               </div>
-              <button class="btn button time-btn">
-                <time datetime="">10:00-10:30</time>
-              </button>
-              <a
-                class="btn button start-btn"
-                href="classroom.html"
-                role="button"
-                >開始上課</a
-              >
             </div>
 
-            <div class="course-card p-3 mb-4">
-              <div class="course-title d-flex">
-                <img
-                  src="../assets/images/explore-courses/course-10.jpg"
-                  alt="course"
-                />
-                <div class="course-txt">
-                  <span class="tag-level">A1</span>
-                  <h4 class="title-1 multiline">
-                    來趟日本東京築地場外以及道地的烹飪指南
-                  </h4>
-                </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="py-4">
+                <time datetime="" class="caption-1">2024年8月5日 星期一</time>
+                <p class="title-1">共1節課程</p>
               </div>
-              <div class="d-flex align-items-start my-3 position-relative">
-                <div class="flex-shrink-0 position-relative">
-                  <img
-                    src="../assets/images/explore-courses/avatar-7.jpg"
-                    class="avatar-sm"
-                    alt="avatar"
-                  />
-                  <img
-                    src="../assets/images/flag/jp.png"
-                    class="flag-sm"
-                    alt="Japan"
-                  />
-                  <div class="online-dot"></div>
+              <div class="course-card p-3 mb-4">
+                <div class="course-title d-flex">
+                  <img src="../assets/images/explore-courses/course-11.jpg" alt="course" />
+                  <div class="course-txt">
+                    <span class="tag-level">B2</span>
+                    <h4 class="title-1 multiline">
+                      教你品嘗土耳其道地茶品體驗茶葉大國的另類風貌
+                    </h4>
+                  </div>
                 </div>
-                <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
-                  <h4 class="username-md">Matsushima Nanako</h4>
+                <div class="d-flex align-items-start my-3">
+                  <div class="flex-shrink-0 position-relative">
+                    <img src="../assets/images/explore-courses/avatar-8.jpg" class="avatar-sm" alt="avatar" />
+                    <img src="../assets/images/flag/tr.png" class="flag-sm" alt="Turkey" />
+                    <div class="online-dot"></div>
+                  </div>
+                  <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
+                    <h4 class="username-md">Fatma Yılmaz</h4>
+                    <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck"
+                      alt="SocialCheck" />
+                  </div>
                 </div>
+                <button class="btn button time-btn">
+                  <time datetime="">10:00-10:30</time>
+                </button>
+                <button class="btn button start-btn">開始上課</button>
               </div>
-              <button class="btn button time-btn">
-                <time datetime="">10:00-10:30</time>
-              </button>
-              <a
-                class="btn button start-btn"
-                href="classroom.html"
-                role="button"
-                >開始上課</a
-              >
-            </div>
-          </div>
 
-          <div
-            class="tab-pane fade"
-            id="profile"
-            role="tabpanel"
-            aria-labelledby="profile-tab"
-          >
-            <div class="py-4">
-              <time datetime="" class="caption-1">2024年8月5日 星期一</time>
-              <p class="title-1">共1節課程</p>
-            </div>
-            <div class="course-card p-3 mb-4">
-              <div class="course-title d-flex">
-                <img
-                  src="../assets/images/explore-courses/course-11.jpg"
-                  alt="course"
-                />
-                <div class="course-txt">
-                  <span class="tag-level">B2</span>
-                  <h4 class="title-1 multiline">
-                    教你品嘗土耳其道地茶品 體驗茶葉大國的另類風貌
-                  </h4>
-                </div>
+              <div class="pb-4">
+                <time datetime="" class="caption-1">2024年8月11日 星期五</time>
+                <p class="title-1">共2節課程</p>
               </div>
-              <div class="d-flex align-items-start my-3 position-relative">
-                <div class="flex-shrink-0 position-relative">
-                  <img
-                    src="../assets/images/explore-courses/avatar-8.jpg"
-                    class="avatar-sm"
-                    alt="avatar"
-                  />
-                  <img
-                    src="../assets/images/flag/tr.png"
-                    class="flag-sm"
-                    alt="Turkey"
-                  />
-                  <div class="online-dot"></div>
+              <div class="course-card p-3 mb-4">
+                <div class="course-title d-flex">
+                  <img src="../assets/images/explore-courses/course-8.jpg" alt="course" />
+                  <div class="course-txt">
+                    <span class="tag-level">A1</span>
+                    <h4 class="title-1 multiline">
+                      韓國媳婦教妳有趣的現代韓國史原來KPOP是這樣來的！
+                    </h4>
+                  </div>
                 </div>
-                <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
-                  <h4 class="username-md">Fatma Yılmaz</h4>
-                  <img
-                    src="../assets/images/icon/social-check-fill-blue500.svg"
-                    class="socialCheck"
-                    alt="SocialCheck"
-                  />
+                <div class="d-flex align-items-start my-3">
+                  <div class="flex-shrink-0 position-relative">
+                    <img src="../assets/images/explore-courses/avatar-5.jpg" class="avatar-sm" alt="avatar" />
+                    <img src="../assets/images/flag/kr.png" class="flag-sm" alt="Korea" />
+                    <div class="online-dot"></div>
+                  </div>
+                  <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
+                    <h4 class="username-md">Kim Hani</h4>
+                  </div>
                 </div>
+                <button class="btn button time-btn">
+                  <time datetime="">10:00-10:30</time>
+                </button>
+                <button class="btn button start-btn">開始上課</button>
               </div>
-              <button class="btn button time-btn">
-                <time datetime="">10:00-10:30</time>
-              </button>
-              <button class="btn button start-btn">開始上課</button>
-            </div>
 
-            <div class="pb-4">
-              <time datetime="" class="caption-1">2024年8月11日 星期五</time>
-              <p class="title-1">共2節課程</p>
-            </div>
-            <div class="course-card p-3 mb-4">
-              <div class="course-title d-flex">
-                <img
-                  src="../assets/images/explore-courses/course-8.jpg"
-                  alt="course"
-                />
-                <div class="course-txt">
-                  <span class="tag-level">A1</span>
-                  <h4 class="title-1 multiline">
-                    韓國媳婦教妳有趣的現代韓國史 原來KPOP是這樣來的！
-                  </h4>
+              <div class="course-card p-3 mb-4">
+                <div class="course-title d-flex">
+                  <img src="../assets/images/explore-courses/course-7.jpg" alt="course" />
+                  <div class="course-txt">
+                    <span class="tag-level">A1</span>
+                    <h4 class="title-1 multiline">
+                      零基礎也敢開口問路點餐旅遊必備⽇常會話
+                    </h4>
+                  </div>
                 </div>
+                <div class="d-flex align-items-start my-3">
+                  <div class="flex-shrink-0 position-relative">
+                    <img src="../assets/images/explore-courses/avatar-4.jpg" class="avatar-sm" alt="avatar" />
+                    <img src="../assets/images/flag/fr.png" class="flag-sm" alt="France" />
+                    <div class="online-dot"></div>
+                  </div>
+                  <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
+                    <h4 class="username-md">Drouin Jeannin</h4>
+                    <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck"
+                      alt="SocialCheck" />
+                  </div>
+                </div>
+                <button class="btn button time-btn">
+                  <time datetime="">10:00-10:30</time>
+                </button>
+                <button class="btn button start-btn">開始上課</button>
               </div>
-              <div class="d-flex align-items-start my-3 position-relative">
-                <div class="flex-shrink-0 position-relative">
-                  <img
-                    src="../assets/images/explore-courses/avatar-5.jpg"
-                    class="avatar-sm"
-                    alt="avatar"
-                  />
-                  <img
-                    src="../assets/images/flag/kr.png"
-                    class="flag-sm"
-                    alt="Korea"
-                  />
-                  <div class="online-dot"></div>
-                </div>
-                <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
-                  <h4 class="username-md">Kim Hani</h4>
-                </div>
-              </div>
-              <button class="btn button time-btn">
-                <time datetime="">10:00-10:30</time>
-              </button>
-              <button class="btn button start-btn">開始上課</button>
-            </div>
-
-            <div class="course-card p-3 mb-4">
-              <div class="course-title d-flex">
-                <img
-                  src="../assets/images/explore-courses/course-7.jpg"
-                  alt="course"
-                />
-                <div class="course-txt">
-                  <span class="tag-level">A1</span>
-                  <h4 class="title-1 multiline">
-                    零基礎也敢開口 問路點餐旅遊必備⽇常會話
-                  </h4>
-                </div>
-              </div>
-              <div class="d-flex align-items-start my-3 position-relative">
-                <div class="flex-shrink-0 position-relative">
-                  <img
-                    src="../assets/images/explore-courses/avatar-4.jpg"
-                    class="avatar-sm"
-                    alt="avatar"
-                  />
-                  <img
-                    src="../assets/images/flag/fr.png"
-                    class="flag-sm"
-                    alt="France"
-                  />
-                  <div class="online-dot"></div>
-                </div>
-                <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
-                  <h4 class="username-md">Drouin Jeannin</h4>
-                  <img
-                    src="../assets/images/icon/social-check-fill-blue500.svg"
-                    class="socialCheck"
-                    alt="SocialCheck"
-                  />
-                </div>
-              </div>
-              <button class="btn button time-btn">
-                <time datetime="">10:00-10:30</time>
-              </button>
-              <button class="btn button start-btn">開始上課</button>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <%- include('./layout/tab-bar', {page: "mycourse"}); -%>
+      <%- include('./layout/tab-bar', {page: "mycourse" }); -%>
 
-    <script type="module" src="../main.js"></script>
+        <script type="module" src="../main.js"></script>
   </body>
+
 </html>

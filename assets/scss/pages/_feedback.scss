@@ -1,3 +1,17 @@
+.blackoverlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:41px;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(31, 31, 31, 0.9);
+    }
+}
+
 //star-rating
 .star-rating {
     display: flex;
@@ -28,7 +42,7 @@
 }
 
 
-//freeback
+//feedback
 textarea {
     width: 100%;
     height: 132px;
@@ -53,3 +67,43 @@ textarea:focus{
 .error {
     color: red;
 }
+
+//modal
+.modal .modal-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.modal.fade .modal-dialog.modal-bottom {
+    transform: translateY(100%); 
+    transition: transform 0.3s ease-out;
+}
+.modal.show .modal-dialog.modal-bottom {
+    transform: translateY(0); 
+}
+.modal-content {
+    border-radius: 10px 10px 0 0; 
+}
+
+
+.get-pin{
+    height: calc(100vh - 41px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & .btn-close{
+        align-self: self-end;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+
+
+
+
+
