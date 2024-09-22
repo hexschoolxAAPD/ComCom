@@ -3,7 +3,8 @@
   <%- include('./layout/head'); -%>
 
   <body>
-    <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
+    <%- include('./layout/header', {page: "explore"}); -%>
+    <!-- <nav class="navbar d-flex align-items-center" aria-label="Navigation Bar">
       <div class="container">
         <span class="title-1">探索課程</span>
         <ul class="list-unstyled mb-0 nav-list">
@@ -41,7 +42,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <main class="pt-4 pb-2 explore-page">
       <!-- search & filter button-->
@@ -363,11 +364,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-9.png"
+                          src="../assets/images/explore-courses/avatar-9.jpg"
                           alt="Yuki Nakamura"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -471,11 +472,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-8.png"
+                          src="../assets/images/explore-courses/avatar-8.jpg"
                           alt="Fatma Yılmaz"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -579,23 +580,17 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-7.png"
+                          src="../assets/images/explore-courses/avatar-7.jpg"
                           alt="Matsushima Nanako"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-jp.svg"
+                          src="../assets/images/flag/jp.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Japan"
                         />
                         <div class="online-dot" aria-label="online"></div>
                       </div>
-                      <h3 class="title-1">
-                        Matsushima Nanako<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Matsushima Nanako</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -687,11 +682,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-6.png"
+                          src="../assets/images/explore-courses/avatar-6.jpg"
                           alt="Emma Corrin"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
@@ -795,22 +790,16 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-5.png"
+                          src="../assets/images/explore-courses/avatar-5.jpg"
                           alt="Kim Hani"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-kr.png"
+                          src="../assets/images/flag/kr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Korea"
                         />
                       </div>
-                      <h3 class="title-1">
-                        Kim Hani<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Kim Hani</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -902,11 +891,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-4.png"
+                          src="../assets/images/explore-courses/avatar-4.jpg"
                           alt="Drouin Jeannin"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-fr.png"
+                          src="../assets/images/flag/fr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="France"
                         />
@@ -1022,23 +1011,17 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-10.png"
+                          src="../assets/images/explore-courses/avatar-10.jpg"
                           alt="Emi Tanaka"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-jp.svg"
+                          src="../assets/images/flag/jp.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Japan"
                         />
                         <div class="online-dot" aria-label="online"></div>
                       </div>
-                      <h3 class="title-1">
-                        Emi Tanaka<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Emi Tanaka</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -1130,11 +1113,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-6.png"
+                          src="../assets/images/explore-courses/avatar-6.jpg"
                           alt="Emma Corrin"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
@@ -1238,11 +1221,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-8.png"
+                          src="../assets/images/explore-courses/avatar-8.jpg"
                           alt="Fatma Yılmaz"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -1346,11 +1329,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-12.png"
+                          src="../assets/images/explore-courses/avatar-12.jpg"
                           alt="Hiroshi Yamamoto"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-jp.svg"
+                          src="../assets/images/flag/jp.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Japan"
                         />
@@ -1454,11 +1437,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-11.png"
+                          src="../assets/images/explore-courses/avatar-11.jpg"
                           alt="Jessica Carter"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-us-circle.png"
+                          src="../assets/images/flag/us.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="US"
                         />
@@ -1562,23 +1545,17 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-7.png"
+                          src="../assets/images/explore-courses/avatar-7.jpg"
                           alt="Matsushima Nanako"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-jp.svg"
+                          src="../assets/images/flag/jp.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Japan"
                         />
                         <div class="online-dot" aria-label="online"></div>
                       </div>
-                      <h3 class="title-1">
-                        Matsushima Nanako<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Matsushima Nanako</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -1693,22 +1670,16 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-5.png"
+                          src="../assets/images/explore-courses/avatar-5.jpg"
                           alt="Kim Hani"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-kr.png"
+                          src="../assets/images/flag/kr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Korea"
                         />
                       </div>
-                      <h3 class="title-1">
-                        Kim Hani<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Kim Hani</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -1800,11 +1771,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-3.png"
+                          src="../assets/images/explore-courses/avatar-3.jpg"
                           alt="Sophie Chen"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-taiwan.svg"
+                          src="../assets/images/flag/tw.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Taiwan"
                         />
@@ -1897,23 +1868,17 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-10.png"
+                          src="../assets/images/explore-courses/avatar-10.jpg"
                           alt="Emi Tanaka"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-jp.svg"
+                          src="../assets/images/flag/jp.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Japan"
                         />
                         <div class="online-dot" aria-label="online"></div>
                       </div>
-                      <h3 class="title-1">
-                        Emi Tanaka<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Emi Tanaka</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -2005,11 +1970,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-6.png"
+                          src="../assets/images/explore-courses/avatar-6.jpg"
                           alt="Emma Corrin"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
@@ -2113,11 +2078,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-8.png"
+                          src="../assets/images/explore-courses/avatar-8.jpg"
                           alt="Fatma Yılmaz"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -2221,11 +2186,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-11.png"
+                          src="../assets/images/explore-courses/avatar-11.jpg"
                           alt="Jessica Carter"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-us-circle.png"
+                          src="../assets/images/flag/us.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="US"
                         />
@@ -2351,11 +2316,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-12.png"
+                          src="../assets/images/explore-courses/avatar-12.jpg"
                           alt="Hiroshi Yamamoto"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-jp.svg"
+                          src="../assets/images/flag/jp.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Japan"
                         />
@@ -2453,11 +2418,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-9.png"
+                          src="../assets/images/explore-courses/avatar-9.jpg"
                           alt="Yuki Nakamura"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -2561,22 +2526,16 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-16.png"
+                          src="../assets/images/explore-courses/avatar-16.jpg"
                           alt="Sarah Smith"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
                       </div>
-                      <h3 class="title-1">
-                        Sarah Smith<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Sarah Smith</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -2668,22 +2627,16 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-15.png"
+                          src="../assets/images/explore-courses/avatar-15.jpg"
                           alt="Masaru Kato"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-jp.svg"
+                          src="../assets/images/flag/jp.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
                       </div>
-                      <h3 class="title-1">
-                        Masaru Kato<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Masaru Kato</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -2775,11 +2728,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-8.png"
+                          src="../assets/images/explore-courses/avatar-8.jpg"
                           alt="Kenta Morita"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -2883,11 +2836,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-6.png"
+                          src="../assets/images/explore-courses/avatar-6.jpg"
                           alt="Emma Corrin"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
@@ -3008,22 +2961,16 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-13.png"
+                          src="../assets/images/explore-courses/avatar-13.jpg"
                           alt="Chloe Thompson"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-au.png"
+                          src="../assets/images/flag/au.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Australia"
                         />
                       </div>
-                      <h3 class="title-1">
-                        Chloe Thompson<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Chloe Thompson</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -3115,11 +3062,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-4.png"
+                          src="../assets/images/explore-courses/avatar-4.jpg"
                           alt="Drouin Jeannin"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-fr.png"
+                          src="../assets/images/flag/fr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="France"
                         />
@@ -3223,22 +3170,16 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-14.png"
+                          src="../assets/images/explore-courses/avatar-14.jpg"
                           alt="Emma Brown"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
                       </div>
-                      <h3 class="title-1">
-                        Emma Brown<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Emma Brown</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -3330,11 +3271,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-6.png"
+                          src="../assets/images/explore-courses/avatar-6.jpg"
                           alt="Emma Corrin"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
@@ -3438,11 +3379,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-1.png"
+                          src="../assets/images/explore-courses/avatar-1.jpg"
                           alt="Heidi Meier"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-au.png"
+                          src="../assets/images/flag/au.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Australia"
                         />
@@ -3543,11 +3484,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-2.png"
+                          src="../assets/images/explore-courses/avatar-2.jpg"
                           alt="Peter Wu"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-taiwan.svg"
+                          src="../assets/images/flag/tw.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Taiwan"
                         />
@@ -3673,11 +3614,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-8.png"
+                          src="../assets/images/explore-courses/avatar-8.jpg"
                           alt="Fatma Yılmaz"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -3781,11 +3722,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-11.png"
+                          src="../assets/images/explore-courses/avatar-11.jpg"
                           alt="Jessica Carter"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-us-circle.png"
+                          src="../assets/images/flag/us.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="US"
                         />
@@ -3889,11 +3830,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-3.png"
+                          src="../assets/images/explore-courses/avatar-3.jpg"
                           alt="Sophie Chen"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-taiwan.svg"
+                          src="../assets/images/flag/tw.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Taiwan"
                         />
@@ -3997,22 +3938,16 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-16.png"
+                          src="../assets/images/explore-courses/avatar-16.jpg"
                           alt="Sarah Smith"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-uk.png"
+                          src="../assets/images/flag/uk.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="UK"
                         />
                       </div>
-                      <h3 class="title-1">
-                        Sarah Smith<img
-                          src="../assets/images/icon/social-check-fill-blue500.svg"
-                          alt="Verified"
-                          class="align-baseline w-18 ms-1"
-                        />
-                      </h3>
+                      <h3 class="title-1">Sarah Smith</h3>
                     </div>
                     <div class="d-flex gap-2 mb-1">
                       <div>
@@ -4099,11 +4034,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-9.png"
+                          src="../assets/images/explore-courses/avatar-9.jpg"
                           alt="Yuki Nakamura"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />
@@ -4207,11 +4142,11 @@
                     <div class="d-flex gap-1 mb-2 mt-auto align-items-center">
                       <div class="position-relative">
                         <img
-                          src="../assets/images/explore-courses/avatar-8.png"
+                          src="../assets/images/explore-courses/avatar-8.jpg"
                           alt="Kenta Morita"
                           class="rounded-circle avatar-img avatar-base"
                         /><img
-                          src="../assets/images/icon/flag-turkey.svg"
+                          src="../assets/images/flag/tr.png"
                           class="position-absolute bottom-0 start-0 rounded-circle w-12"
                           alt="Turkey"
                         />

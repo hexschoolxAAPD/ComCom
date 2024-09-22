@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-    <%- include('./layout/head'); -%>
-<body>
+  <%- include('./layout/head'); -%>
+  <body>
     <div class="container d-flex flex-column align-items-center py-3">
-        <span class="title-1 mb-4">讓老師知道你的感受吧!</span>
-        <div class="position-relative mb-2">
-            <img src="../assets/images/course-page-intro/avatar-1.png" class="avatar" alt="avatar"/>
-            <img src="../assets/images/flag/United Kingdom (GB).png" class="flag" alt="Taiwan"/>
-            <div class="online-dot-large"></div>
-        </div>
-        <div class="d-flex mb-2">
-            <h4 class="username-md">Emma Corrin</h4>
-            <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck" alt="SocialCheck" />
-        </div>
+      <span class="title-1 mb-4">讓老師知道你的感受吧!</span>
+      <div class="position-relative mb-2">
+        <img
+          src="../assets/images/course-page-intro/avatar-1.png"
+          class="avatar"
+          alt="avatar"
+        />
+        <img src="../assets/images/flag/uk.png" class="flag" alt="UK" />
+        <div class="online-dot-large"></div>
+      </div>
+      <div class="d-flex mb-2">
+        <h4 class="username-md">Emma Corrin</h4>
+        <img
+          src="../assets/images/icon/social-check-fill-blue500.svg"
+          class="socialCheck"
+          alt="SocialCheck"
+        />
+      </div>
 
-        <!-- 星星 -->
-        <div class="star-rating mb-4">
-            <input type="radio" id="star5" name="rating" value="5" />
-            <label for="star5" title="5 stars"></label>
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4" title="4 stars"></label>
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3" title="3 stars"></label>
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2" title="2 stars"></label>
-            <input type="radio" id="star1" name="rating" value="1" />
-            <label for="star1" title="1 star"></label>
-        </div>
+      <!-- 星星 -->
+      <div class="star-rating mb-4">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5" title="5 stars"></label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4" title="4 stars"></label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3" title="3 stars"></label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2" title="2 stars"></label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1" title="1 star"></label>
+      </div>
     </div>
     <div class="container">
-        <!-- 意見欄 -->
-        <div class="freeback mb-4">
-            <textarea id="inputText" maxlength="200" placeholder="寫下你的上課心得給老師吧!"></textarea>
-            <div class="counter caption-1" id="charCount">0 / 200</div>
-        </div>
-        <button class="btn button start-btn mb-2">提交</button>
-        <button class="btn button cancel-btn">下次再說</button>
+      <!-- 意見欄 -->
+      <div class="freeback mb-4">
+        <textarea
+          id="inputText"
+          maxlength="200"
+          placeholder="寫下你的上課心得給老師吧!"
+        ></textarea>
+        <div class="counter caption-1" id="charCount">0 / 200</div>
+      </div>
+      <button class="btn button start-btn mb-2">提交</button>
+      <button class="btn button cancel-btn">下次再說</button>
     </div>
-    
-
 
     <script type="module" src="../main.js"></script>
 
     <script>
-        const textarea = document.getElementById('inputText');
-        const charCount = document.getElementById('charCount');
-    
-        // 監聽輸入事件
-        textarea.addEventListener('input', function() {
-          const currentLength = textarea.value.length;
-          charCount.textContent = `已輸入字數: ${currentLength} / 200`;
-        });
-      </script>
-</body>
+      const textarea = document.getElementById("inputText");
+      const charCount = document.getElementById("charCount");
+
+      // 監聽輸入事件
+      textarea.addEventListener("input", function () {
+        const currentLength = textarea.value.length;
+        charCount.textContent = `已輸入字數: ${currentLength} / 200`;
+      });
+    </script>
+  </body>
 </html>
