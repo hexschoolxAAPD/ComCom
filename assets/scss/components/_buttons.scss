@@ -51,8 +51,14 @@
   --bs-btn-active-border-color: #{$primary-600};
 }
 
+.btn.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // 預約課程 btn
-.button{
+.button {
   width: 100%;
   text-align: center;
   padding-top: 8px;
@@ -60,7 +66,8 @@
   border-radius: 8px;
 }
 
-.time-btn, .time-btn:hover{
+.time-btn,
+.time-btn:hover {
   background-color: $gray-100;
   color: $gray-500;
   font-size: 18px;
@@ -68,19 +75,20 @@
   font-weight: 600;
   margin-bottom: 12px;
 }
-.start-btn{
+.start-btn {
   background-color: $primary;
   color: $white;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
-  &:hover{
-      background-color: $primary-200;
-      color: $primary-700;
+  &:hover {
+    background-color: $primary-200;
+    color: $primary-700;
   }
 }
 
-.cancel-btn, .cancel-btn:hover{
+.cancel-btn,
+.cancel-btn:hover {
   background-color: $gray-200;
   color: $white;
   font-size: 18px;
@@ -88,9 +96,7 @@
   font-weight: 600;
 }
 
-.post-icon{
+.post-icon {
   padding: 0;
   border: 0;
 }
-
-

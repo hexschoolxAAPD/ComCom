@@ -1,0 +1,14 @@
+// 圖片黑色漸層
+.course-img-filter {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5) 75%,
+      rgba(0, 0, 0, 1)
+    );
+  }
+}

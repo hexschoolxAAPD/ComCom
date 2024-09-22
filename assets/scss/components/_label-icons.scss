@@ -1,10 +1,78 @@
+// bookmark icon
+.bookmark-label-icon {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  // white stroke
+  &.bookmark-light {
+    background-image: url(../images/icon/ic-button-bookmark-light.svg);
+  }
+  // black stroke
+  &.bookmark-dark {
+    background-image: url(../images/icon/ic-button-bookmark.svg);
+  }
+}
+
+.bookmark-checkbox:checked ~ .bookmark-label-icon {
+  background-image: url(../images/icon/ic-button-bookmark-fill-red.svg);
+}
+
+// label checkbox
+.label-checkbox {
+  padding: 14px;
+  background-color: $gray-100; // 預設灰底
+  cursor: pointer;
+
+  // 白底
+  &.label-checkbox-light {
+    background-color: $white;
+  }
+}
+
+// 主色底 （ 勾選狀態 ）
+input:checked ~ .label-checkbox {
+  background-color: $primary-100;
+  font-weight: 600;
+  fill: black;
+}
+
+// check-icon
+.label-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    // margin-right: 14px;
+    // margin-right: 10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/icon/social-check-circle.svg");
+  }
+}
+
+input:checked ~ .label-check-icon {
+  &::before {
+    background-image: url("../images/icon/course-check-circle.svg");
+  }
+}
+
+// heart icon
 .label-icon-heart {
   width: 24px;
   height: 24px;
   vertical-align: middle;
   background-image: url(../images/icon/social-heart.svg);
-  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 input:checked ~ .label-icon-heart {

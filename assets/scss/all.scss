@@ -13,6 +13,11 @@
 @import "./components/usercard.scss";
 @import "./components/buttons.scss";
 @import "./components/label-icons.scss";
+@import "./components/online-dot.scss";
+@import "./components/shadow.scss";
+@import "./components/img-gradient-filter.scss";
+@import "./components/avatar.scss";
+@import "./components/timetable.scss";
 
 // layouts
 @import "./layout/notification.scss";
@@ -29,3 +34,5 @@
 
 @import "./pages/course.scss";
 @import "./pages/explore-courses.scss";
+
+@import "./base/utilis.scss";
