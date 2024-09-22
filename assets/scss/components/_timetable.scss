@@ -1,0 +1,15 @@
+.timetable-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 0.25rem;
+
+  &__available {
+    border: 1px solid $white;
+    background-color: $primary-100;
+  }
+
+  &__unavailable {
+    background-color: $primary-700;
+  }
+}

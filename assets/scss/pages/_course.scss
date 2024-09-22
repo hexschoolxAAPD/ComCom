@@ -1,7 +1,8 @@
-main.course-intro-page {
-  height: calc(100dvh - 43px - 67px);
+main.intro-page {
+  height: calc(100dvh - 51px - 67px);
   overflow-y: auto;
 }
+
 // 圖片 aspect-ratio
 .course-banner {
   aspect-ratio: 375 / 236;
@@ -15,61 +16,8 @@ main.course-intro-page {
   aspect-ratio: 287 / 180;
 }
 
-// icon sizes
-.icon-10 {
-  width: 10px;
-  height: 10px;
-}
-
-.icon-15 {
-  width: 15px;
-  height: 15px;
-}
-
-.icon-16 {
-  width: 16px;
-  height: 16px;
-}
-
-.icon-24 {
-  width: 24px;
-  height: 24px;
-}
-
-.avatar-56 {
-  width: 56px;
-  height: 56px;
-}
-
-.avatar-80 {
-  width: 80px;
-  height: 80px;
-}
-
-.timetable-icon {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-radius: 0.25rem;
-
-  &__available {
-    border: 1px solid $white;
-    background-color: $primary-100;
-  }
-
-  &__unavailable {
-    background-color: $primary-700;
-  }
-}
-
-// list style
-.list-style-small-dot {
-  li::marker {
-    content: "· ";
-  }
-}
-
-// 展開卡片 btn
+// collapse - up down arrow btn
+// 展開簡介
 .label-arrow-up-down {
   display: flex;
   justify-content: center;
@@ -100,7 +48,7 @@ input:checked ~ .label-arrow-up-down {
   }
 }
 
-// 展開評論卡片 btn
+// 展開評論
 .label-comment-text {
   &::before {
     content: "顯示所有評論";

@@ -92,38 +92,3 @@ a {
   font-weight: 400;
 }
 
-// size
-.icon-size-1 {
-  width: 12px;
-  height: 12px;
-}
-
-.icon-size-2 {
-  width: 14px;
-  height: 14px;
-}
-
-.icon-size-3 {
-  width: 18px;
-  height: 18px;
-}
-
-.icon-size-4 {
-  width: 20px;
-  height: 20px;
-}
-
-.avatar-base {
-  width: 40px;
-  height: 40px;
-}
-
-// for debug
-.debug,
-.debug * {
-  outline: 1px solid lightseagreen;
-}
-
-.debug-red {
-  outline: 1px solid lightcoral !important;
-}
