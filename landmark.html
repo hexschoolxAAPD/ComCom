@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,57 +9,32 @@
   <link rel="modulepreload" crossorigin href="/ComCom/assets/main-9ace46f2.js">
   <link rel="stylesheet" href="/ComCom/assets/main-0da870cb.css">
 </head>
+
   <body>
     <!-- 置頂列 -->
-    <nav
-      class="container text-center py-2 position-relative"
-      aria-label="Navigation Bar"
-    >
+    <nav class="container text-center py-2 position-relative" aria-label="Navigation Bar">
       <span class="title-1">地標成就</span>
       <div class="back-btn">
-        <a href="javascript:history.back()"
-          ><img src="/ComCom/assets/function-caret-left-3a8368ab.svg" alt="back"
-        /></a>
+        <a href="javascript:history.back()"><img src="/ComCom/assets/function-caret-left-3a8368ab.svg" alt="back" /></a>
       </div>
     </nav>
 
     <main class="landmark-page">
       <!-- 頁籤 -->
       <div class="nav" role="tablist">
-        <button
-          class="nav-btn active"
-          id="collect-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#collect"
-          type="button"
-          role="tab"
-          aria-controls="collect"
-          aria-selected="true"
-        >
+        <button class="nav-btn active" id="collect-tab" data-bs-toggle="tab" data-bs-target="#collect" type="button"
+          role="tab" aria-controls="collect" aria-selected="true">
           收藏模式
         </button>
-        <button
-          class="nav-btn"
-          id="landmap-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#landmap"
-          type="button"
-          role="tab"
-          aria-controls="landmap"
-          aria-selected="false"
-        >
+        <button class="nav-btn" id="landmap-tab" data-bs-toggle="tab" data-bs-target="#landmap" type="button" role="tab"
+          aria-controls="landmap" aria-selected="false">
           地圖模式
         </button>
       </div>
 
       <div class="tab-content">
         <!-- 收藏模式 -->
-        <div
-          class="tab-pane fade show active"
-          id="collect"
-          role="tabpanel"
-          aria-labelledby="collect-tab"
-        >
+        <div class="tab-pane fade" id="collect" role="tabpanel" aria-labelledby="collect-tab">
           <div class="container py-4">
             <div class="list-unstyled d-flex mb-3 classify">
               <button class="btn classify-cell">國家</button>
@@ -73,48 +48,32 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img mb-2 position-relative">
-                    <img
-                      src="/ComCom/assets/achievement-overview-2-05d3575a.jpg"
-                      class="rounded-3"
-                      alt="favorite-landmark"
-                    />
+                    <img src="/ComCom/assets/achievement-overview-2-05d3575a.jpg" class="rounded-3"
+                      alt="favorite-landmark" />
                     <div class="slide-txt">
                       <h4 class="h4 text-white">舊金山</h4>
                       <h5 class="h5 text-white">San Francisco</h5>
                     </div>
                     <div class="favorite-mark">
-                      <input
-                        type="checkbox"
-                        class="d-none favorite-checkbtn"
-                        name="favorite-checkbtn"
-                        id="favorite-1"
-                      />
+                      <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn"
+                        id="favorite-1" />
                       <label for="favorite-1" class="heart-btn"></label>
                     </div>
                   </div>
                   <span class="subtitle d-block mt-0">美國 Unites States</span>
-                  <time datetime="2024-07-20" class="caption-2 d-block"
-                    >2024.07.20</time
-                  >
+                  <time datetime="2024-07-20" class="caption-2 d-block">2024.07.20</time>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img mb-2 position-relative">
-                    <img
-                      src="/ComCom/assets/achievement-overview-3-b272e282.jpg"
-                      class="rounded-3"
-                      alt="favorite-landmark"
-                    />
+                    <img src="/ComCom/assets/achievement-overview-3-b272e282.jpg" class="rounded-3"
+                      alt="favorite-landmark" />
                     <div class="slide-txt">
                       <h4 class="h4 text-white">東京</h4>
                       <h5 class="h5 text-white">Tokyo</h5>
                     </div>
                     <div class="favorite-mark">
-                      <input
-                        type="checkbox"
-                        class="d-none favorite-checkbtn"
-                        name="favorite-checkbtn"
-                        id="favorite-2"
-                      />
+                      <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn"
+                        id="favorite-2" />
                       <label for="favorite-2" class="heart-btn"></label>
                     </div>
                   </div>
@@ -123,22 +82,15 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img mb-2 position-relative">
-                    <img
-                      src="/ComCom/assets/achievement-overview-4-5e3dc989.jpg"
-                      class="rounded-3"
-                      alt="favorite-landmark"
-                    />
+                    <img src="/ComCom/assets/achievement-overview-4-5e3dc989.jpg" class="rounded-3"
+                      alt="favorite-landmark" />
                     <div class="slide-txt">
                       <h4 class="h4 text-white">巴黎</h4>
                       <h5 class="h5 text-white">Paris</h5>
                     </div>
                     <div class="favorite-mark">
-                      <input
-                        type="checkbox"
-                        class="d-none favorite-checkbtn"
-                        name="favorite-checkbtn"
-                        id="favorite-3"
-                      />
+                      <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn"
+                        id="favorite-3" />
                       <label for="favorite-3" class="heart-btn"></label>
                     </div>
                   </div>
@@ -147,22 +99,15 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img mb-2 position-relative">
-                    <img
-                      src="/ComCom/assets/achievement-overview-5-af134b78.jpg"
-                      class="rounded-3"
-                      alt="favorite-landmark"
-                    />
+                    <img src="/ComCom/assets/achievement-overview-5-af134b78.jpg" class="rounded-3"
+                      alt="favorite-landmark" />
                     <div class="slide-txt">
                       <h4 class="h4 text-white">斯德哥爾摩</h4>
                       <h5 class="h5 text-white">Stockholm</h5>
                     </div>
                     <div class="favorite-mark">
-                      <input
-                        type="checkbox"
-                        class="d-none favorite-checkbtn"
-                        name="favorite-checkbtn"
-                        id="favorite-4"
-                      />
+                      <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn"
+                        id="favorite-4" />
                       <label for="favorite-4" class="heart-btn"></label>
                     </div>
                   </div>
@@ -176,22 +121,15 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img mb-2 position-relative">
-                    <img
-                      src="/ComCom/assets/achievement-overview-3-b272e282.jpg"
-                      class="rounded-3"
-                      alt="favorite-landmark"
-                    />
+                    <img src="/ComCom/assets/achievement-overview-3-b272e282.jpg" class="rounded-3"
+                      alt="favorite-landmark" />
                     <div class="slide-txt">
                       <h4 class="h4 text-white">東京</h4>
                       <h5 class="h5 text-white">Tokyo</h5>
                     </div>
                     <div class="favorite-mark">
-                      <input
-                        type="checkbox"
-                        class="d-none favorite-checkbtn"
-                        name="favorite-checkbtn"
-                        id="favorite-6"
-                      />
+                      <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn"
+                        id="favorite-6" />
                       <label for="favorite-6" class="heart-btn"></label>
                     </div>
                   </div>
@@ -200,22 +138,15 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img mb-2 position-relative">
-                    <img
-                      src="/ComCom/assets/achievement-overview-1-4e1d4172.jpg"
-                      class="rounded-3"
-                      alt="favorite-landmark"
-                    />
+                    <img src="/ComCom/assets/achievement-overview-1-4e1d4172.jpg" class="rounded-3"
+                      alt="favorite-landmark" />
                     <div class="slide-txt">
                       <h4 class="h4 text-white">台北</h4>
                       <h5 class="h5 text-white">Taipei</h5>
                     </div>
                     <div class="favorite-mark">
-                      <input
-                        type="checkbox"
-                        class="d-none favorite-checkbtn"
-                        name="favorite-checkbtn"
-                        id="favorite-7"
-                      />
+                      <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn"
+                        id="favorite-7" />
                       <label for="favorite-7" class="heart-btn"></label>
                     </div>
                   </div>
@@ -224,22 +155,15 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img mb-2 position-relative">
-                    <img
-                      src="/ComCom/assets/achievement-overview-2-05d3575a.jpg"
-                      class="rounded-3"
-                      alt="favorite-landmark"
-                    />
+                    <img src="/ComCom/assets/achievement-overview-2-05d3575a.jpg" class="rounded-3"
+                      alt="favorite-landmark" />
                     <div class="slide-txt">
                       <h4 class="h4 text-white">首爾</h4>
                       <h5 class="h5 text-white">Seoul</h5>
                     </div>
                     <div class="favorite-mark">
-                      <input
-                        type="checkbox"
-                        class="d-none favorite-checkbtn"
-                        name="favorite-checkbtn"
-                        id="favorite-8"
-                      />
+                      <input type="checkbox" class="d-none favorite-checkbtn" name="favorite-checkbtn"
+                        id="favorite-8" />
                       <label for="favorite-8" class="heart-btn"></label>
                     </div>
                   </div>
@@ -251,19 +175,10 @@
           </div>
         </div>
         <!-- 地圖模式 -->
-        <div
-          class="tab-pane fade"
-          id="landmap"
-          role="tabpanel"
-          aria-labelledby="landmap-tab"
-        >
+        <div class="tab-pane fade show active" id="landmap" role="tabpanel" aria-labelledby="landmap-tab">
           <div class="container">
             <div class="wrap-row position-relative">
-              <img
-                src="/ComCom/assets/map-09eefdaf.jpg"
-                class="landmap"
-                alt=""
-              />
+              <img src="/ComCom/assets/map-09eefdaf.jpg" class="landmap" alt="" />
               <div class="list-unstyled d-flex classify landmap-btn">
                 <button class="btn classify-cell">國家</button>
                 <button class="btn classify-cell">城市</button>
@@ -272,35 +187,19 @@
                 <button class="btn classify-cell">美食</button>
               </div>
               <div class="landmark icon1">
-                <img
-                  src="/ComCom/assets/map-pin-4-c72f5b0b.jpg"
-                  class="pin-img"
-                  alt="map-pin"
-                />
+                <img src="/ComCom/assets/map-pin-4-c72f5b0b.jpg" class="pin-img" alt="map-pin" />
                 <div class="pin"></div>
               </div>
               <div class="landmark icon2">
-                <img
-                  src="/ComCom/assets/map-pin-3-0cb8eb7e.jpg"
-                  class="pin-img"
-                  alt="map-pin"
-                />
+                <img src="/ComCom/assets/map-pin-3-0cb8eb7e.jpg" class="pin-img" alt="map-pin" />
                 <div class="pin"></div>
               </div>
               <div class="landmark icon3">
-                <img
-                  src="/ComCom/assets/map-pin-2-d390a8bb.jpg"
-                  class="pin-img"
-                  alt="map-pin"
-                />
+                <img src="/ComCom/assets/map-pin-2-d390a8bb.jpg" class="pin-img" alt="map-pin" />
                 <div class="pin"></div>
               </div>
               <div class="landmark icon4">
-                <img
-                  src="/ComCom/assets/map-pin-1-11c759d3.jpg"
-                  class="pin-img"
-                  alt="map-pin"
-                />
+                <img src="/ComCom/assets/map-pin-1-11c759d3.jpg" class="pin-img" alt="map-pin" />
                 <div class="pin"></div>
               </div>
             </div>
@@ -383,7 +282,8 @@
     </div>
   </div>
 </div>
-    
-    
+      
+      
   </body>
+
 </html>
