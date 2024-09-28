@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Com Com 英語學習 App</title>
-  <script type="module" crossorigin src="/ComCom/assets/main-9ace46f2.js"></script>
-  <link rel="stylesheet" href="/ComCom/assets/main-0da870cb.css">
+  <script type="module" crossorigin src="/ComCom/assets/main-cc01a810.js"></script>
+  <link rel="stylesheet" href="/ComCom/assets/main-673f4410.css">
 </head>
 
   <body>
     <!-- 置頂列 -->
-    <nav class="container text-center py-2 position-relative modal-zindex" aria-label="Navigation Bar">
+    <nav
+      class="container text-center py-2 position-relative modal-zindex"
+      aria-label="Navigation Bar"
+    >
       <span class="title-1">教室</span>
       <div class="back-btn">
-        <a href="feedback.html"><img src="/ComCom/assets/function-caret-left-3a8368ab.svg" alt="back"></a>
+        <a href="feedback.html"
+          ><img src="/ComCom/assets/function-caret-left-2a6218da.svg" alt="back"
+        /></a>
       </div>
     </nav>
 
@@ -28,17 +33,32 @@
         <div class="course-card p-3">
           <div class="d-flex align-items-start mb-3">
             <div class="flex-shrink-0 position-relative">
-              <img src="/ComCom/assets/avatar-1-8dcdc330.png" class="avatar-sm" alt="avatar" />
-              <img src="data:image/png;base64,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" class="flag-sm" alt="UK" />
+              <img
+                src="/ComCom/assets/avatar-1-8dcdc330.png"
+                class="avatar-sm"
+                alt="avatar"
+              />
+              <img
+                src="data:image/png;base64,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"
+                class="flag-sm"
+                alt="UK"
+              />
               <div class="online-dot"></div>
             </div>
             <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
               <h4 class="username-md">Emma Corrin</h4>
-              <img src="/ComCom/assets/social-check-fill-blue500-ca605f41.svg" class="socialCheck" alt="SocialCheck" />
+              <img
+                src="/ComCom/assets/social-check-fill-blue500-14195d47.svg"
+                class="socialCheck"
+                alt="SocialCheck"
+              />
             </div>
           </div>
           <div class="course-title d-flex">
-            <img src="/ComCom/assets/course-9-52f864c4.jpg" alt="course" />
+            <img
+              src="/ComCom/assets/course-9-52f864c4.jpg"
+              alt="course"
+            />
             <div class="course-txt">
               <span class="tag-level">B2</span>
               <h4 class="title-1 multiline">
@@ -50,24 +70,37 @@
       </div>
     </main>
 
-
     <!-- Modal -->
 
-    <div class="modal fade" id="bottomSheetModal" tabindex="-1" aria-labelledby="bottomSheetLabel" aria-hidden="true"
-      data-bs-backdrop="false">
+    <div
+      class="modal fade"
+      id="bottomSheetModal"
+      tabindex="-1"
+      aria-labelledby="bottomSheetLabel"
+      aria-hidden="true"
+      data-bs-backdrop="false"
+    >
       <div class="modal-dialog modal-bottom">
         <div class="modal-content">
           <div class="modal-body">
             <div class="container d-flex flex-column align-items-center py-3">
               <span class="title-1 mb-4">讓老師知道你的感受吧!</span>
               <div class="position-relative mb-2">
-                <img src="/ComCom/assets/avatar-1-8dcdc330.png" class="avatar" alt="avatar" />
+                <img
+                  src="/ComCom/assets/avatar-1-8dcdc330.png"
+                  class="avatar"
+                  alt="avatar"
+                />
                 <img src="data:image/png;base64,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" class="flag" alt="UK" />
                 <div class="online-dot-large"></div>
               </div>
               <div class="d-flex mb-2">
                 <h4 class="username-md">Emma Corrin</h4>
-                <img src="/ComCom/assets/social-check-fill-blue500-ca605f41.svg" class="socialCheck" alt="SocialCheck" />
+                <img
+                  src="/ComCom/assets/social-check-fill-blue500-14195d47.svg"
+                  class="socialCheck"
+                  alt="SocialCheck"
+                />
               </div>
               <!-- 星星 -->
               <div class="star-rating mb-4">
@@ -86,11 +119,21 @@
             <div class="container">
               <!-- 意見欄 -->
               <div class="freeback mb-4">
-                <textarea id="inputText" maxlength="220" placeholder="寫下你的上課心得給老師吧!"></textarea>
+                <textarea
+                  id="inputText"
+                  maxlength="220"
+                  placeholder="寫下你的上課心得給老師吧!"
+                ></textarea>
                 <div class="counter caption-1 mt-0" id="charCount">0 / 200</div>
               </div>
-              <button type="button" class="btn button start-btn mb-2" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">提交</button>
+              <button
+                type="button"
+                class="btn btn-primary w-100 h5 fw-semibold py-2 mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                提交
+              </button>
               <button class="btn button cancel-btn">下次再說</button>
             </div>
           </div>
@@ -98,66 +141,56 @@
       </div>
     </div>
 
-
     <!-- got pin -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-      data-bs-backdrop="false">
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="false"
+    >
       <div class="modal-dialog modal-bottom">
         <div class="modal-content bg-transparent border-0">
           <div class="modal-body get-pin">
-            <button type="button" class="btn-close"  aria-label="Close"></button>
+            <button type="button" class="btn-close" aria-label="Close"></button>
             <div class="text-center">
-              <span class="h1 fst-italic text-white d-block mb-5">You Got It!</span>
-              <img src="/ComCom/assets/stamp-06a13e79.png" class="mb-5" alt="location-pin" width="217px">
-              <h4 class="h4 text-white">你知道舊金山有北美洲</br>最古老的唐人街嗎?</h4>
+              <span class="h1 fst-italic text-white d-block mb-5"
+                >You Got It!</span
+              >
+              <img
+                src="/ComCom/assets/stamp-06a13e79.png"
+                class="mb-5"
+                alt="location-pin"
+                width="217px"
+              />
+              <h4 class="h4 text-white">
+                你知道舊金山有北美洲<br />最古老的唐人街嗎?
+              </h4>
             </div>
-            <a class="btn button check-btn" href="landmark.html" role="button">查看地標</a>
+            <a
+              class="btn btn-primary w-100 h5 fw-semibold py-2"
+              href="landmark.html"
+              role="button"
+              >查看地標</a
+            >
           </div>
         </div>
       </div>
     </div>
-    </div>
-
-
-
-
-
 
     
-
-    <!-- 字數計算 -->
-    <script>
-      const textarea = document.getElementById('inputText');
-      const charCount = document.getElementById('charCount');
-
-      // 監聽輸入事件
-      textarea.addEventListener('input', function () {
-        const currentLength = textarea.value.length;
-
-        // 更新字數顯示
-        charCount.textContent = `已輸入字數: ${currentLength} / 200`;
-
-        // 如果字數超過 200，添加紅色警告
-        if (currentLength > 200) {
-          charCount.classList.add('error');
-          charCount.textContent = `字數超過限制！已輸入字數: ${currentLength} / 200`;
-        } else {
-          // 當字數在限制內，移除紅色警告
-          charCount.classList.remove('error');
-        }
-      });
-    </script>
 
     <!-- modal自動彈出 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Automatically show modal when page loads
       window.onload = function () {
-        var myModal = new bootstrap.Modal(document.getElementById('bottomSheetModal'));
+        var myModal = new bootstrap.Modal(
+          document.getElementById("bottomSheetModal")
+        );
         myModal.show();
       };
     </script>
-
   </body>
-
 </html>
