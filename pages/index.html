@@ -1,285 +1,411 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<%- include('./layout/head'); -%>
+  <%- include('./layout/head'); -%>
 
   <body>
     <!-- 置頂列 -->
     <%- include('./layout/header', {page: "home" }); -%>
 
-      <div class="achievement-page">
-        <!-- 通知條 -->
-        <div class="bg-emphasis">
-          <div class="container">
-            <div class="alert d-flex justify-content-between align-items-center m-0 py-3 px-0 fade show" role="alert">
-              <p class="subtitle text-white">預約課程即將開始，快去上課吧！</p>
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
+    <div class="achievement-page">
+      <!-- 通知條 -->
+      <div class="bg-emphasis">
+        <div class="container">
+          <div
+            class="alert d-flex justify-content-between align-items-center m-0 py-3 px-0 fade show"
+            role="alert"
+          >
+            <p class="subtitle text-white">預約課程即將開始，快去上課吧！</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
           </div>
         </div>
-        <!-- user資訊欄 -->
-        <main class="container pt-4 pb-2">
-          <!-- user狀態列-->
-          <div class="d-flex align-items-start mb-3 position-relative">
-            <div class="flex-shrink-0 position-relative">
-              <img src="../assets/images/achievements/avatar.jpg" class="avatar" alt="avatar" />
-              <img src="../assets/images/flag/tw.png" class="flag" alt="Taiwan" />
-            </div>
-
-            <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
-              <h4 class="username">Barron Li</h4>
-              <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck" alt="SocialCheck" />
-            </div>
-
-            <div class="talkbubble d-flex">
-              <p class="talkbubble-item">
-                8/5~8/16 San Francisco trip
-                <img src="../assets/images/icon/flag-us.png" class="align-baseline" alt="flags_us" />
-              </p>
-            </div>
-          </div>
-          <!-- user成就欄-->
-          <ul class="d-flex list-unstyled justify-content-around mb-3">
-            <li class="achievement">
-              <h5 class="h5">A1</h5>
-              <p class="caption-1">英文程度</p>
-            </li>
-            <li class="achievement">
-              <h5 class="h5">88個</h5>
-              <p class="caption-1">地標成就</p>
-            </li>
-            <li class="achievement">
-              <h5 class="h5">2小時</h5>
-              <p class="caption-1">上課時數</p>
-            </li>
-            <li class="achievement">
-              <h5 class="h5">369位</h5>
-              <p class="caption-1">學伴朋友</p>
-            </li>
-          </ul>
-          <!-- user編輯欄-->
-          <div class="d-flex">
-            <button type="button" class="btn btn-light px-4 pt-0 me-3" style="width: 52px">
-              <img src="../assets/images/icon/course-export.svg" alt="Export" style="width: 20px; height: 20px" />
-            </button>
-            <button type="button" class="btn btn-light subtitle w-100">
-              編輯個人檔案
-            </button>
-          </div>
-        </main>
-
-        <!-- 最愛地標 -->
-        <div class="location container py-2">
-          <div class="d-flex align-items-center justify-content-between mb-2">
-            <h3 class="mb-0 title-1">最愛地標</h3>
-            <a href="landmark.html" class="fs-body-2 text-gray-600 d-inline-flex align-items-center">更多<img
-                src="../assets/images/icon/function-caret-right.svg" alt="more" width="14px" height="14px" /></a>
+      </div>
+      <!-- user資訊欄 -->
+      <main class="container pt-4 pb-2">
+        <!-- user狀態列-->
+        <div class="d-flex align-items-start mb-3 position-relative">
+          <div class="flex-shrink-0 position-relative">
+            <img
+              src="../assets/images/achievements/avatar.jpg"
+              class="avatar"
+              alt="avatar"
+            />
+            <img src="../assets/images/flag/tw.png" class="flag" alt="Taiwan" />
           </div>
 
-          <div class="swiper-container overflow-hidden">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-1.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+          <div class="flex-grow-1 ms-1 py-2 d-flex align-items-center">
+            <h4 class="username">Barron Li</h4>
+            <img
+              src="../assets/images/icon/social-check-fill-blue500.svg"
+              class="socialCheck"
+              alt="SocialCheck"
+            />
+          </div>
+
+          <div class="talkbubble d-flex">
+            <p class="talkbubble-item">
+              8/5~8/16 San Francisco trip
+              <img
+                src="../assets/images/icon/flag-us.png"
+                class="align-baseline"
+                alt="flags_us"
+              />
+            </p>
+          </div>
+        </div>
+        <!-- user成就欄-->
+        <ul class="d-flex list-unstyled justify-content-around mb-3">
+          <li class="achievement">
+            <h5 class="h5">A1</h5>
+            <p class="caption-1">英文程度</p>
+          </li>
+          <li class="achievement">
+            <h5 class="h5">88個</h5>
+            <p class="caption-1">地標成就</p>
+          </li>
+          <li class="achievement">
+            <h5 class="h5">2小時</h5>
+            <p class="caption-1">上課時數</p>
+          </li>
+          <li class="achievement">
+            <h5 class="h5">369位</h5>
+            <p class="caption-1">學伴朋友</p>
+          </li>
+        </ul>
+        <!-- user編輯欄-->
+        <div class="d-flex">
+          <button
+            type="button"
+            class="btn btn-light px-4 pt-0 me-3"
+            style="width: 52px"
+          >
+            <img
+              src="../assets/images/icon/course-export.svg"
+              alt="Export"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+          <button type="button" class="btn btn-light subtitle w-100">
+            編輯個人檔案
+          </button>
+        </div>
+      </main>
+
+      <!-- 最愛地標 -->
+      <div class="location container py-2">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <h3 class="mb-0 title-1">最愛地標</h3>
+          <a
+            href="landmark.html"
+            class="fs-body-2 text-gray-600 d-inline-flex align-items-center"
+            >更多<img
+              src="../assets/images/icon/function-caret-right.svg"
+              alt="more"
+              width="14px"
+              height="14px"
+          /></a>
+        </div>
+
+        <div class="swiper-container overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-1.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">舊金山</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-2.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-2.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">東京鐵塔</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-3.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-3.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">羅浮宮</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-4.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-4.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">首爾</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-5.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-5.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">紐約</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-6.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-6.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">自由女神</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-7.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-7.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">金門大橋</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-8.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-8.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">紐西蘭</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-9.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-9.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">庫克山</p>
-                </a>
-              </div>
-              <div class="swiper-slide location-img">
-                <a href="#" class="card border-0">
-                <img src="../assets/images/achievements/favorite-landmark-10.jpg" class="rounded-3"
-                  alt="favorite-landmark" />
+              </a>
+            </div>
+            <div class="swiper-slide location-img">
+              <a href="#" class="card border-0">
+                <img
+                  src="../assets/images/achievements/favorite-landmark-10.jpg"
+                  class="rounded-3"
+                  alt="favorite-landmark"
+                />
                 <p class="fs-body-2">瑞典</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- tag -->
-        <div class="container d-flex pt-1 pb-2 gap-3 flex-wrap">
-          
-            <button
-              type="button"
-              class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
-            >
-            私房景點</button
-            ><button
-              type="button"
-              class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
-            >
-            自然風景</button
-            ><button
-              type="button"
-              class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
-            >
-            節慶祭典
-            </button>
-            <button
-              type="button"
-              class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
-            >
-            戶外運動
-            </button>
-          
-        </div>
-        <!-- 學習分享 -->
-        <div class="container pt-2">
-          <h3 class="mb-0 title-1 mb-2">學習分享</h3>
-
-          <div class="post mb-2">
-            <!-- user -->
-            <div class="d-flex align-items-center mb-2">
-              <div class="flex-shrink-0 position-relative">
-                <img src="../assets/images/achievements/avatar.jpg" class="avatar-sm" alt="avatar" />
-                <img src="../assets/images/flag/tw.png" class="flag-sm" alt="Taiwan" />
-              </div>
-              <div class="flex-grow-1 ms-2 me-auto d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <h4 class="username-sm">Barron Li</h4>
-                  <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm"
-                    alt="SocialCheck" />
-                </div>
-                <time datetime="" class="caption-1 text-gray-500">8月9日</time>
-              </div>
-              <a href="#" type="button"><img src="../assets/images/icon/more.svg" alt="more" /></a>
-            </div>
-            <!-- post -->
-            <div class="ms-12">
-              <p class="mb-2">
-                Last time I chatted with
-                <span class="text-primary">@Emma Corrin</span> about fortune
-                cookies, and I finding them at a Chinese restaurant in San
-                Francisco! How lucky!
-                <img src="../assets/images/achievements/emoji_love.png" alt="" width="16px" />
-              </p>
-              <img src="../assets/images/achievements/post-02.jpg" class="rounded mb-2" alt="post" height="166px" />
-              <!-- social buttons -->
-              <div class="d-flex mb-2 gap-4 align-items-center">
-                <div>
-                  <input type="checkbox" name="index-post-like1" id="index-post-like1" class="d-none" />
-                  <label for="index-post-like1" class="label-icon-heart align-middle" role="button"></label>
-                </div>
-                <button type="button" class="btn btn-text p-0">
-                  <img src="../assets/images/icon/social-chat.svg" alt="comment icon" />
-                </button>
-                <button type="button" class="btn btn-text p-0">
-                  <img src="../assets/images/icon/social-paper-plane.svg" alt="share icon" />
-                </button>
-              </div>
-
-              <span class="caption-1">52個讚</span>
-            </div>
-          </div>
-          <div class="post mb-2">
-            <!-- user -->
-            <div class="d-flex align-items-center mb-2">
-              <div class="flex-shrink-0 position-relative">
-                <img src="../assets/images/achievements/avatar.jpg" class="avatar-sm" alt="..." />
-                <img src="../assets/images/flag/tw.png" class="flag-sm" alt="Taiwan" />
-              </div>
-              <div class="flex-grow-1 ms-2 me-auto d-flex flex-column">
-                <div class="d-flex align-items-center">
-                  <h4 class="username-sm">Barron Li</h4>
-                  <img src="../assets/images/icon/social-check-fill-blue500.svg" class="socialCheck-sm"
-                    alt="socialCheck" />
-                </div>
-                <time datetime="" class="caption-1 text-gray-500">8月5日</time>
-              </div>
-              <a href="#" type="button"><img src="../assets/images/icon/more.svg" alt="more" /></a>
-            </div>
-            <!-- post -->
-            <div class="ms-12">
-              <p class="mb-2">
-                Good morning! The weather is really nice today, and the Golden
-                Gate Bridge is so spectacular!<img src="../assets/images/achievements/emoji_love.png" alt=""
-                  width="16px" />
-              </p>
-              <img src="../assets/images/achievements/post-01.jpg" class="rounded mb-2" alt="post" height="166px" />
-              <!-- social buttons -->
-              <div class="d-flex mb-2 gap-4 align-items-center">
-                <div>
-                  <input type="checkbox" name="index-post-like2" id="index-post-like2" class="d-none" />
-                  <label for="index-post-like2" class="label-icon-heart align-middle" role="button"></label>
-                </div>
-                <button type="button" class="btn btn-text p-0">
-                  <img src="../assets/images/icon/social-chat.svg" alt="comment icon" />
-                </button>
-                <button type="button" class="btn btn-text p-0">
-                  <img src="../assets/images/icon/social-paper-plane.svg" alt="share icon" />
-                </button>
-              </div>
-              <span class="caption-1">19個讚</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
+      <!-- tag -->
+      <div class="container d-flex pt-1 pb-2 gap-3 flex-wrap">
+        <button
+          type="button"
+          class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+        >
+          私房景點</button
+        ><button
+          type="button"
+          class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+        >
+          自然風景</button
+        ><button
+          type="button"
+          class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+        >
+          節慶祭典
+        </button>
+        <button
+          type="button"
+          class="btn rounded-1 fs-body-2 px-2 py-1 btn-card-theme-tag btn btn-outline-primary"
+        >
+          戶外運動
+        </button>
+      </div>
+      <!-- 學習分享 -->
+      <div class="container pt-2">
+        <h3 class="mb-0 title-1 mb-2">學習分享</h3>
 
-      <%- include('./layout/tab-bar', {page: "home" }); -%>
+        <div class="post mb-2">
+          <!-- user -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0 position-relative">
+              <img
+                src="../assets/images/achievements/avatar.jpg"
+                class="avatar-sm"
+                alt="avatar"
+              />
+              <img
+                src="../assets/images/flag/tw.png"
+                class="flag-sm"
+                alt="Taiwan"
+              />
+            </div>
+            <div class="flex-grow-1 ms-2 me-auto d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <h4 class="username-sm">Barron Li</h4>
+                <img
+                  src="../assets/images/icon/social-check-fill-blue500.svg"
+                  class="socialCheck-sm"
+                  alt="SocialCheck"
+                />
+              </div>
+              <time datetime="" class="caption-1 text-gray-500">8月9日</time>
+            </div>
+            <a href="#" type="button"
+              ><img src="../assets/images/icon/more.svg" alt="more"
+            /></a>
+          </div>
+          <!-- post -->
+          <div class="ms-12">
+            <p class="mb-2">
+              Last time I chatted with
+              <span class="text-primary">@Emma Corrin</span> about fortune
+              cookies, and I finding them at a Chinese restaurant in San
+              Francisco! How lucky!
+              <img
+                src="../assets/images/achievements/emoji_love.png"
+                alt=""
+                width="16px"
+              />
+            </p>
+            <img
+              src="../assets/images/achievements/post-02.jpg"
+              class="rounded mb-2"
+              alt="post"
+              height="166px"
+            />
+            <!-- social buttons -->
+            <div class="d-flex mb-2 gap-4 align-items-center">
+              <div>
+                <input
+                  type="checkbox"
+                  name="index-post-like1"
+                  id="index-post-like1"
+                  class="d-none"
+                />
+                <label
+                  for="index-post-like1"
+                  class="label-icon-heart align-middle"
+                  role="button"
+                ></label>
+              </div>
+              <button type="button" class="btn btn-text p-0">
+                <img
+                  src="../assets/images/icon/social-chat.svg"
+                  alt="comment icon"
+                />
+              </button>
+              <button type="button" class="btn btn-text p-0">
+                <img
+                  src="../assets/images/icon/social-paper-plane.svg"
+                  alt="share icon"
+                />
+              </button>
+            </div>
 
-        <script type="module" src="../main.js"></script>
-        <script type="module">
-          import Swiper from "swiper/bundle";
+            <span class="caption-1">52個讚</span>
+          </div>
+        </div>
+        <div class="post mb-2">
+          <!-- user -->
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0 position-relative">
+              <img
+                src="../assets/images/achievements/avatar.jpg"
+                class="avatar-sm"
+                alt="..."
+              />
+              <img
+                src="../assets/images/flag/tw.png"
+                class="flag-sm"
+                alt="Taiwan"
+              />
+            </div>
+            <div class="flex-grow-1 ms-2 me-auto d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <h4 class="username-sm">Barron Li</h4>
+                <img
+                  src="../assets/images/icon/social-check-fill-blue500.svg"
+                  class="socialCheck-sm"
+                  alt="socialCheck"
+                />
+              </div>
+              <time datetime="" class="caption-1 text-gray-500">8月5日</time>
+            </div>
+            <a href="#" type="button"
+              ><img src="../assets/images/icon/more.svg" alt="more"
+            /></a>
+          </div>
+          <!-- post -->
+          <div class="ms-12">
+            <p class="mb-2">
+              Good morning! The weather is really nice today, and the Golden
+              Gate Bridge is so spectacular!<img
+                src="../assets/images/achievements/emoji_love.png"
+                alt=""
+                width="16px"
+              />
+            </p>
+            <img
+              src="../assets/images/achievements/post-01.jpg"
+              class="rounded mb-2"
+              alt="post"
+              height="166px"
+            />
+            <!-- social buttons -->
+            <div class="d-flex mb-2 gap-4 align-items-center">
+              <div>
+                <input
+                  type="checkbox"
+                  name="index-post-like2"
+                  id="index-post-like2"
+                  class="d-none"
+                />
+                <label
+                  for="index-post-like2"
+                  class="label-icon-heart align-middle"
+                  role="button"
+                ></label>
+              </div>
+              <button type="button" class="btn btn-text p-0">
+                <img
+                  src="../assets/images/icon/social-chat.svg"
+                  alt="comment icon"
+                />
+              </button>
+              <button type="button" class="btn btn-text p-0">
+                <img
+                  src="../assets/images/icon/social-paper-plane.svg"
+                  alt="share icon"
+                />
+              </button>
+            </div>
+            <span class="caption-1">19個讚</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          const swiper = new Swiper(".swiper-container", {
-            slidesPerView: "4.2",
-            spaceBetween: 12,
-          });
-        </script>
+    <%- include('./layout/tab-bar', {page: "home" }); -%>
+    <script type="module" src="../main.js"></script>
   </body>
-
 </html>
