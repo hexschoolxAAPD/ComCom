@@ -1,111 +1,106 @@
-.blackoverlay{
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:41px;
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        inset: 0;
-        background-color: rgba(31, 31, 31, 0.9);
-    }
+.blackoverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 41px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(31, 31, 31, 0.9);
+  }
 }
 
 //star-rating
 .star-rating {
-    display: flex;
-    flex-direction: row-reverse; /* 星星從右到左排列 */
-    justify-content: flex-start;
-    gap: 4px;
+  display: flex;
+  flex-direction: row-reverse; /* 星星從右到左排列 */
+  justify-content: flex-start;
+  gap: 4px;
 }
 
 .star-rating input {
-    display: none; /* 隱藏 radio buttons */
+  display: none; /* 隱藏 radio buttons */
 }
 
 .star-rating label {
-    width: 30px;
-    height: 30px;
-    background-image: url('/assets/images/icon/social-star.svg'); /* 空心星星圖片 */
-    background-size: contain;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/images/icon/social-star.svg"); /* 空心星星圖片 */
+  background-size: contain;
+  cursor: pointer;
 }
 
 .star-rating label:hover,
 .star-rating label:hover ~ label {
-    background-image: url('/assets/images/icon/course-star-lime-green.svg'); /* 滑鼠懸停時顯示實心星星圖片 */
+  background-image: url("/assets/images/icon/course-star-lime-green.svg"); /* 滑鼠懸停時顯示實心星星圖片 */
 }
 
 .star-rating input:checked ~ label {
-    background-image: url('/assets/images/icon/course-star-lime-green.svg'); /* 選中時顯示實心星星圖片 */
+  background-image: url("/assets/images/icon/course-star-lime-green.svg"); /* 選中時顯示實心星星圖片 */
 }
-
 
 //feedback
 textarea {
-    width: 100%;
-    height: 132px;
-    resize: none;
-    background-color: $gray-100;
-    border-radius: 8px;
-    border: 0;
-    padding: 16px;
+  width: 100%;
+  height: 132px;
+  resize: none;
+  background-color: $gray-100;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px;
 }
-textarea::placeholder{
-    font-size: 14px;
-    color: $gray-500;
+textarea::placeholder {
+  font-size: 14px;
+  color: $gray-500;
 }
-textarea:focus{
-    outline: none;
+textarea:focus {
+  outline: none;
 }
 .counter {
-    margin-top: 4px;
-    text-align: right;
-    color: $gray-500;
+  margin-top: 4px;
+  text-align: right;
+  color: $gray-500;
 }
 .error {
-    color: red;
+  color: red;
 }
 
 //modal
+.feedback-modal,
+.landmark-modal {
+  top: 41px; // 讓置頂列按鈕可以正常運行
+}
+
 .modal .modal-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .modal.fade .modal-dialog.modal-bottom {
-    transform: translateY(100%); 
-    transition: transform 0.3s ease-out;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
 }
+
 .modal.show .modal-dialog.modal-bottom {
-    transform: translateY(0); 
+  transform: translateY(0);
 }
 .modal-content {
-    border-radius: 10px 10px 0 0; 
+  border-width: 0px;
+  border-radius: 10px 10px 0 0;
 }
 
-
-.get-pin{
-    height: calc(100vh - 41px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    & .btn-close{
-        align-self: self-end;
-        width: 24px;
-        height: 24px;
-    }
+.get-pin {
+  height: calc(100vh - 41px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & .btn-close {
+    align-self: self-end;
+    width: 24px;
+    height: 24px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
