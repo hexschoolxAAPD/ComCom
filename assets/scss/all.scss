@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 
+// bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
-@import "./utils/variables.scss";
-
+// 覆寫的自定義 bootstrap 變數
+@import "./vendors-extensions/variables.scss";
 @import "../../node_modules/bootstrap";
 
 // 自定義基礎樣式
@@ -31,8 +32,8 @@
 @import "./pages/partner.scss";
 @import "./pages/landmark.scss";
 @import "./pages/feedback.scss";
-
 @import "./pages/course.scss";
 @import "./pages/explore-courses.scss";
 
-@import "./base/utilis.scss";
+// utilities
+@import "./base/utilities.scss";
