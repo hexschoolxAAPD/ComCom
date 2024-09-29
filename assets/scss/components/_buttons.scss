@@ -15,6 +15,15 @@
   --bs-btn-active-bg: #{$gray-200};
 }
 
+.btn.btn-gray-200 {
+  --bs-btn-border-width: 0;
+  --bs-btn-color: #{$white};
+  --bs-btn-hover-color: #{$white};
+  --bs-btn-hover-bg: #{$gray-300};
+  --bs-btn-active-color: #{$white};
+  --bs-btn-active-bg: #{$gray-300};
+}
+
 // 白底按鈕
 .btn.btn-white {
   background-color: $white;
@@ -87,11 +96,11 @@
   margin-bottom: 12px;
 }
 
-.cancel-btn,
-.cancel-btn:hover {
-  background-color: $gray-200;
-  color: $white;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
-}
+// .cancel-btn,
+// .cancel-btn:hover {
+//   background-color: $gray-200;
+//   color: $white;
+//   font-size: 18px;
+//   line-height: 24px;
+//   font-weight: 600;
+// }
