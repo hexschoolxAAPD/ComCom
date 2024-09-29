@@ -4,7 +4,6 @@
   height: 24px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
   // white stroke
   &.bookmark-light {
     background-image: url(../images/icon/ic-button-bookmark-light.svg);
@@ -13,10 +12,20 @@
   &.bookmark-dark {
     background-image: url(../images/icon/ic-button-bookmark.svg);
   }
+
+  // sm black stroke
+  &.bookmark-dark-sm {
+    background-image: url(../images/icon/ic-button-bookmark-sm.svg);
+  }
 }
 
-.bookmark-checkbox:checked ~ .bookmark-label-icon {
-  background-image: url(../images/icon/ic-button-bookmark-fill-red.svg);
+.bookmark-checkbox {
+  &:checked ~ .bookmark-label-icon {
+    background-image: url(../images/icon/ic-button-bookmark-fill-red.svg);
+  }
+  &:checked ~ .bookmark-dark-sm {
+    background-image: url(../images/icon/ic-button-bookmark-fill-red-sm.svg);
+  }
 }
 
 // label checkbox
