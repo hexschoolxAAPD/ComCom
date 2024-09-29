@@ -94,7 +94,7 @@ textarea:focus {
 }
 
 .get-pin {
-  height: calc(100vh - 41px);
+  height: calc(100dvh - 41px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
