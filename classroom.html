@@ -1,151 +1,339 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-    <head>
+  <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Com Com 英語學習 App</title>
-  <script type="module" crossorigin src="/ComCom/assets/main-cc01a810.js"></script>
-  <link rel="stylesheet" href="/ComCom/assets/main-673f4410.css">
+  <script type="module" crossorigin src="/ComCom/assets/main-50c9a485.js"></script>
+  <link rel="stylesheet" href="/ComCom/assets/main-f720d3e1.css">
 </head>
-<body>
-        <!-- 置頂列 -->
-        <nav class="container text-center py-2  position-relative" aria-label="Navigation Bar">
-            <span class="title-1">教室</span>
-            <div class="back-btn">
-                <a href="feedback.html"><img src="/ComCom/assets/function-caret-left-2a6218da.svg" alt="back"></a>
+  <body>
+    <!-- 置頂列 -->
+    <nav
+      class="container text-center py-2 position-relative"
+      aria-label="Navigation Bar"
+    >
+      <span class="title-1">教室</span>
+      <div class="back-btn">
+        <a href="feedback.html"
+          ><img src="/ComCom/assets/function-caret-left-2a6218da.svg" alt="back"
+        /></a>
+      </div>
+    </nav>
+    <div id="loading">
+      <!-- 第一個 loading -->
+      <div class="first-loading container py-4">
+        <div
+          class="black-screen d-flex flex-column justify-content-between p-4"
+        >
+          <div class="offline-tag">
+            <img
+              src="/ComCom/assets/video-broadcast-38d2062d.svg"
+              class="me-1"
+              alt="offline"
+              width="18px"
+            />
+          </div>
+          <span class="text-center text-white h6"
+            >Hi, Barron<br />課程即將開始</span
+          >
+          <div class="video-tab d-flex">
+            <button class="btn p-0 me-auto border-0">
+              <img
+                src="/ComCom/assets/video-microphone-17e377d3.svg"
+                alt="microphone"
+                width="30px"
+              />
+            </button>
+            <div class="video-item">
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/course-download-light-d1d58ea9.svg"
+                  alt="download"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/video-speaker-light-eac7dd73.svg"
+                  alt="speaker"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg"
+                  alt="speaker"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/video-corners-out-light-238078ef.svg"
+                  alt="fullscreen"
+                  width="30px"
+                />
+              </button>
             </div>
-        </nav>
-        <div id="loading">
-            <!-- 第一個 loading -->
-            <div class="first-loading container py-4">
-                <div class="black-screen d-flex flex-column justify-content-between p-4">
-                    <div class="offline-tag">
-                        <img src="/ComCom/assets/video-broadcast-38d2062d.svg" class="me-1" alt="offline" width="18px">
-                    </div>
-                    <span class="text-center text-white h6">Hi, Barron</br>課程即將開始</span>
-                    <div class="video-tab d-flex">
-                        <button class="btn p-0 me-auto border-0"><img src="/ComCom/assets/video-microphone-17e377d3.svg" alt="microphone" width="30px"></button>
-                        <div class="video-item">
-                            <button class="btn border-0"><img src="/ComCom/assets/course-download-light-d1d58ea9.svg" alt="download" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/video-speaker-light-eac7dd73.svg" alt="speaker" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg" alt="speaker" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/video-corners-out-light-238078ef.svg" alt="fullscreen" width="30px"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- 第二個 loading -->
-            <div class="second-loading container py-4">
-                <div class="screen d-flex flex-column justify-content-between p-4">
-                    <div class="online-tag">
-                        <img src="/ComCom/assets/video-broadcast-38d2062d.svg" class="me-1" alt="online" width="18px"><span class="fs-body-2">直播中</span>
-                    </div>
-                    <div class="video-tab d-flex">
-                        <button class="btn p-0 me-auto border-0"><img src="/ComCom/assets/video-microphone-17e377d3.svg" alt="microphone" width="30px"></button>
-                        <div class="video-item">
-                            <button class="btn border-0"><img src="/ComCom/assets/course-download-light-d1d58ea9.svg" alt="download" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/video-speaker-light-eac7dd73.svg" alt="speaker" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg" alt="speaker" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/video-corners-out-light-238078ef.svg" alt="fullscreen" width="30px"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 第三個 loading -->
-            <div class="third-loading container py-4">
-                <div class="stop-screen d-flex flex-column justify-content-between p-4">
-                    <div class="online-tag">
-                        <img src="/ComCom/assets/video-broadcast-38d2062d.svg" class="me-1" alt="online" width="18px">
-                    </div>
-                    <span class="text-center text-white h6">直播中斷</br>請稍等</span>
-                    <div class="video-tab d-flex">
-                        <button class="btn p-0 me-auto border-0"><img src="/ComCom/assets/video-microphone-17e377d3.svg" alt="microphone" width="30px"></button>
-                        <div class="video-item">
-                            <button class="btn border-0"><img src="/ComCom/assets/course-download-light-d1d58ea9.svg" alt="download" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/video-speaker-light-eac7dd73.svg" alt="speaker" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg" alt="speaker" width="30px"></button>
-                            <button class="btn border-0"><img src="/ComCom/assets/video-corners-out-light-238078ef.svg" alt="fullscreen" width="30px"></button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
-
-
-        <main class="container py-4 classroom">
-            <div class="screen d-flex flex-column justify-content-between p-4">
-                <div class="online-tag">
-                    <img src="/ComCom/assets/video-broadcast-38d2062d.svg" class="me-1" alt="online" width="18px"><span class="fs-body-2">直播中</span>
-                </div>
-                <div class="video-tab d-flex">
-                    <button class="btn p-0 me-auto border-0"><img src="/ComCom/assets/video-microphone-17e377d3.svg" alt="microphone" width="30px"></button>
-                    <div class="video-item">
-                        <button class="btn border-0"><img src="/ComCom/assets/course-download-light-d1d58ea9.svg" alt="download" width="30px"></button>
-                        <button class="btn border-0"><img src="/ComCom/assets/video-speaker-light-eac7dd73.svg" alt="speaker" width="30px"></button>
-                        <button class="btn border-0"><img src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg" alt="speaker" width="30px"></button>
-                        <button class="btn border-0" data-bs-toggle="modal" data-bs-target="#fullscreen"><img src="/ComCom/assets/video-corners-out-light-238078ef.svg" alt="fullscreen" width="30px"></button>
-                    </div>
-                </div>
+      </div>
+      <!-- 第二個 loading -->
+      <div class="second-loading container py-4">
+        <div class="screen d-flex flex-column justify-content-between p-4">
+          <div class="online-tag">
+            <img
+              src="/ComCom/assets/video-broadcast-38d2062d.svg"
+              class="me-1"
+              alt="online"
+              width="18px"
+            /><span class="fs-body-2">直播中</span>
+          </div>
+          <div class="video-tab d-flex">
+            <button class="btn p-0 me-auto border-0">
+              <img
+                src="/ComCom/assets/video-microphone-17e377d3.svg"
+                alt="microphone"
+                width="30px"
+              />
+            </button>
+            <div class="video-item">
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/course-download-light-d1d58ea9.svg"
+                  alt="download"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/video-speaker-light-eac7dd73.svg"
+                  alt="speaker"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg"
+                  alt="speaker"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/video-corners-out-light-238078ef.svg"
+                  alt="fullscreen"
+                  width="30px"
+                />
+              </button>
             </div>
-
-
-            <!-- Modal -->
-            <div class="modal" id="fullscreen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                
-                    <div class="modal-body screen d-flex flex-column justify-content-between p-4 rounded-0">
-                        <div class="online-tag">
-                            <img src="/ComCom/assets/video-broadcast-38d2062d.svg" class="me-1" alt="online" width="18px"><span class="fs-body-2">直播中</span>
-                        </div>
-                        <div class="video-tab d-flex">
-                            <button class="btn p-0 me-auto border-0"><img src="/ComCom/assets/video-microphone-17e377d3.svg" alt="microphone" width="30px"></button>
-                            <div class="video-item">
-                                <button class="btn border-0"><img src="/ComCom/assets/course-download-light-d1d58ea9.svg" alt="download" width="30px"></button>
-                                <button class="btn border-0"><img src="/ComCom/assets/video-speaker-light-eac7dd73.svg" alt="speaker" width="30px"></button>
-                                <button class="btn border-0"><img src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg" alt="speaker" width="30px"></button>
-                                <button class="btn border-0" data-bs-dismiss="modal"><img src="/ComCom/assets/video-corners-in-light-b2f20871.svg" alt="fullscreen" width="30px"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <!-- 第三個 loading -->
+      <div class="third-loading container py-4">
+        <div class="stop-screen d-flex flex-column justify-content-between p-4">
+          <div class="online-tag">
+            <img
+              src="/ComCom/assets/video-broadcast-38d2062d.svg"
+              class="me-1"
+              alt="online"
+              width="18px"
+            />
+          </div>
+          <span class="text-center text-white h6">直播中斷<br />請稍等</span>
+          <div class="video-tab d-flex">
+            <button class="btn p-0 me-auto border-0">
+              <img
+                src="/ComCom/assets/video-microphone-17e377d3.svg"
+                alt="microphone"
+                width="30px"
+              />
+            </button>
+            <div class="video-item">
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/course-download-light-d1d58ea9.svg"
+                  alt="download"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/video-speaker-light-eac7dd73.svg"
+                  alt="speaker"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg"
+                  alt="speaker"
+                  width="30px"
+                />
+              </button>
+              <button class="btn border-0">
+                <img
+                  src="/ComCom/assets/video-corners-out-light-238078ef.svg"
+                  alt="fullscreen"
+                  width="30px"
+                />
+              </button>
             </div>
-        </main>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        
-        <script>
-            const firstImage = document.querySelector('.first-loading');
-            const secondImage = document.querySelector('.second-loading');
-            const thirdImage = document.querySelector('.third-loading');
-            const content = document.querySelector('.classroom');
-            const loading = document.getElementById('loading');
-        
-            // 當第一張圖片結束後，顯示第二張圖片
-            firstImage.addEventListener('animationend', function() {
-              firstImage.style.display = 'none';  // 隱藏第一張圖片
-              secondImage.style.display = 'block'; // 顯示第二張圖片
-              secondImage.style.animation = 'firstAnimation 2s forwards'; // 讓第二張圖片淡入
-            });
-            
-            secondImage.addEventListener('animationend', function() {
-              secondImage.style.display = 'none';  // 隱藏第一張圖片
-              thirdImage.style.display = 'block'; // 顯示第二張圖片
-              thirdImage.style.animation = 'firstAnimation 2s forwards'; // 讓第二張圖片淡入
-            });
-        
-            // 當第二張圖片顯示完後，進入內容
-            thirdImage.addEventListener('animationend', function() {
-            setTimeout(function() {
-                loading.style.display = 'none';  // 完全隱藏loading
-                content.style.display = 'block';  // 顯示主要內容
-                }); 
-            });
-        </script>
+    <main class="container py-4 classroom">
+      <div class="screen d-flex flex-column justify-content-between p-4">
+        <div class="online-tag">
+          <img
+            src="/ComCom/assets/video-broadcast-38d2062d.svg"
+            class="me-1"
+            alt="online"
+            width="18px"
+          /><span class="fs-body-2">直播中</span>
+        </div>
+        <div class="video-tab d-flex">
+          <button class="btn p-0 me-auto border-0">
+            <img
+              src="/ComCom/assets/video-microphone-17e377d3.svg"
+              alt="microphone"
+              width="30px"
+            />
+          </button>
+          <div class="video-item">
+            <button class="btn border-0">
+              <img
+                src="/ComCom/assets/course-download-light-d1d58ea9.svg"
+                alt="download"
+                width="30px"
+              />
+            </button>
+            <button class="btn border-0">
+              <img
+                src="/ComCom/assets/video-speaker-light-eac7dd73.svg"
+                alt="speaker"
+                width="30px"
+              />
+            </button>
+            <button class="btn border-0">
+              <img
+                src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg"
+                alt="speaker"
+                width="30px"
+              />
+            </button>
+            <button
+              class="btn border-0"
+              data-bs-toggle="modal"
+              data-bs-target="#fullscreen"
+            >
+              <img
+                src="/ComCom/assets/video-corners-out-light-238078ef.svg"
+                alt="fullscreen"
+                width="30px"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
 
-</body>
+      <!-- Modal -->
+      <div
+        class="modal"
+        id="fullscreen"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div
+              class="modal-body screen d-flex flex-column justify-content-between p-4 rounded-0"
+            >
+              <div class="online-tag">
+                <img
+                  src="/ComCom/assets/video-broadcast-38d2062d.svg"
+                  class="me-1"
+                  alt="online"
+                  width="18px"
+                /><span class="fs-body-2">直播中</span>
+              </div>
+              <div class="video-tab d-flex">
+                <button class="btn p-0 me-auto border-0">
+                  <img
+                    src="/ComCom/assets/video-microphone-17e377d3.svg"
+                    alt="microphone"
+                    width="30px"
+                  />
+                </button>
+                <div class="video-item">
+                  <button class="btn border-0">
+                    <img
+                      src="/ComCom/assets/course-download-light-d1d58ea9.svg"
+                      alt="download"
+                      width="30px"
+                    />
+                  </button>
+                  <button class="btn border-0">
+                    <img
+                      src="/ComCom/assets/video-speaker-light-eac7dd73.svg"
+                      alt="speaker"
+                      width="30px"
+                    />
+                  </button>
+                  <button class="btn border-0">
+                    <img
+                      src="/ComCom/assets/navbar-gear-light-f1b3e04b.svg"
+                      alt="speaker"
+                      width="30px"
+                    />
+                  </button>
+                  <button class="btn border-0" data-bs-dismiss="modal">
+                    <img
+                      src="/ComCom/assets/video-corners-in-light-b2f20871.svg"
+                      alt="fullscreen"
+                      width="30px"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <script>
+      const firstImage = document.querySelector(".first-loading");
+      const secondImage = document.querySelector(".second-loading");
+      const thirdImage = document.querySelector(".third-loading");
+      const content = document.querySelector(".classroom");
+      const loading = document.getElementById("loading");
+
+      // 當第一張圖片結束後，顯示第二張圖片
+      firstImage.addEventListener("animationend", function () {
+        firstImage.style.display = "none"; // 隱藏第一張圖片
+        secondImage.style.display = "block"; // 顯示第二張圖片
+        secondImage.style.animation = "firstAnimation 2s forwards"; // 讓第二張圖片淡入
+      });
+
+      secondImage.addEventListener("animationend", function () {
+        secondImage.style.display = "none"; // 隱藏第一張圖片
+        thirdImage.style.display = "block"; // 顯示第二張圖片
+        thirdImage.style.animation = "firstAnimation 2s forwards"; // 讓第二張圖片淡入
+      });
+
+      // 當第二張圖片顯示完後，進入內容
+      thirdImage.addEventListener("animationend", function () {
+        setTimeout(function () {
+          loading.style.display = "none"; // 完全隱藏loading
+          content.style.display = "block"; // 顯示主要內容
+        });
+      });
+    </script>
+  </body>
 </html>

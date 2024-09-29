@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Com Com 英語學習 App</title>
-  <script type="module" crossorigin src="/ComCom/assets/main-cc01a810.js"></script>
-  <link rel="stylesheet" href="/ComCom/assets/main-673f4410.css">
+  <script type="module" crossorigin src="/ComCom/assets/main-50c9a485.js"></script>
+  <link rel="stylesheet" href="/ComCom/assets/main-f720d3e1.css">
 </head>
 
   <body>
@@ -17,7 +17,7 @@
     >
       <span class="title-1">教室</span>
       <div class="back-btn">
-        <a href="feedback.html"
+        <a href="mycourse.html"
           ><img src="/ComCom/assets/function-caret-left-2a6218da.svg" alt="back"
         /></a>
       </div>
@@ -73,7 +73,7 @@
     <!-- Modal -->
 
     <div
-      class="modal fade"
+      class="modal fade feedback-modal"
       id="bottomSheetModal"
       tabindex="-1"
       aria-labelledby="bottomSheetLabel"
@@ -130,11 +130,18 @@
                 type="button"
                 class="btn btn-primary w-100 h5 fw-semibold py-2 mb-2"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#landmarkModal"
               >
                 提交
               </button>
-              <button class="btn button cancel-btn">下次再說</button>
+              <button
+                type="button"
+                class="btn btn-gray-200 fw-semibold h5 w-100 py-2"
+                data-bs-toggle="modal"
+                data-bs-target="#landmarkModal"
+              >
+                下次再說
+              </button>
             </div>
           </div>
         </div>
@@ -143,17 +150,17 @@
 
     <!-- got pin -->
     <div
-      class="modal fade"
-      id="exampleModal"
+      class="modal fade landmark-modal"
+      id="landmarkModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="landmarkModalLabel"
       aria-hidden="true"
       data-bs-backdrop="false"
     >
       <div class="modal-dialog modal-bottom">
         <div class="modal-content bg-transparent border-0">
           <div class="modal-body get-pin">
-            <button type="button" class="btn-close" aria-label="Close"></button>
+            <a href="landmark.html" class="btn-close" aria-label="Close"></a>
             <div class="text-center">
               <span class="h1 fst-italic text-white d-block mb-5"
                 >You Got It!</span
