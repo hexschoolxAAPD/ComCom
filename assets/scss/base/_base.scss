@@ -6,6 +6,8 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
 }
 
 a {
@@ -91,4 +93,3 @@ a {
   line-height: 12px;
   font-weight: 400;
 }
-
